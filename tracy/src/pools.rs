@@ -2,17 +2,23 @@
 pub struct OsmosisPool {
     address: String,
     id: String,
-    poolParams: OsmosisPoolParams,
+    #[serde(alias = "poolParams")]
+    pool_params: OsmosisPoolParams,
     future_pool_governor: String,
-    totalShares: OsmosisPoolToken,
-    poolAssets: Vec<OsmosisPoolAssets>,
-    totalWeight: String,
+    #[serde(alias = "totalShares")]
+    total_shares: OsmosisPoolToken,
+    #[serde(alias = "poolAssets")]
+    pool_assets: Vec<OsmosisPoolAssets>,
+    #[serde(alias = "totalWeight")]
+    total_weight: String,
 }
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct OsmosisPoolParams {
-    swapFee: String,
-    exitFee: String,
+    #[serde(alias = "swapFee")]
+    swap_fee: String,
+    #[serde(alias = "exitFee")]
+    exit_fee: String,
 }
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
