@@ -72,12 +72,9 @@ async fn get_quotes(
                 u128::from_str_radix(&amount, 10).unwrap(),
                 &denom1,
                 &denom2,
-                PoolConfig {
-                    grpc_url: None,
-                    rest_url: None,
-                    rpc_url: None,
-                    estimate_quote: false,
-                },
+                db.config
+                    .get(&pool.chain())
+                    .expect(&format!("No config for chain {}", pool.chain())),
             )
             .await;
         quotes.push(quote);

@@ -238,7 +238,7 @@ impl Pool for WasmPool {
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: PoolConfig,
+        config: &PoolConfig,
     ) -> Result<Quote> {
         let token1_denom = &self.token1.clone().unwrap().symbol.unwrap();
         let token2_denom = &self.token2.clone().unwrap().symbol.unwrap();
@@ -247,7 +247,7 @@ impl Pool for WasmPool {
             || (token_in_denom == token1_denom && token_out_denom == token2_denom)
         {
             let amount_out = get_price_for(
-                config.rest_url.unwrap().as_str(),
+                config.rest_url.clone().unwrap().as_str(),
                 &pool_address,
                 amount as u64,
                 token_in_denom == token1_denom,

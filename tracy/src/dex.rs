@@ -26,7 +26,25 @@ impl DexAgg {
                 .map(|x| Box::<dyn Pool>::from(x))
                 .collect::<Vec<Box<dyn Pool>>>(),
         );
-        let config = HashMap::new();
+        let mut config = HashMap::new();
+        config.insert(
+            "osmosis".to_owned(),
+            PoolConfig {
+                grpc_url: None,
+                rest_url: None,
+                rpc_url: None,
+                estimate_quote: true,
+            },
+        );
+        config.insert(
+            "juno".to_owned(),
+            PoolConfig {
+                grpc_url: None,
+                rest_url: Some("https://lcd-juno.itastakers.com".to_owned()),
+                rpc_url: None,
+                estimate_quote: true,
+            },
+        );
         Ok(DexAgg {
             pools: pools,
             config: config,

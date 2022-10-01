@@ -118,7 +118,7 @@ impl Pool for OsmosisPool {
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: PoolConfig,
+        config: &PoolConfig,
     ) -> Result<Quote> {
         if config.estimate_quote {
             Ok(Quote {

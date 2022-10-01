@@ -26,7 +26,7 @@ pub trait Pool: DynClone + Send + Sync {
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: PoolConfig,
+        config: &PoolConfig,
     ) -> Result<Quote>;
 
     fn token_denoms(&self) -> Vec<String>;
