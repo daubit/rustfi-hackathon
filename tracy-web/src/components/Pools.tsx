@@ -31,16 +31,15 @@ interface PoolProps {
 const Pool = (props: PoolProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { pool } = props;
-  console.log(pool);
   return (
     <>
       <Tr onClick={onOpen}>
         {pool.chain === "juno" && (
           <>
             <Td>{pool.chain}</Td>
+            <Td>{pool.pool_address}</Td>
             <Td>{pool.token1?.symbol}</Td>
             <Td>{pool.token2?.symbol}</Td>
-            <Td>{pool.pool_address}</Td>
             <Td isNumeric>{pool.token1_reserve}</Td>
             <Td isNumeric>{pool.token2_reserve}</Td>
           </>
@@ -88,7 +87,6 @@ const Pool = (props: PoolProps) => {
 export const Pools = () => {
   const { data, isLoading } = usePools();
   const chains = useAtomValue(chainsAtom);
-
   if (isLoading) {
     return (
       <Spinner
