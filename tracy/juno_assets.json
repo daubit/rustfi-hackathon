@@ -1,0 +1,667 @@
+[
+  {
+    "name": "Stable Fortis Oeconomia Token",
+    "symbol": "sFOT",
+    "total_supply": "46778042084763935",
+    "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+    "decimals": 10
+  },
+  {
+    "name": null,
+    "symbol": "uusd",
+    "total_supply": null,
+    "address": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+    "decimals": 6
+  },
+  {
+    "name": "ujuno",
+    "symbol": "ujuno",
+    "total_supply": null,
+    "address": null,
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "umntl",
+    "total_supply": null,
+    "address": "ibc/5CB906E82B7A88E62644AD811361F5858B74BA9EBD75C84B6D24B20C01A4819F",
+    "decimals": 6
+  },
+  {
+    "name": "Mercury Protocol",
+    "symbol": "MERCURY",
+    "total_supply": "10000",
+    "address": "juno12pxhfxq2ffz7crtrywxteu6e8lz4hdg5kp6udc6kwpfgaqkey46sj9h5gr",
+    "decimals": 6
+  },
+  {
+    "name": "ckxpress",
+    "symbol": "CKX",
+    "total_supply": "9999000000",
+    "address": "juno1g50fgz3yaexwpc44eck2l86a7wgd5hr295dcw2lx5qwuzm4pua6qyxuc6l",
+    "decimals": 6
+  },
+  {
+    "name": "CryptoCrew",
+    "symbol": "CREW",
+    "total_supply": "142000000",
+    "address": "juno18cpnn3cnrr9xq7r0cqp7shl7slasf27nrmskw4rrw8c6hyp8u7rqe2nulg",
+    "decimals": 3
+  },
+  {
+    "name": null,
+    "symbol": "uscrt",
+    "total_supply": null,
+    "address": "ibc/CD78EE5B20682E5A61B4D96C9F4DC39361269B88A6B3462C26A18652F7A90A9A",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "ustars",
+    "total_supply": null,
+    "address": "ibc/F6B367385300865F654E110976B838502504231705BAC0849B0651C226385885",
+    "decimals": 6
+  },
+  {
+    "name": "BLOCK",
+    "symbol": "BLCK",
+    "total_supply": "53111488259",
+    "address": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "eeur",
+    "total_supply": null,
+    "address": "ibc/B9F7C1E4CE9219B5AF06C47B18661DBD49CCD7A6C18FF789E2FB62BB365CFF9C",
+    "decimals": 6
+  },
+  {
+    "name": "Blep",
+    "symbol": "BLEP",
+    "total_supply": "10000000000",
+    "address": "juno1pjf4gs82nsfne8979pn63uwu7qaenhzy72mhdnpn0tr8jevtswqqahh68s",
+    "decimals": 6
+  },
+  {
+    "name": "JoeDAO",
+    "symbol": "JOE",
+    "total_supply": "10127176935000",
+    "address": "juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3",
+    "decimals": 6
+  },
+  {
+    "name": "Husky",
+    "symbol": "HSKY",
+    "total_supply": "10000000",
+    "address": "juno1hpm7ynqwqmstkqzw7aw5c4v0e0nf2zxm9cde0ued62llpdwcehnqnqukqe",
+    "decimals": 3
+  },
+  {
+    "name": "Grand Fortis Oeconomia Token",
+    "symbol": "gFOT",
+    "total_supply": "122162640278767",
+    "address": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl",
+    "decimals": 10
+  },
+  {
+    "name": "WasmSwap_Liquidity_Token",
+    "symbol": "wslpt",
+    "total_supply": "23093487869537",
+    "address": "juno13e8nz9ekzvvh29vjwa3806cp8j9qgas8r6teuc8f8ky6jvddvmpqjkm383",
+    "decimals": 6
+  },
+  {
+    "name": "SAFEMOON",
+    "symbol": "SFM",
+    "total_supply": "1000000000000000",
+    "address": "juno1jklhpvnw33waqzmum42y396vc7t07q7wgxtv0xgcsj5k6rl4752sus3vd7",
+    "decimals": 6
+  },
+  {
+    "name": "Scary-Type_159",
+    "symbol": "IMSCARED",
+    "total_supply": "22000000000000",
+    "address": "juno1mf7nspj99zgq8f55m4rrk53d4zrxfvffwv0px5j0du4leehl8mms3csj4d",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "uxprt",
+    "total_supply": null,
+    "address": "ibc/7455B3F2F2737906BACF4AE980069A4CAB7C7F9FDAABAEFBA439DF037AEC5898",
+    "decimals": 6
+  },
+  {
+    "name": "Burned Fortis Oeconomia Token",
+    "symbol": "bFOT",
+    "total_supply": "57532249141653117983",
+    "address": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7",
+    "decimals": 10
+  },
+  {
+    "name": "#decentralizehk",
+    "symbol": "DHK",
+    "total_supply": "7000000",
+    "address": "juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49",
+    "decimals": 0
+  },
+  {
+    "name": "BLOCK",
+    "symbol": "BLOCK",
+    "total_supply": "338600000000000",
+    "address": "juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
+    "decimals": 6
+  },
+  {
+    "name": "POSTHUMAN",
+    "symbol": "PHMN",
+    "total_supply": "53000000000",
+    "address": "juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l",
+    "decimals": 6
+  },
+  {
+    "name": "MARBLE",
+    "symbol": "MARBLE",
+    "total_supply": "20999990",
+    "address": "juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl",
+    "decimals": 3
+  },
+  {
+    "name": "DaoDoge",
+    "symbol": "DDoge",
+    "total_supply": "1000000000",
+    "address": "juno1g767zq566m66557gtc7lz8vsqhrytyuggknxl5wpca3zqj4wtpys0naxks",
+    "decimals": 6
+  },
+  {
+    "name": "HOPE GALAXY",
+    "symbol": "HOPE",
+    "total_supply": "14180000000",
+    "address": "juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z",
+    "decimals": 6
+  },
+  {
+    "name": "BLOCK",
+    "symbol": "BLOCK",
+    "total_supply": "100000000",
+    "address": "juno132ezr4fkzc3rpua95u5latfsc6fke39lkc7rfz8j8drqncyms34qgnyq7k",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "udig",
+    "total_supply": null,
+    "address": "ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "ubcna",
+    "total_supply": null,
+    "address": "ibc/0CB5D60E57FD521FA39D11E3E410144389010AC5EF5F292BC9BDD832FA2FDBF9",
+    "decimals": 6
+  },
+  {
+    "name": "Arto DAO",
+    "symbol": "ARTO",
+    "total_supply": "18000000000",
+    "address": "juno1hy0ky3pe742phd4w55tdfej0ez55h4jx4g06rp4wsa0mne9wzudqy4hum2",
+    "decimals": 6
+  },
+  {
+    "name": "FUTURE",
+    "symbol": "FUTURE",
+    "total_supply": "1000000000000000",
+    "address": "juno1gzys54drag6753qq75mkt3yhjwyv4rp698kfvesh0wcy5737z4tsn0chtm",
+    "decimals": 6
+  },
+  {
+    "name": "ESUNA",
+    "symbol": "ESUNA",
+    "total_supply": "100000000",
+    "address": "juno1hd6gykfwxr6n4zkshxqefm8un6kamrlzs49mlypk57kzedum43nqtj24c9",
+    "decimals": 6
+  },
+  {
+    "name": "Wokeness",
+    "symbol": "WOKE",
+    "total_supply": "1000000000000",
+    "address": "juno1x7hatwxtexuxt3gaylgenldl0ssrf49r7tupu7l753vy3gxm736qw7tkgj",
+    "decimals": 4
+  },
+  {
+    "name": "Junits",
+    "symbol": "Junits",
+    "total_supply": "10000000000000000",
+    "address": "juno1r2lr60fujfmnv4ekguz67gl7ud0xht7l6rrvv320gv28ev50hgfsvzywal",
+    "decimals": 2
+  },
+  {
+    "name": "RAW",
+    "symbol": "RAW",
+    "total_supply": "1000000000000000",
+    "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+    "decimals": 6
+  },
+  {
+    "name": "Santorini Coin",
+    "symbol": "SANTO",
+    "total_supply": "1000000000",
+    "address": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3",
+    "decimals": 6
+  },
+  {
+    "name": "WasmSwap_Liquidity_Token",
+    "symbol": "wslpt",
+    "total_supply": "1111287343460017",
+    "address": "juno1p4y3la4h4ckmsndsgrhvs90f2vtsw8t3edehj39dup768r5087nsmt6kzc",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "uakt",
+    "total_supply": null,
+    "address": "ibc/DFC6F33796D5D0075C5FB54A4D7B8E76915ACF434CB1EE2A1BA0BB8334E17C3A",
+    "decimals": 6
+  },
+  {
+    "name": "SAFEMOON",
+    "symbol": "SFM",
+    "total_supply": "1000000000000000",
+    "address": "juno1c93f9we96laxpg9clr6kww35fyfar4hzp7pgunkqlcdmv4ch5hlqpv9lwf",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "dai-wei",
+    "total_supply": null,
+    "address": "ibc/171E8F6687D290D378678310F9F15D367DCD245BF06184532B703A92054A8A4F",
+    "decimals": 6
+  },
+  {
+    "name": "BOSON",
+    "symbol": "BSN",
+    "total_supply": "1000000000000",
+    "address": "juno1rqsmf8vetkgjxmqdmm0c68hzksj6vcrkjf8j7gpwffs7a5vvpxwquptfyp",
+    "decimals": 3
+  },
+  {
+    "name": "WasmSwap_Liquidity_Token",
+    "symbol": "wslpt",
+    "total_supply": "143151343383334",
+    "address": "juno13kys802wnpzlyp57uyua3zaa0uvmkv0ytmcjqsax8ea3cysm2wyqsxnxn3",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "uatom",
+    "total_supply": null,
+    "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+    "decimals": 6
+  },
+  {
+    "name": "OpenNMN",
+    "symbol": "NMN",
+    "total_supply": "22000000000000",
+    "address": "juno17r8dyxuj25muaudhgqgx4xrg6gzr6tvzem6gwtpprnfld58yggcqjhhkjy",
+    "decimals": 6
+  },
+  {
+    "name": "Matrix Coin",
+    "symbol": "MTX",
+    "total_supply": "100000",
+    "address": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt",
+    "decimals": 0
+  },
+  {
+    "name": null,
+    "symbol": "uluna",
+    "total_supply": null,
+    "address": "ibc/8F865D9760B482FF6254EDFEC1FF2F1273B9AB6873A7DE484F89639795D73D75",
+    "decimals": 6
+  },
+  {
+    "name": "BLOCK",
+    "symbol": "BLOCK",
+    "total_supply": "100000000",
+    "address": "juno1kz0cdwafl0eu9ym3pmg09ynyal982lv3pjeczxnevatxsd3xmhcs67pc74",
+    "decimals": 6
+  },
+  {
+    "name": "SmartNodes",
+    "symbol": "SMART",
+    "total_supply": "500000000000",
+    "address": "juno1pycyh3fqczmvfcrq6ake8pjvj2y3n7y4exvlgjyckkjkkg5kplsqpqx3a7",
+    "decimals": 4
+  },
+  {
+    "name": "Tuckermint",
+    "symbol": "TUCK",
+    "total_supply": "100000000",
+    "address": "juno1wurfx334prlceydmda3aecldn2xh4axhqtly05n8gptgl69ee7msrewg6y",
+    "decimals": 3
+  },
+  {
+    "name": "HANSUM",
+    "symbol": "HANSUM",
+    "total_supply": "694200000000000",
+    "address": "juno1txtq2w57v5lg5usd8dgdufqznrlvwf2gyqethp9glhpynjsp9yxsr78vwu",
+    "decimals": 6
+  },
+  {
+    "name": "Signal",
+    "symbol": "SGNL",
+    "total_supply": "1350000000000",
+    "address": "juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k",
+    "decimals": 6
+  },
+  {
+    "name": "Welike Cash",
+    "symbol": "WKASH",
+    "total_supply": "1000000000",
+    "address": "juno1aw23epxge5t43kuwg8gkm2chgp5hrh74n7tpg6k48ajuxv0n9r7sz0s2jf",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "ubtsg",
+    "total_supply": null,
+    "address": "ibc/008BFD000A10BCE5F0D4DD819AE1C1EC2942396062DABDD6AE64A655ABC7085B",
+    "decimals": 6
+  },
+  {
+    "name": "Hello1",
+    "symbol": "HLL",
+    "total_supply": "100000",
+    "address": "juno10dvlms4m555jk67qsrun5a87cn9gje967yl8hn5senjxlycdv37sqqukrn",
+    "decimals": 0
+  },
+  {
+    "name": null,
+    "symbol": "ucmdx",
+    "total_supply": null,
+    "address": "ibc/946AD96F278770521526D7283F58268DA2F6ACDDE40324A9D1C86811D78C86A0",
+    "decimals": 6
+  },
+  {
+    "name": "DaisyFinance",
+    "symbol": "DAISY",
+    "total_supply": "20000000000",
+    "address": "juno1p32te9zfhd99ehpxfd06hka6hc9p7tv5kyl5909mzedg5klze09qrg08ry",
+    "decimals": 6
+  },
+  {
+    "name": "WasmSwap_Liquidity_Token",
+    "symbol": "wslpt",
+    "total_supply": "27627494181995367",
+    "address": "juno19qetspgghczk5hvw3su602vjqqdhgl062eftgh897cdka6lny5sq6yhmg4",
+    "decimals": 6
+  },
+  {
+    "name": "CoinDex",
+    "symbol": "COIN",
+    "total_supply": "20000000000",
+    "address": "juno1cl2ewl842wcnagz5psd68z4dpp4gfxrrm9atm807uvyyg235h85stg7awy",
+    "decimals": 6
+  },
+  {
+    "name": "MDAO",
+    "symbol": "MDAO",
+    "total_supply": "100000000",
+    "address": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6",
+    "decimals": 6
+  },
+  {
+    "name": "SAFEMOON",
+    "symbol": "SFM",
+    "total_supply": "1000000000000000",
+    "address": "juno1wv8lnl777lmncwu0jc02xv6c7xfvtzmeprxxm5zcpapu7rxz885svupfhp",
+    "decimals": 6
+  },
+  {
+    "name": "W Coin",
+    "symbol": "WOIN",
+    "total_supply": "1000000000000000",
+    "address": "juno1enxzhqt4gsxcw4kysyzypej3lqknxw227n3aymg3xraa2q47wtasqn3cmu",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "uscrt",
+    "total_supply": null,
+    "address": "ibc/B55B08EF3667B0C6F029C2CC9CAA6B00788CF639EBB84B34818C85CBABA33ABD",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "uusdc",
+    "total_supply": null,
+    "address": "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034",
+    "decimals": 6
+  },
+  {
+    "name": "SAFEMOON",
+    "symbol": "SFM",
+    "total_supply": "1000000000000000",
+    "address": "juno1hm4p3qsqkdmh6tdf4se337fhzdejqg7q5jq7c983ufy6yzkxfqwq2xqqdf",
+    "decimals": 6
+  },
+  {
+    "name": "SAFEMOON",
+    "symbol": "SFM",
+    "total_supply": "1000000000000000",
+    "address": "juno13sn084lhg58z9w73jccvxwsljs8r7xw8uydq2df88k63pk6a2fmsf3u5he",
+    "decimals": 6
+  },
+  {
+    "name": "NETA",
+    "symbol": "NETA",
+    "total_supply": "31886600000",
+    "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
+    "decimals": 6
+  },
+  {
+    "name": "Cardinal Finance ",
+    "symbol": "PRIMO",
+    "total_supply": "49999999990",
+    "address": "juno1t8dnpktypue65q0hjz7tr3cvqypgj5vkxhd2twvng4a2ywa3j25spjuk6z",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "uosmo",
+    "total_supply": null,
+    "address": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+    "decimals": 6
+  },
+  {
+    "name": "HULCAT",
+    "symbol": "HULC",
+    "total_supply": "4999999999999997",
+    "address": "juno1pshrvuw5ng2q4nwcsuceypjkp48d95gmcgjdxlus2ytm4k5kvz2s7t9ldx",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "ungm",
+    "total_supply": null,
+    "address": "ibc/52423136339C1CE8C91F6A586DFE41591BDDD4665AE526DFFA8421F9ACF95196",
+    "decimals": 6
+  },
+  {
+    "name": "LUNA",
+    "symbol": "XLUNA",
+    "total_supply": "99999",
+    "address": "juno16s4mrjsakd6275fjnrgjftn982mv9a3hg3ru78s5flx3wgkx8qyszff0aj",
+    "decimals": 0
+  },
+  {
+    "name": "RACOON",
+    "symbol": "RAC",
+    "total_supply": "923783339949",
+    "address": "juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa",
+    "decimals": 6
+  },
+  {
+    "name": "WasmSwap_Liquidity_Token",
+    "symbol": "wslpt",
+    "total_supply": "536862668506",
+    "address": "juno1ngkpj8f4kg4qpnt385cs0ne3ucfm3s2x5e72nczlggteedl2t6qst649l7",
+    "decimals": 6
+  },
+  {
+    "name": "BLISS",
+    "symbol": "BLISS",
+    "total_supply": "100000000",
+    "address": "juno1nq6q9cg7jvuf960s4el3v95axpn6w704gsvka54dt5tznterelgsst89qa",
+    "decimals": 6
+  },
+  {
+    "name": "CannaLabs",
+    "symbol": "CANLAB",
+    "total_supply": "1001000000",
+    "address": "juno1vn38rzq0wc7zczp4dhy0h5y5kxh2jjzeahwe30c9cc6dw3lkyk5qn5rmfa",
+    "decimals": 3
+  },
+  {
+    "name": "WasmSwap_Liquidity_Token",
+    "symbol": "wslpt",
+    "total_supply": "3232639866303",
+    "address": "juno1h0ce9ff2ekgq9aq3lwumrqyam9rl8yfmpmemyparnvwka9l47a3setumzu",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "uhuahua",
+    "total_supply": null,
+    "address": "ibc/D836B191CDAE8EDACDEBE7B64B504C5E06CC17C6A072DAF278F9A96DF66F6241",
+    "decimals": 6
+  },
+  {
+    "name": "World coin",
+    "symbol": "World",
+    "total_supply": "10000",
+    "address": "juno15cp5yajp9y3lkygae5amcajdrcef4nx3llvcsm90axapzmwkl8hqf4533n",
+    "decimals": 6
+  },
+  {
+    "name": "WasmSwap_Liquidity_Token",
+    "symbol": "wslpt",
+    "total_supply": "5676500915937",
+    "address": "juno1s494eeq9vx596p39na5gqxgjzgn07jgg87940w6y3ap99qvdn95qftzgh6",
+    "decimals": 6
+  },
+  {
+    "name": "Fortis Oeconomia Token",
+    "symbol": "FOT",
+    "total_supply": "847005496592639216",
+    "address": "juno1xmpenz0ykxfy8rxr3yc3d4dtqq4dpas4zz3xl6sh873us3vajlpshzp69d",
+    "decimals": 10
+  },
+  {
+    "name": "PUNK JUNO TOKEN",
+    "symbol": "PUNK",
+    "total_supply": "12345678000000",
+    "address": "juno13926947pmrjly5p9hf5juey65c6rget0gqrnx3us3r6pvnpf4hwqm8mchy",
+    "decimals": 6
+  },
+  {
+    "name": "Gelotto",
+    "symbol": "GLTO",
+    "total_supply": "275092660865970",
+    "address": "juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
+    "decimals": 6
+  },
+  {
+    "name": "Xplorer Token",
+    "symbol": "XPLOT",
+    "total_supply": "100000000000",
+    "address": "juno1qdcprxhe5nyj6gvagnsnpl3skyst2wmufxga0d6qxlnrtf9e0edqt2dgcg",
+    "decimals": 6
+  },
+  {
+    "name": "EZ Coin",
+    "symbol": "XEZ",
+    "total_supply": "1000000000",
+    "address": "juno1ctnjk7an90lz5wjfvr3cf6x984a8cjnv8dpmztmlpcq4xteaa2xsss6qs9",
+    "decimals": 3
+  },
+  {
+    "name": "PLEB",
+    "symbol": "PLEB",
+    "total_supply": "100000",
+    "address": "juno1halr9l6r7xsqnh3tl63wsmqugtd5ppdcgfe3h625fvw28g3wwl3qrajkfu",
+    "decimals": 6
+  },
+  {
+    "name": "MUSE",
+    "symbol": "MUSE",
+    "total_supply": "100000000000000",
+    "address": "juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3",
+    "decimals": 6
+  },
+  {
+    "name": "seJUNO",
+    "symbol": "SEJUNO",
+    "total_supply": "266256259924",
+    "address": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv",
+    "decimals": 6
+  },
+  {
+    "name": "bJUNO",
+    "symbol": "BJUNO",
+    "total_supply": "64110160887",
+    "address": "juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3",
+    "decimals": 6
+  },
+  {
+    "name": "Loop Protocol",
+    "symbol": "LOOP",
+    "total_supply": "153458304000000",
+    "address": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup",
+    "decimals": 6
+  },
+  {
+    "name": "Stake Dragons",
+    "symbol": "DRGN",
+    "total_supply": "10000000000000",
+    "address": "juno147t4fd3tny6hws6rha9xs5gah9qa6g7hrjv9tuvv6ce6m25sy39sq6yv52",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "ucre",
+    "total_supply": null,
+    "address": "ibc/B7EA961307B6915512F1204B78B6180851DD7474469EB21F16D30DF74DA22903",
+    "decimals": 6
+  },
+  {
+    "name": null,
+    "symbol": "aevmos",
+    "total_supply": null,
+    "address": "ibc/9B990F95D85E7CA8C46544975776CAA20A3DEE3507EEA829A4000D8D65617F6D",
+    "decimals": 6
+  },
+  {
+    "name": "SEASY",
+    "symbol": "SEASY",
+    "total_supply": "2000100000000",
+    "address": "juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf",
+    "decimals": 6
+  },
+  {
+    "name": "UniverseDAO",
+    "symbol": "VERSE",
+    "total_supply": "9000000000000",
+    "address": "juno1kqx9rhc8ksx52tukdx797k4rjrhkgfh4gljs04ql97hmnnkgyvxs5cqt7d",
+    "decimals": 6
+  },
+  {
+    "name": "Steak Token",
+    "symbol": "STEAK",
+    "total_supply": "593131725",
+    "address": "juno173c59crjqeec28cpzs7n0y7hm4cd308zda8z6j4cnl6pct3stenseg2dxp",
+    "decimals": 6
+  }
+]
