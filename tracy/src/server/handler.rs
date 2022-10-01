@@ -1,19 +1,19 @@
-use std::{convert::Infallible, sync::Arc};
+use std::convert::Infallible;
 
-use tokio::sync::Mutex;
 use tracy::{dex::DexAgg, Quote};
 use warp::{http::Response, Filter};
 
-pub type Db = Arc<Mutex<DexAgg>>;
+pub type Db = DexAgg;
 
 pub fn with_db(db: Db) -> impl Filter<Extract = (Db,), Error = std::convert::Infallible> + Clone {
     warp::any().map(move || db.clone())
 }
 
 pub async fn list_pools_for_denom(param: String, db: Db) -> Result<impl warp::Reply, Infallible> {
-    let db = db.lock().await;
+    let db = db;
     let text = db
         .with_denom(&param)
+        .await
         .clone()
         .into_iter()
         .map(|x| x.to_json())
@@ -34,9 +34,10 @@ pub async fn list_pools_for_denoms(
     denom2: String,
     db: Db,
 ) -> Result<impl warp::Reply, Infallible> {
-    let db = db.lock().await;
+    let db = db;
     let text = db
         .with_denoms(vec![denom1, denom2])
+        .await
         .clone()
         .into_iter()
         .map(|x| x.to_json())
@@ -57,9 +58,10 @@ pub async fn get_quotes(
     amount: String,
     db: Db,
 ) -> Result<impl warp::Reply, Infallible> {
-    let db = db.lock().await;
+    let db = db;
     let pools = db
         .with_denoms(vec![denom1.to_string(), denom2.to_string()])
+        .await
         .clone();
     let mut quotes = vec![];
     for pool in pools {
@@ -95,8 +97,8 @@ pub async fn get_pool_by_address_handler(
     address: String,
     db: Db,
 ) -> Result<impl warp::Reply, Infallible> {
-    let db = db.lock().await;
-    let pool = db.with_address(&address);
+    let db = db;
+    let pool = db.with_address(&address).await;
     let body = match pool {
         Ok(p) => p.to_json(),
         Err(e) => format!("{{\"error\": \"{}\"}}", e.to_string()),
@@ -109,9 +111,11 @@ pub async fn get_pool_by_address_handler(
 }
 
 pub async fn get_pools_handler(db: Db) -> Result<impl warp::Reply, Infallible> {
-    let db = db.lock().await;
+    let db = db;
     let objs = db
         .pools
+        .lock()
+        .await
         .iter()
         .map(|x| x.to_json())
         .reduce(|acc: String, x: String| format!("{},{}", acc, x));
