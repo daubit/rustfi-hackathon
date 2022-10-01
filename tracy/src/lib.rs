@@ -3,8 +3,8 @@ use eyre::Result;
 
 
 pub struct Quote {
-    token_in: u128,
-    token_out: u128,
+    pub token_in: u128,
+    pub token_out: u128,
 }
 
 pub trait Pool {
