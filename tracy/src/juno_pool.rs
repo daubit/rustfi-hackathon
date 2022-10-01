@@ -1,7 +1,7 @@
 use async_trait::async_trait;
 use serde::{Deserialize, Serialize};
 
-use eyre::Result;
+use eyre::{eyre, Result};
 use std::error::Error;
 use std::fs::{self, File};
 use std::io::{Read, Write};
@@ -35,8 +35,10 @@ pub struct WasmPool {
     pool_address: Option<String>,
     lp_token_address: String,
     lp_token_supply: String,
+    token1: Option<JunoToken>,
     token1_denom: JunoDenom,
     token1_reserve: String,
+    token2: Option<JunoToken>,
     token2_denom: JunoDenom,
     token2_reserve: String,
 }
@@ -146,7 +148,12 @@ pub async fn fetch_juno_pools(api: &str) -> Result<Vec<WasmPool>, Box<dyn Error>
     let mut res = Vec::new();
     for contract in contracts {
         let mut pool = get_pool_info(api, contract.as_str()).await?;
+        if pool.token1_reserve == "0" || pool.token2_reserve == "0" {
+            continue; // Empty pool, probably invalid
+        }
         pool.pool_address = Some(contract);
+        pool.token1 = Some(extract_token(api, &pool.token1_denom).await?);
+        pool.token2 = Some(extract_token(api, &pool.token2_denom).await?);
         res.push(pool);
     }
     let out = serde_json::to_string(&res)?;
@@ -192,9 +199,6 @@ pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
     let pools = serde_json::from_str::<Vec<WasmPool>>(&pools)?;
     let mut assets = Vec::new();
     for pool in pools {
-        if pool.token1_reserve == "0" || pool.token2_reserve == "0" {
-            continue; // Empty pool, probably invalid
-        }
         let token1 = extract_token(api, &pool.token1_denom).await?;
         let token2 = extract_token(api, &pool.token2_denom).await?;
         if !assets.contains(&token1) {
@@ -211,17 +215,29 @@ pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub fn load_juno_pools_from_file(path: &Path) -> Result<Vec<JunoPool>> {
+pub fn load_juno_pools_from_file(path: &Path) -> Result<Vec<WasmPool>> {
     let mut file = File::open(path)?;
 
     let mut text: String = "".to_string();
     file.read_to_string(&mut text)?;
-    let pools: Vec<JunoPool> = serde_json::from_str(&text)?;
+    let pools: Vec<WasmPool> = serde_json::from_str(&text)?;
+    Ok(pools)
+}
+
+pub fn load_juno_assets_from_file(path: &Path) -> Result<Vec<JunoToken>> {
+    let mut file = File::open(path)?;
+
+    let mut text: String = "".to_string();
+    file.read_to_string(&mut text)?;
+    let pools: Vec<JunoToken> = serde_json::from_str(&text)?;
     Ok(pools)
 }
 
 #[derive(Debug)]
-pub struct JunoPoolConfig {}
+pub struct JunoPoolConfig {
+    pub path: String,
+    pub api: String,
+}
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct JunoPoolParams {
@@ -232,20 +248,16 @@ pub struct JunoPoolParams {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct JunoPool {
-    address: String,
-    id: String,
+pub struct JunoPool {}
+
+impl JunoPool {
+    pub fn new() -> Self {
+        JunoPool {}
+    }
 }
 
 #[async_trait]
 impl Pool<JunoPoolConfig> for JunoPool {
-    // fn new(address: &str) -> Self {
-    //     Self {
-    //         address: (),
-    //         id: (),
-    //     }
-    // }
-
     async fn get_quote(
         &self,
         amount: u128,
@@ -253,6 +265,51 @@ impl Pool<JunoPoolConfig> for JunoPool {
         token_out_denom: &str,
         config: JunoPoolConfig,
     ) -> Result<Quote> {
-        todo!()
+        let path = &Path::new(&config.path);
+        let pools = load_juno_pools_from_file(&path)?;
+        for pool in pools {
+            let token1_denom = pool.token1.unwrap().symbol.unwrap();
+            let token2_denom = pool.token2.unwrap().symbol.unwrap();
+            if (token_in_denom == token1_denom && token_out_denom == token2_denom)
+                || (token_in_denom == token1_denom && token_out_denom == token2_denom)
+            {
+                if token_in_denom == token1_denom {
+                    let amount_out = get_price_for(
+                        config.api.as_str(),
+                        pool.pool_address.expect("Pool address not found").as_str(),
+                        amount as u64,
+                        true,
+                    )
+                    .await
+                    .unwrap();
+                    let amount_out = amount_out.parse::<u128>()?;
+                    return Ok(Quote {
+                        token_in: amount,
+                        token_out: amount_out,
+                    });
+                }
+                if token_in_denom == token2_denom {
+                    let amount_out = get_price_for(
+                        config.api.as_str(),
+                        pool.pool_address.expect("Pool address not found").as_str(),
+                        amount as u64,
+                        false,
+                    )
+                    .await
+                    .unwrap();
+                    let amount_out = amount_out.parse::<u128>()?;
+                    return Ok(Quote {
+                        token_in: amount,
+                        token_out: amount_out,
+                    });
+                }
+                break;
+            }
+        }
+        Err(eyre!(
+            "Cannot find pair: {} | {}",
+            token_in_denom,
+            token_out_denom
+        ))
     }
 }
