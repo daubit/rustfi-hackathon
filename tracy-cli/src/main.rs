@@ -1,7 +1,7 @@
 use clap::{Arg, ArgAction, Command};
 use tracy::dex::DexAgg;
-use tracy::juno_pool::fetch_juno_pools;
-use tracy::pools::fetch_osmosis_pools;
+use tracy::pools::juno_pool::fetch_juno_pools;
+use tracy::pools::osmosis_pool::fetch_osmosis_pools;
 use tracy::PoolConfig;
 
 #[tokio::main]
@@ -100,7 +100,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             let token_out = token_out.unwrap();
             let node = node.unwrap();
             let amount = amount.unwrap().parse::<u128>()?;
-            let pools = dex.with_denoms(vec![token_in.to_string(), token_out.to_string()]);
+            let pools = dex
+                .with_denoms(vec![token_in.to_string(), token_out.to_string()])
+                .await;
             let config = PoolConfig {
                 rest_url: Some(node.to_string()),
                 grpc_url: None,
