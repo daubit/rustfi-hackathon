@@ -20,6 +20,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { useAtomValue } from "jotai";
+import { useMemo } from "react";
 import { usePools } from "../hooks/usePools";
 import { chainsAtom } from "../state/menu";
 
@@ -60,6 +61,7 @@ interface PoolProps {
 const Pool = (props: PoolProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { pool } = props;
+  console.log(pool);
   return (
     <>
       <Tr onClick={onOpen}>
@@ -112,7 +114,6 @@ export const Pools = () => {
         size="xl"
         marginTop={"5rem"}
         marginBottom={"5rem"}
-
       />
     );
   }
