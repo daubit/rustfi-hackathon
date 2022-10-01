@@ -1,3 +1,15 @@
+use std::fs::File;
+use std::io::Write;
+use std::path::Path;
+use std::time::Duration;
+
+use async_trait::async_trait;
+use eyre::Result;
+use tokio::time::sleep;
+
+use crate::util::denom_trace::denom_trace;
+use crate::{Pool, Quote};
+
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct OsmosisPool {
     address: String,
@@ -11,6 +23,101 @@ pub struct OsmosisPool {
     pool_assets: Vec<OsmosisPoolAssets>,
     #[serde(alias = "totalWeight")]
     total_weight: String,
+}
+
+#[derive(Debug)]
+pub struct OsmosisPoolConfig {
+    pub estimateQuote: bool,
+}
+
+impl OsmosisPool {
+    fn calculate_quote(
+        &self,
+        amount: u128,
+        token_in_amount: u128,
+        token_out_amount: u128,
+        token_in_weight: u128,
+        token_out_weight: u128,
+        token_in_decimals: u32,
+        token_out_decimals: u32,
+    ) -> u128 {
+        assert!(
+            self.pool_assets.len() == 2,
+            "Can only calculate quote for pools with 2 assets, estimate quote instead."
+        );
+        // only on block by block basis, no time weighted average
+        (token_out_amount * token_out_weight * u128::from(token_out_decimals) * amount)
+            / (token_in_amount * token_in_weight * u128::from(token_in_decimals))
+    }
+
+    async fn estimate_quote(&self) -> Result<u128> {
+        todo!()
+    }
+}
+
+#[async_trait]
+impl Pool<OsmosisPoolConfig> for OsmosisPool {
+    async fn get_quote(
+        &self,
+        amount: u128,
+        token_in_denom: &str,
+        token_out_denom: &str,
+        config: OsmosisPoolConfig,
+    ) -> Result<Quote> {
+        if config.estimateQuote {
+            Ok(Quote {
+                token_in: amount,
+                token_out: self.estimate_quote().await?,
+            })
+        } else {
+            let token_in_index = self
+                .pool_assets
+                .iter()
+                .position(|x| {
+                    x.token.denom == token_in_denom
+                        || (match x.token.native_name.clone() {
+                            Some(x) => x == token_in_denom,
+                            None => false,
+                        })
+                })
+                .unwrap();
+            let token_out_index = self
+                .pool_assets
+                .iter()
+                .position(|x| {
+                    x.token.denom == token_out_denom
+                        || (match x.token.native_name.clone() {
+                            Some(x) => x == token_out_denom,
+                            None => false,
+                        })
+                })
+                .unwrap();
+
+            let token_in_amount =
+                u128::from_str_radix(&self.pool_assets[token_in_index].token.amount, 10)?;
+            let token_out_amount =
+                u128::from_str_radix(&self.pool_assets[token_out_index].token.amount, 10)?;
+            let token_in_weight =
+                u128::from_str_radix(&self.pool_assets[token_in_index].weight, 10)?;
+            let token_out_weight =
+                u128::from_str_radix(&self.pool_assets[token_out_index].weight, 10)?;
+            let token_in_decimals = 6;
+            let token_out_decimals = 6;
+
+            Ok(Quote {
+                token_in: amount,
+                token_out: self.calculate_quote(
+                    amount,
+                    token_in_amount,
+                    token_out_amount,
+                    token_in_weight,
+                    token_out_weight,
+                    token_in_decimals,
+                    token_out_decimals,
+                ),
+            })
+        }
+    }
 }
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
@@ -33,16 +140,6 @@ pub struct OsmosisPoolAssets {
     token: OsmosisPoolToken,
     weight: String,
 }
-
-use std::fs::File;
-use std::io::Write;
-use std::path::Path;
-use std::time::Duration;
-
-use eyre::Result;
-use tokio::time::sleep;
-
-use crate::util::denom_trace::denom_trace;
 
 #[derive(Debug, serde::Deserialize)]
 struct OsmosisPoolsFetchResult {
@@ -72,6 +169,7 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
                     denom: asset.token.denom.clone(),
                     amount: asset.token.amount,
                     native_name: if asset.token.denom.starts_with("ibc/") {
+                        // TODO: cache results? there is a endpoint to get all traces but that is missing the hash
                         let native_denom =
                             denom_trace("https://lcd.osmosis.zone", &asset.token.denom[4..])
                                 .await?;
@@ -97,7 +195,7 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
     }
 
     let text = serde_json::to_string(&pools)?;
-    let path = Path::new("osmosis_pools.json");
+    let path = Path::new("osmosis_pools_hackathon.json");
     //let text = serde_json::to_string(&request)?;
     let mut file = File::create(path)?;
     file.write(text.as_bytes())?;
