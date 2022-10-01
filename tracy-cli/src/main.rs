@@ -1,4 +1,5 @@
 use clap::{Arg, ArgAction, Command};
+use petgraph::{Graph, Undirected};
 use tracy::dex::DexAgg;
 use tracy::pools::juno_pool::fetch_juno_pools;
 use tracy::pools::osmosis_pool::fetch_osmosis_pools;
@@ -159,7 +160,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 _ => println!("Chain not yet implemented!"),
             }
         }
-        Some(("graph", _)) => {}
+        Some(("graph", _)) => {
+            let mut graph = Graph::<&str, &str, Undirected>::new_undirected();
+        }
         _ => unreachable!(), // If all subcommands are defined above, anything else is unreachable
     };
     Ok(())
