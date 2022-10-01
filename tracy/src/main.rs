@@ -1,7 +1,7 @@
 use std::path::Path;
 
 use eyre::Result;
-use tracy::juno_pool::{extract_assets, fetch_juno_pools, JunoPoolConfig};
+use tracy::juno_pool::{extract_assets, fetch_juno_pools};
 use tracy::pools::load_osmo_pools_from_file_boxed;
 
 #[tokio::main]
