@@ -10,9 +10,9 @@ use tokio::time::sleep;
 use crate::util::denom_trace::denom_trace;
 use crate::util::proto::osmosis_gamm_v1beta1::query_client::QueryClient;
 use crate::util::proto::osmosis_gamm_v1beta1::{QuerySwapExactAmountInRequest, SwapAmountInRoute};
-use crate::{Pool, Quote};
+use crate::{Pool, PoolConfig, Quote};
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPool {
     address: String,
     id: String,
@@ -27,12 +27,18 @@ pub struct OsmosisPool {
     total_weight: String,
 }
 
-#[derive(Debug)]
-pub struct OsmosisPoolConfig {
-    pub estimate_quote: bool,
-}
-
 impl OsmosisPool {
+    // takes ibc or native denom and converts to correct type
+    fn asset_for_denom(&self, denom: &str) -> Option<usize> {
+        self.pool_assets.iter().position(|x| {
+            x.token.denom == denom
+                || match x.token.native_name.clone() {
+                    Some(x) => x == denom,
+                    None => false,
+                }
+        })
+    }
+
     fn calculate_quote(
         &self,
         amount: u128,
@@ -58,17 +64,19 @@ impl OsmosisPool {
         token_in_denom: &str,
         token_out_denom: &str,
     ) -> Result<u128> {
-        let mut client =
-            QueryClient::connect("https://grpc-osmosis-ia.cosmosia.notional.ventures:443").await?;
+        let mut client = QueryClient::connect("https://osmosis-grpc.polkachu.com:12590").await?;
 
         let pool_id = u64::from_str_radix(&self.id, 10)?;
+        let token_in_index = self.asset_for_denom(token_in_denom).unwrap();
+
+        let token_out_index = self.asset_for_denom(token_out_denom).unwrap();
         let request = QuerySwapExactAmountInRequest {
             sender: self.address.clone(), // small hack because it uses SwapExactAmountIn just without writing new state so we need a address with enought liquidity, we assume the pool has that
             pool_id: pool_id,
-            token_in: format!("{}{}", amount, token_in_denom),
+            token_in: format!("{}{}", amount, self.pool_assets[token_in_index].token.denom),
             routes: vec![SwapAmountInRoute {
                 pool_id: pool_id,
-                token_out_denom: token_out_denom.to_string(),
+                token_out_denom: self.pool_assets[token_out_index].token.denom.clone(),
             }],
         };
         let response = client.estimate_swap_exact_amount_in(request).await?;
@@ -81,13 +89,13 @@ impl OsmosisPool {
 }
 
 #[async_trait]
-impl Pool<OsmosisPoolConfig> for OsmosisPool {
+impl Pool for OsmosisPool {
     async fn get_quote(
         &self,
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: OsmosisPoolConfig,
+        config: PoolConfig,
     ) -> Result<Quote> {
         if config.estimate_quote {
             Ok(Quote {
@@ -97,28 +105,8 @@ impl Pool<OsmosisPoolConfig> for OsmosisPool {
                     .await?,
             })
         } else {
-            let token_in_index = self
-                .pool_assets
-                .iter()
-                .position(|x| {
-                    x.token.denom == token_in_denom
-                        || (match x.token.native_name.clone() {
-                            Some(x) => x == token_in_denom,
-                            None => false,
-                        })
-                })
-                .unwrap();
-            let token_out_index = self
-                .pool_assets
-                .iter()
-                .position(|x| {
-                    x.token.denom == token_out_denom
-                        || (match x.token.native_name.clone() {
-                            Some(x) => x == token_out_denom,
-                            None => false,
-                        })
-                })
-                .unwrap();
+            let token_in_index = self.asset_for_denom(token_in_denom).unwrap();
+            let token_out_index = self.asset_for_denom(token_out_denom).unwrap();
 
             let token_in_amount =
                 u128::from_str_radix(&self.pool_assets[token_in_index].token.amount, 10)?;
@@ -145,9 +133,31 @@ impl Pool<OsmosisPoolConfig> for OsmosisPool {
             })
         }
     }
+    fn token_denoms(&self) -> Vec<String> {
+        let mut denoms: Vec<String> = self
+            .pool_assets
+            .iter()
+            .map(|x| x.token.denom.clone())
+            .collect();
+        let native_denoms: Vec<String> = self
+            .pool_assets
+            .iter()
+            .map(|x| x.token.native_name.clone())
+            .filter(|x| x.is_some())
+            .map(|x| x.unwrap())
+            .collect();
+
+        denoms.extend(native_denoms);
+
+        denoms
+    }
+
+    fn to_json(&self) -> String {
+        serde_json::to_string(self).unwrap()
+    }
 }
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolParams {
     #[serde(alias = "swapFee")]
     swap_fee: String,
@@ -155,14 +165,14 @@ pub struct OsmosisPoolParams {
     exit_fee: String,
 }
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolToken {
     denom: String,
     amount: String,
     native_name: Option<String>,
 }
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolAssets {
     token: OsmosisPoolToken,
     weight: String,
@@ -230,11 +240,12 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
     Ok(())
 }
 
-pub fn load_osmo_pools_from_file(path: &Path) -> Result<Vec<OsmosisPool>> {
+// TODO: move fetch + load to trait
+pub fn load_osmo_pools_from_file_boxed(path: &Path) -> Result<Vec<Box<OsmosisPool>>> {
     let mut file = File::open(path)?;
 
     let mut text: String = "".to_string();
     file.read_to_string(&mut text)?;
-    let pools: Vec<OsmosisPool> = serde_json::from_str(&text)?;
+    let pools: Vec<Box<OsmosisPool>> = serde_json::from_str(&text)?;
     Ok(pools)
 }
