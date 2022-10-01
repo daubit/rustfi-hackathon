@@ -217,7 +217,6 @@ pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
 
 pub fn load_juno_pools_from_file(path: &Path) -> Result<Vec<WasmPool>> {
     let mut file = File::open(path)?;
-
     let mut text: String = "".to_string();
     file.read_to_string(&mut text)?;
     let pools: Vec<WasmPool> = serde_json::from_str(&text)?;
@@ -226,7 +225,6 @@ pub fn load_juno_pools_from_file(path: &Path) -> Result<Vec<WasmPool>> {
 
 pub fn load_juno_assets_from_file(path: &Path) -> Result<Vec<JunoToken>> {
     let mut file = File::open(path)?;
-
     let mut text: String = "".to_string();
     file.read_to_string(&mut text)?;
     let pools: Vec<JunoToken> = serde_json::from_str(&text)?;
@@ -237,14 +235,6 @@ pub fn load_juno_assets_from_file(path: &Path) -> Result<Vec<JunoToken>> {
 pub struct JunoPoolConfig {
     pub path: String,
     pub api: String,
-}
-
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
-pub struct JunoPoolParams {
-    #[serde(alias = "swapFee")]
-    swap_fee: String,
-    #[serde(alias = "exitFee")]
-    exit_fee: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
