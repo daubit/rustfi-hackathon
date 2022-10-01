@@ -32,7 +32,7 @@ impl DexAgg {
         config.insert(
             "osmosis".to_owned(),
             PoolConfig {
-                grpc_url: Some("https://api-osmosis-ia.cosmosia.notional.ventures".to_owned()),
+                grpc_url: Some("https://osmosis-grpc.polkachu.com:12590".to_owned()),
                 rest_url: None,
                 rpc_url: None,
                 estimate_quote: true,
