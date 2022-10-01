@@ -15,7 +15,8 @@ use crate::{Pool, PoolConfig, Quote};
 
 #[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPool {
-    address: String,
+    #[serde(alias = "address")]
+    pool_address: String,
     id: String,
     #[serde(alias = "poolParams")]
     pool_params: OsmosisPoolParams,
@@ -96,7 +97,7 @@ impl OsmosisPool {
 
         let token_out_index = self.asset_for_denom(token_out_denom).unwrap();
         let request = QuerySwapExactAmountInRequest {
-            sender: self.address.clone(), // small hack because it uses SwapExactAmountIn just without writing new state so we need a address with enought liquidity, we assume the pool has that
+            sender: self.pool_address.clone(), // small hack because it uses SwapExactAmountIn just without writing new state so we need a address with enought liquidity, we assume the pool has that
             pool_id: pool_id,
             token_in: format!("{}{}", amount, self.pool_assets[token_in_index].token.denom),
             routes: vec![SwapAmountInRoute {
@@ -129,7 +130,7 @@ impl Pool for OsmosisPool {
                     self.estimate_quote(amount, token_in_denom, token_out_denom, config)
                         .await?,
                 ),
-                pool_address: Some(self.address.clone()),
+                pool_address: Some(self.pool_address.clone()),
                 error: None,
             })
         } else {
@@ -158,7 +159,7 @@ impl Pool for OsmosisPool {
                     token_in_decimals,
                     token_out_decimals,
                 )?),
-                pool_address: Some(self.address.clone()),
+                pool_address: Some(self.pool_address.clone()),
                 error: None,
             })
         }
@@ -191,7 +192,7 @@ impl Pool for OsmosisPool {
     }
 
     fn address(&self) -> Result<String> {
-        Ok(self.address.clone())
+        Ok(self.pool_address.clone())
     }
 }
 
@@ -256,7 +257,7 @@ pub async fn fetch_osmosis_pools(lcd_api: &str) -> Result<()> {
         }
 
         pools.push(OsmosisPool {
-            address: pool.address,
+            pool_address: pool.pool_address,
             id: pool.id,
             pool_params: pool.pool_params,
             future_pool_governor: pool.future_pool_governor,
