@@ -34,7 +34,12 @@ interface Denom {
   cw20: String | null;
 }
 
+enum Chain {
+  JUNO,
+  OSMOSIS,
+}
 interface Pool {
+  chain?: Chain | null;
   pool_address: String | null;
   lp_token_address: String | null;
   lp_token_supply: String | null;
