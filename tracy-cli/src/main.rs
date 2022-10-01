@@ -71,6 +71,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                         .help("Node to connect to"),
                 ),
         )
+        .subcommand(Command::new("graph").about("generator dotfile"))
         .get_matches();
 
     match matches.subcommand() {
@@ -158,6 +159,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 _ => println!("Chain not yet implemented!"),
             }
         }
+        Some(("graph", _)) => {}
         _ => unreachable!(), // If all subcommands are defined above, anything else is unreachable
     };
     Ok(())
