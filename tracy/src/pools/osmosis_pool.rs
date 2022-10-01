@@ -26,6 +26,7 @@ pub struct OsmosisPool {
     pool_assets: Vec<OsmosisPoolAssets>,
     #[serde(alias = "totalWeight")]
     total_weight: String,
+    chain: Option<String>,
 }
 
 #[derive(Debug)]
@@ -262,6 +263,7 @@ pub async fn fetch_osmosis_pools(lcd_api: &str) -> Result<()> {
             total_shares: pool.total_shares,
             pool_assets: assets,
             total_weight: pool.total_weight,
+            chain: Some("osmosis".to_owned()),
         })
     }
 

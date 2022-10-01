@@ -42,6 +42,7 @@ pub struct WasmPool {
     pub token2: Option<JunoToken>,
     pub token2_denom: JunoDenom,
     pub token2_reserve: String,
+    chain: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -148,6 +149,7 @@ pub async fn fetch_juno_pools(api: &str) -> Result<Vec<WasmPool>> {
         pool.pool_address = Some(contract);
         pool.token1 = Some(extract_token(api, &pool.token1_denom).await?);
         pool.token2 = Some(extract_token(api, &pool.token2_denom).await?);
+        pool.chain = Some("juno".to_owned());
         res.push(pool);
     }
     let out = serde_json::to_string(&res)?;
