@@ -3,6 +3,7 @@ use std::path::Path;
 use crate::{pools::load_osmo_pools_from_file_boxed, Pool};
 use eyre::Result;
 
+#[derive(Clone)]
 pub struct DexAgg {
     pub pools: Vec<Box<dyn Pool>>,
 }
@@ -32,7 +33,10 @@ impl DexAgg {
         self.pools
             .clone()
             .into_iter()
-            .filter(|x| x.token_denoms().iter().all(|x| denoms.contains(x)))
+            .filter(|x| {
+                let token_denoms = x.token_denoms();
+                denoms.iter().all(|x| token_denoms.contains(x))
+            })
             .collect()
     }
 }

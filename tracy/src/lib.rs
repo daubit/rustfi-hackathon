@@ -15,8 +15,9 @@ pub struct PoolConfig {
     pub estimate_quote: bool,
 }
 
+// Send + Static may be unsafe(probably is) but we  use it in DexAgg and use DexAgg behind a mutex
 #[async_trait]
-pub trait Pool: DynClone {
+pub trait Pool: DynClone + Send + Sync {
     async fn get_quote(
         &self,
         amount: u128,
@@ -26,6 +27,7 @@ pub trait Pool: DynClone {
     ) -> Result<Quote>;
 
     fn token_denoms(&self) -> Vec<String>;
+    fn to_json(&self) -> String;
 }
 
 dyn_clone::clone_trait_object!(Pool);

@@ -151,6 +151,10 @@ impl Pool for OsmosisPool {
 
         denoms
     }
+
+    fn to_json(&self) -> String {
+        serde_json::to_string(self).unwrap()
+    }
 }
 
 #[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
