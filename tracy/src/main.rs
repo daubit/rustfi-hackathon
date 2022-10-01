@@ -7,7 +7,7 @@ use tracy::Pool;
 #[tokio::main]
 async fn main() -> Result<()> {
     println!("{}", "oi");
-    /*let pools = load_osmo_pools_from_file(Path::new("./osmosis_pools_hackathon.json"))?;
+    let pools = load_osmo_pools_from_file(Path::new("./osmosis_pools_hackathon.json"))?;
     let quote = pools[0]
         .get_quote(
             1000000,
@@ -19,7 +19,7 @@ async fn main() -> Result<()> {
         )
         .await?;
 
-    println!("{} {}", quote.token_in, quote.token_out);*/
-    fetch_osmosis_pools().await?;
+    println!("{} {}", quote.token_in, quote.token_out);
+    //fetch_osmosis_pools().await?;
     Ok(())
 }

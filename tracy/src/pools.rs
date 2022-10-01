@@ -33,6 +33,17 @@ pub struct OsmosisPoolConfig {
 }
 
 impl OsmosisPool {
+    // takes ibc or native denom and converts to correct type
+    fn asset_for_denom(&self, denom: &str) -> Option<usize> {
+        self.pool_assets.iter().position(|x| {
+            x.token.denom == denom
+                || match x.token.native_name.clone() {
+                    Some(x) => x == denom,
+                    None => false,
+                }
+        })
+    }
+
     fn calculate_quote(
         &self,
         amount: u128,
@@ -58,17 +69,19 @@ impl OsmosisPool {
         token_in_denom: &str,
         token_out_denom: &str,
     ) -> Result<u128> {
-        let mut client =
-            QueryClient::connect("https://grpc-osmosis-ia.cosmosia.notional.ventures:443").await?;
+        let mut client = QueryClient::connect("https://osmosis-grpc.polkachu.com:12590").await?;
 
         let pool_id = u64::from_str_radix(&self.id, 10)?;
+        let token_in_index = self.asset_for_denom(token_in_denom).unwrap();
+
+        let token_out_index = self.asset_for_denom(token_out_denom).unwrap();
         let request = QuerySwapExactAmountInRequest {
             sender: self.address.clone(), // small hack because it uses SwapExactAmountIn just without writing new state so we need a address with enought liquidity, we assume the pool has that
             pool_id: pool_id,
-            token_in: format!("{}{}", amount, token_in_denom),
+            token_in: format!("{}{}", amount, self.pool_assets[token_in_index].token.denom),
             routes: vec![SwapAmountInRoute {
                 pool_id: pool_id,
-                token_out_denom: token_out_denom.to_string(),
+                token_out_denom: self.pool_assets[token_out_index].token.denom.clone(),
             }],
         };
         let response = client.estimate_swap_exact_amount_in(request).await?;
@@ -97,28 +110,8 @@ impl Pool<OsmosisPoolConfig> for OsmosisPool {
                     .await?,
             })
         } else {
-            let token_in_index = self
-                .pool_assets
-                .iter()
-                .position(|x| {
-                    x.token.denom == token_in_denom
-                        || (match x.token.native_name.clone() {
-                            Some(x) => x == token_in_denom,
-                            None => false,
-                        })
-                })
-                .unwrap();
-            let token_out_index = self
-                .pool_assets
-                .iter()
-                .position(|x| {
-                    x.token.denom == token_out_denom
-                        || (match x.token.native_name.clone() {
-                            Some(x) => x == token_out_denom,
-                            None => false,
-                        })
-                })
-                .unwrap();
+            let token_in_index = self.asset_for_denom(token_in_denom).unwrap();
+            let token_out_index = self.asset_for_denom(token_out_denom).unwrap();
 
             let token_in_amount =
                 u128::from_str_radix(&self.pool_assets[token_in_index].token.amount, 10)?;
