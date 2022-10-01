@@ -33,5 +33,6 @@ pub trait Pool: DynClone + Send + Sync {
 dyn_clone::clone_trait_object!(Pool);
 
 pub mod dex;
+pub mod juno_pool;
 pub mod pools;
 pub mod util;
