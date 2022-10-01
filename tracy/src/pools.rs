@@ -1,5 +1,5 @@
 use std::fs::File;
-use std::io::Write;
+use std::io::{Read, Write};
 use std::path::Path;
 use std::time::Duration;
 
@@ -8,6 +8,8 @@ use eyre::Result;
 use tokio::time::sleep;
 
 use crate::util::denom_trace::denom_trace;
+use crate::util::proto::osmosis_gamm_v1beta1::query_client::QueryClient;
+use crate::util::proto::osmosis_gamm_v1beta1::{QuerySwapExactAmountInRequest, SwapAmountInRoute};
 use crate::{Pool, Quote};
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
@@ -27,7 +29,7 @@ pub struct OsmosisPool {
 
 #[derive(Debug)]
 pub struct OsmosisPoolConfig {
-    pub estimateQuote: bool,
+    pub estimate_quote: bool,
 }
 
 impl OsmosisPool {
@@ -50,8 +52,31 @@ impl OsmosisPool {
             / (token_in_amount * token_in_weight * u128::from(token_in_decimals))
     }
 
-    async fn estimate_quote(&self) -> Result<u128> {
-        todo!()
+    async fn estimate_quote(
+        &self,
+        amount: u128,
+        token_in_denom: &str,
+        token_out_denom: &str,
+    ) -> Result<u128> {
+        let mut client =
+            QueryClient::connect("https://grpc-osmosis-ia.cosmosia.notional.ventures:443").await?;
+
+        let pool_id = u64::from_str_radix(&self.id, 10)?;
+        let request = QuerySwapExactAmountInRequest {
+            sender: self.address.clone(), // small hack because it uses SwapExactAmountIn just without writing new state so we need a address with enought liquidity, we assume the pool has that
+            pool_id: pool_id,
+            token_in: format!("{}{}", amount, token_in_denom),
+            routes: vec![SwapAmountInRoute {
+                pool_id: pool_id,
+                token_out_denom: token_out_denom.to_string(),
+            }],
+        };
+        let response = client.estimate_swap_exact_amount_in(request).await?;
+
+        Ok(u128::from_str_radix(
+            &response.into_inner().token_out_amount,
+            10,
+        )?)
     }
 }
 
@@ -64,10 +89,12 @@ impl Pool<OsmosisPoolConfig> for OsmosisPool {
         token_out_denom: &str,
         config: OsmosisPoolConfig,
     ) -> Result<Quote> {
-        if config.estimateQuote {
+        if config.estimate_quote {
             Ok(Quote {
                 token_in: amount,
-                token_out: self.estimate_quote().await?,
+                token_out: self
+                    .estimate_quote(amount, token_in_denom, token_out_denom)
+                    .await?,
             })
         } else {
             let token_in_index = self
@@ -201,4 +228,13 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
     file.write(text.as_bytes())?;
 
     Ok(())
+}
+
+pub fn load_osmo_pools_from_file(path: &Path) -> Result<Vec<OsmosisPool>> {
+    let mut file = File::open(path)?;
+
+    let mut text: String = "".to_string();
+    file.read_to_string(&mut text)?;
+    let pools: Vec<OsmosisPool> = serde_json::from_str(&text)?;
+    Ok(pools)
 }
