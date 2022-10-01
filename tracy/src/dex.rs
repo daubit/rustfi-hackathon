@@ -85,4 +85,14 @@ impl DexAgg {
             .unwrap();
         Ok(pools[index].clone())
     }
+
+    pub async fn with_chain(&self, chain: &str) -> Vec<Box<dyn Pool>> {
+        self.pools
+            .lock()
+            .await
+            .clone()
+            .into_iter()
+            .filter(|x| x.chain() == chain)
+            .collect()
+    }
 }
