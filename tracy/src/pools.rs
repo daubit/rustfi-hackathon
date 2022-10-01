@@ -1,3 +1,4 @@
+use std::fmt;
 use std::fs::File;
 use std::io::{Read, Write};
 use std::path::Path;
@@ -27,6 +28,26 @@ pub struct OsmosisPool {
     total_weight: String,
 }
 
+#[derive(Debug)]
+pub enum TracyError {
+    Only2AssersError,
+}
+
+impl std::error::Error for TracyError {}
+unsafe impl Sync for TracyError {}
+unsafe impl Send for TracyError {}
+
+impl fmt::Display for TracyError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match self {
+            TracyError::Only2AssersError => write!(
+                f,
+                "Can only calculate quote for pools with 2 assets, estimate quote instead."
+            ),
+        }
+    }
+}
+
 impl OsmosisPool {
     // takes ibc or native denom and converts to correct type
     fn asset_for_denom(&self, denom: &str) -> Option<usize> {
@@ -48,14 +69,15 @@ impl OsmosisPool {
         token_out_weight: u128,
         token_in_decimals: u32,
         token_out_decimals: u32,
-    ) -> u128 {
-        assert!(
-            self.pool_assets.len() == 2,
-            "Can only calculate quote for pools with 2 assets, estimate quote instead."
-        );
+    ) -> Result<u128> {
+        if self.pool_assets.len() != 2 {
+            return Err(TracyError::Only2AssersError.into());
+        }
         // only on block by block basis, no time weighted average
-        (token_out_amount * token_out_weight * u128::from(token_out_decimals) * amount)
-            / (token_in_amount * token_in_weight * u128::from(token_in_decimals))
+        Ok(
+            (token_out_amount * token_out_weight * u128::from(token_out_decimals) * amount)
+                / (token_in_amount * token_in_weight * u128::from(token_in_decimals)),
+        )
     }
 
     async fn estimate_quote(
@@ -129,7 +151,7 @@ impl Pool for OsmosisPool {
                     token_out_weight,
                     token_in_decimals,
                     token_out_decimals,
-                ),
+                )?,
             })
         }
     }

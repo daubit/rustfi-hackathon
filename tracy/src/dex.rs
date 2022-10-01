@@ -29,6 +29,7 @@ impl DexAgg {
             .collect()
     }
 
+    // TODO make &str
     pub fn with_denoms(&self, denoms: Vec<String>) -> Vec<Box<dyn Pool>> {
         self.pools
             .clone()

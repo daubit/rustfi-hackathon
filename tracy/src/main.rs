@@ -1,14 +1,14 @@
 use std::path::Path;
 
 use eyre::Result;
-use tracy::juno_pool::{extract_assets, fetch_juno_pools, JunoPool, JunoPoolConfig};
+use tracy::juno_pool::{extract_assets, fetch_juno_pools};
 use tracy::Pool;
 use tracy::PoolConfig;
 
 #[tokio::main]
 async fn main() -> Result<()> {
     // fetch_osmosis_pools().await?;
-    let api = "https://lcd-juno.itastakers.com";
+    /*let api = "https://lcd-juno.itastakers.com";
     // let _res = fetch_juno_pools(api).await.unwrap();
     let pool = JunoPool::new();
     let config = JunoPoolConfig {
@@ -22,6 +22,6 @@ async fn main() -> Result<()> {
     println!(
         "Price for {} {} -> {} {}",
         token_in, amount, token_out, quote.token_out
-    );
+    );*/
     Ok(())
 }

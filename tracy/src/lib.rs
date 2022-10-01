@@ -2,6 +2,7 @@ use async_trait::async_trait;
 use dyn_clone::DynClone;
 use eyre::Result;
 
+#[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct Quote {
     pub token_in: u128,
     pub token_out: u128,

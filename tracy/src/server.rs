@@ -1,10 +1,11 @@
 use std::{
     convert::Infallible,
     net::{Ipv4Addr, SocketAddrV4},
-    sync::{Arc, Mutex},
+    sync::Arc,
 };
 
-use tracy::dex::DexAgg;
+use tokio::sync::Mutex;
+use tracy::{dex::DexAgg, PoolConfig};
 use warp::{http::Response, Filter};
 
 pub type Db = Arc<Mutex<DexAgg>>;
@@ -14,7 +15,7 @@ fn with_db(db: Db) -> impl Filter<Extract = (Db,), Error = std::convert::Infalli
 }
 
 async fn list_pools_for_denom(param: String, db: Db) -> Result<impl warp::Reply, Infallible> {
-    let db = db.lock().unwrap();
+    let db = db.lock().await;
     let text = db
         .with_denom(&param)
         .clone()
@@ -37,7 +38,7 @@ async fn list_pools_for_denoms(
     denom2: String,
     db: Db,
 ) -> Result<impl warp::Reply, Infallible> {
-    let db = db.lock().unwrap();
+    let db = db.lock().await;
     let text = db
         .with_denoms(vec![denom1, denom2])
         .clone()
@@ -52,6 +53,52 @@ async fn list_pools_for_denoms(
         .header("content-type", "application/json")
         .body(body)
         .unwrap())
+}
+
+async fn get_quotes(
+    denom1: String,
+    denom2: String,
+    amount: String,
+    db: Db,
+) -> Result<impl warp::Reply, Infallible> {
+    let db = db.lock().await;
+    let pools = db
+        .with_denoms(vec![denom1.to_string(), denom2.to_string()])
+        .clone();
+    let mut quotes = vec![];
+    for pool in pools {
+        let quote = pool
+            .get_quote(
+                u128::from_str_radix(&amount, 10).unwrap(),
+                &denom1,
+                &denom2,
+                PoolConfig {
+                    grpc_url: None,
+                    rest_url: None,
+                    rpc_url: None,
+                    estimate_quote: false,
+                },
+            )
+            .await;
+        quotes.push(quote);
+    }
+
+    let returnarray: Vec<String> = quotes
+        .into_iter()
+        .map(|x| match x {
+            Ok(x) => serde_json::to_string(&x).unwrap(),
+            Err(x) => format!("{{{}}}", x).to_string(),
+        })
+        .collect();
+    Ok(warp::reply::json(&returnarray))
+    /*let body = match text {
+        Some(text) => format!("[{}]", returnarray),
+        None => format!("[]"),
+    };
+    Ok(Response::builder()
+        .header("content-type", "application/json")
+        .body(body)
+        .unwrap())*/
 }
 
 fn pools_with_denom(
@@ -76,10 +123,21 @@ fn pools_with_denoms(
         .and_then(list_pools_for_denoms)
 }
 
+fn get_quotes_route(
+    dexAgg: Db,
+) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
+    warp::path!("quote" / String / String / String)
+        // TODO: hacky af
+        .and(with_db(dexAgg))
+        .and_then(get_quotes)
+}
+
 fn init_routes(
     dexAgg: Db,
 ) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
-    pools_with_denom(dexAgg.clone()).or(pools_with_denoms(dexAgg.clone()))
+    pools_with_denom(dexAgg.clone())
+        .or(pools_with_denoms(dexAgg.clone()))
+        .or(get_quotes_route(dexAgg.clone()))
 }
 
 #[tokio::main]
