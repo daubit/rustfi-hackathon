@@ -2,6 +2,10 @@ use async_trait::async_trait;
 use dyn_clone::DynClone;
 use eyre::Result;
 
+pub mod dex;
+pub mod pools;
+pub mod util;
+
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct Quote {
     pub token_in: Option<u128>,
@@ -18,7 +22,7 @@ pub struct PoolConfig {
     pub estimate_quote: bool,
 }
 
-// Send + Static may be unsafe(probably is) but we  use it in DexAgg and use DexAgg behind a mutex
+// Send + Static may be unsafe(probably is) but we  use it in DexAgg behind a mutex
 #[async_trait]
 pub trait Pool: DynClone + Send + Sync {
     async fn get_quote(
@@ -37,8 +41,3 @@ pub trait Pool: DynClone + Send + Sync {
 }
 
 dyn_clone::clone_trait_object!(Pool);
-
-pub mod dex;
-pub mod juno_pool;
-pub mod pools;
-pub mod util;

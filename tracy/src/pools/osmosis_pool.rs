@@ -86,8 +86,9 @@ impl OsmosisPool {
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
+        config: &PoolConfig,
     ) -> Result<u128> {
-        let mut client = QueryClient::connect("https://osmosis-grpc.polkachu.com:12590").await?;
+        let mut client = QueryClient::connect(config.grpc_url.clone().unwrap()).await?;
 
         let pool_id = u64::from_str_radix(&self.id, 10)?;
         let token_in_index = self.asset_for_denom(token_in_denom).unwrap();
@@ -124,7 +125,7 @@ impl Pool for OsmosisPool {
             Ok(Quote {
                 token_in: Some(amount),
                 token_out: Some(
-                    self.estimate_quote(amount, token_in_denom, token_out_denom)
+                    self.estimate_quote(amount, token_in_denom, token_out_denom, config)
                         .await?,
                 ),
                 pool_address: Some(self.address.clone()),
@@ -236,7 +237,7 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
         // TODO: this should probably be mapable
         let mut assets: Vec<OsmosisPoolAssets> = vec![];
         for asset in pool.pool_assets {
-            sleep(Duration::from_millis(500)).await;
+            sleep(Duration::from_millis(200)).await;
             assets.push(OsmosisPoolAssets {
                 token: OsmosisPoolToken {
                     denom: asset.token.denom.clone(),

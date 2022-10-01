@@ -1,14 +1,15 @@
-use std::{collections::HashMap, path::Path};
+use std::{collections::HashMap, path::Path, sync::Arc};
 
 use crate::{
-    juno_pool::load_juno_pools_from_file, pools::load_osmo_pools_from_file_boxed, Pool, PoolConfig,
+    pools::{juno_pool::load_juno_pools_from_file, osmosis_pool::load_osmo_pools_from_file_boxed},
+    Pool, PoolConfig,
 };
 use eyre::Result;
+use tokio::sync::Mutex;
 
 #[derive(Clone)]
 pub struct DexAgg {
-    // TODO: maybe Arc<Mutex<_>> that vec? see usage in server
-    pub pools: Vec<Box<dyn Pool>>,
+    pub pools: Arc<Mutex<Vec<Box<dyn Pool>>>>,
     pub config: HashMap<String, PoolConfig>,
 }
 
@@ -31,7 +32,7 @@ impl DexAgg {
         config.insert(
             "osmosis".to_owned(),
             PoolConfig {
-                grpc_url: None,
+                grpc_url: Some("https://osmosis-grpc.polkachu.com:12590".to_owned()),
                 rest_url: None,
                 rpc_url: None,
                 estimate_quote: true,
@@ -47,13 +48,15 @@ impl DexAgg {
             },
         );
         Ok(DexAgg {
-            pools: pools,
+            pools: Arc::new(Mutex::new(pools)),
             config: config,
         })
     }
 
-    pub fn with_denom(&self, denom: &String) -> Vec<Box<dyn Pool>> {
+    pub async fn with_denom(&self, denom: &String) -> Vec<Box<dyn Pool>> {
         self.pools
+            .lock()
+            .await
             .clone()
             .into_iter()
             .filter(|x| x.token_denoms().contains(denom))
@@ -61,8 +64,10 @@ impl DexAgg {
     }
 
     // TODO make &str
-    pub fn with_denoms(&self, denoms: Vec<String>) -> Vec<Box<dyn Pool>> {
+    pub async fn with_denoms(&self, denoms: Vec<String>) -> Vec<Box<dyn Pool>> {
         self.pools
+            .lock()
+            .await
             .clone()
             .into_iter()
             .filter(|x| {
@@ -72,12 +77,22 @@ impl DexAgg {
             .collect()
     }
 
-    pub fn with_address(&self, addr: &str) -> Result<Box<dyn Pool>> {
-        let index = self
-            .pools
+    pub async fn with_address(&self, addr: &str) -> Result<Box<dyn Pool>> {
+        let pools = self.pools.lock().await;
+        let index = pools
             .iter()
             .position(|x| x.address().unwrap() == addr)
             .unwrap();
-        Ok(self.pools[index].clone())
+        Ok(pools[index].clone())
+    }
+
+    pub async fn with_chain(&self, chain: &str) -> Vec<Box<dyn Pool>> {
+        self.pools
+            .lock()
+            .await
+            .clone()
+            .into_iter()
+            .filter(|x| x.chain() == chain)
+            .collect()
     }
 }
