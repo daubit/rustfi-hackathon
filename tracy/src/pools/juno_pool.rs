@@ -2,6 +2,7 @@ use async_trait::async_trait;
 use serde::{Deserialize, Serialize};
 
 use eyre::{eyre, Result};
+use std::collections::HashMap;
 use std::error::Error;
 use std::fs::{self, File};
 use std::io::{Read, Write};
@@ -65,38 +66,31 @@ pub struct WasmErrorResponse {
     error: String,
 }
 
-async fn get_query(url: &str, query: &Vec<(&str, &str)>) -> Result<String, Box<dyn Error>> {
+async fn get_query(url: &str, query: &Vec<(&str, &str)>) -> Result<String> {
     let client = reqwest::Client::new();
     let resp = client.get(url).query(query).send().await?.text().await?;
     Ok(resp)
 }
 
-pub async fn get_contracts(api: &str, code_id: u64) -> Result<Vec<String>, Box<dyn Error>> {
+pub async fn get_contracts(api: &str, code_id: u64) -> Result<Vec<String>> {
     let url = format!("{}/wasm/code/{}/contracts", &api.to_string(), code_id);
     let res = get_query(&url, &vec![]).await?;
     let res = serde_json::from_str::<WasmCodeContracts>(res.as_str())?;
     Ok(res.result)
 }
 
-pub async fn query_contract(
-    api: &str,
-    contract_address: &str,
-    msg: &str,
-) -> Result<String, Box<dyn Error>> {
+pub async fn query_contract(api: &str, contract_address: &str, msg: &str) -> Result<String> {
     let url = format!("{}/wasm/contract/{}/smart/{}", api, contract_address, msg);
     let res = get_query(&url, &vec![("encoding", "base64")]).await?;
     let err = res.clone();
     if let Ok(res) = serde_json::from_str::<WasmErrorResponse>(&err) {
-        return Err(Box::from(res.error));
+        return Err(eyre!(res.error));
     }
     let res = serde_json::from_str::<WasmContractResponse>(&res)?;
     Ok(res.result.smart)
 }
 
-pub async fn get_token_info(
-    api: &str,
-    contract_address: &str,
-) -> Result<JunoToken, Box<dyn Error>> {
+pub async fn get_token_info(api: &str, contract_address: &str) -> Result<JunoToken> {
     let msg = "{ \"token_info\" : {} }";
     let msg = base64::encode(msg);
     let res = query_contract(api, contract_address, msg.as_str()).await?;
@@ -107,7 +101,7 @@ pub async fn get_token_info(
     Ok(token)
 }
 
-pub async fn get_pool_info(api: &str, contract_address: &str) -> Result<WasmPool, Box<dyn Error>> {
+pub async fn get_pool_info(api: &str, contract_address: &str) -> Result<WasmPool> {
     let msg = "{ \"info\" : {} }";
     let msg = base64::encode(msg);
     let res = query_contract(api, contract_address, msg.as_str()).await?;
@@ -122,7 +116,7 @@ pub async fn get_price_for(
     contract_address: &str,
     amount: u64,
     for2: bool,
-) -> Result<String, Box<dyn Error>> {
+) -> Result<String> {
     let (method, arg): (&str, &str) = if !for2 {
         ("token2_for_token1_price", "token2_amount")
     } else {
@@ -140,10 +134,10 @@ pub async fn get_price_for(
     if let Some(amount) = res.token2_amount {
         return Ok(amount);
     }
-    return Err(Box::from("We should not be here"));
+    return Err(eyre!("We should not be here"));
 }
 
-pub async fn fetch_juno_pools(api: &str) -> Result<Vec<WasmPool>, Box<dyn Error>> {
+pub async fn fetch_juno_pools(api: &str) -> Result<Vec<WasmPool>> {
     let contracts = get_contracts(api, 16).await?;
     let mut res = Vec::new();
     for contract in contracts {
@@ -163,7 +157,46 @@ pub async fn fetch_juno_pools(api: &str) -> Result<Vec<WasmPool>, Box<dyn Error>
     Ok(res)
 }
 
-async fn extract_token(api: &str, denom: &JunoDenom) -> Result<JunoToken, Box<dyn Error>> {
+pub async fn fetch_juno_pool(api: &str, contract_address: &str) -> Result<WasmPool> {
+    let mut pool = get_pool_info(api, contract_address)
+        .await
+        .expect("Cannot fetch pool info");
+    if pool.token1_reserve == "0" || pool.token2_reserve == "0" {
+        return Err(eyre!("Cannot fetch empty pool")); // Empty pool, probably invalid
+    }
+    pool.pool_address = Some(contract_address.to_string());
+    pool.token1 = Some(
+        extract_token(api, &pool.token1_denom)
+            .await
+            .expect("Cannot extract token"),
+    );
+    pool.token2 = Some(
+        extract_token(api, &pool.token2_denom)
+            .await
+            .expect("Cannot extract token"),
+    );
+    Ok(pool)
+}
+
+pub async fn update_juno_pool(api: &str, path: &Path, contract_addresses: Vec<&str>) -> Result<()> {
+    let mut pools = load_juno_pools_from_file(path)?;
+    let mut new_pools = HashMap::new();
+    for contract_address in contract_addresses {
+        let new_pool = fetch_juno_pool(api, contract_address).await?;
+        new_pools.insert(contract_address, new_pool);
+    }
+    for i in 0..pools.len() {
+        let pool = &pools[i];
+        let wrapped_address = pool.address().unwrap();
+        let pool_address = &wrapped_address.as_str();
+        if new_pools.contains_key(pool_address) {
+            pools[i] = Box::new(new_pools.get(pool_address.clone()).unwrap().to_owned());
+        }
+    }
+    Ok(())
+}
+
+async fn extract_token(api: &str, denom: &JunoDenom) -> Result<JunoToken> {
     if let Some(address) = &denom.cw20 {
         return Ok(get_token_info(api, &address).await?);
     }
@@ -191,7 +224,7 @@ async fn extract_token(api: &str, denom: &JunoDenom) -> Result<JunoToken, Box<dy
             return Ok(get_token_info(api, &address).await?);
         }
     }
-    return Err(Box::from("We should not be here"));
+    return Err(eyre!("We should not be here"));
 }
 
 pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {

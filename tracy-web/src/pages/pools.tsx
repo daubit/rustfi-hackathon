@@ -3,19 +3,21 @@ import {
   Heading,
   Menu,
   MenuButton,
-  MenuDivider,
   MenuItemOption,
   MenuList,
   MenuOptionGroup,
 } from "@chakra-ui/react";
+import { useSetAtom } from "jotai";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { Header } from "../components/Header";
 import { Pools } from "../components/Pools";
+import { chainsAtom } from "../state/menu";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
+  const setChains = useSetAtom(chainsAtom);
   return (
     <div className={styles.container}>
       <Head>
@@ -40,7 +42,17 @@ const Home: NextPage = () => {
             Chains
           </MenuButton>
           <MenuList minWidth="240px" backgroundColor={"black"}>
-            <MenuOptionGroup title="Chains" type="checkbox">
+            <MenuOptionGroup
+              title="Chains"
+              type="checkbox"
+              onChange={(chains) => {
+                if (typeof chains !== "object") {
+                  setChains([chains]);
+                } else {
+                  setChains(chains);
+                }
+              }}
+            >
               <MenuItemOption
                 value="juno"
                 _hover={{ bg: "teal.600" }}
@@ -70,7 +82,7 @@ const Home: NextPage = () => {
             Powered by{" "}
             <span className={styles.logo}>
               <Image
-                src="/images/daubit_apps_logo-opt-256.webp"
+                src="/images/daubit_logo.png"
                 alt="Vercel Logo"
                 width={72}
                 height={16}
