@@ -37,6 +37,7 @@ const Pool = (props: PoolProps) => {
       <Tr onClick={onOpen}>
         {pool.chain === "juno" && (
           <>
+            <Td>{pool.chain}</Td>
             <Td>{pool.token1?.symbol}</Td>
             <Td>{pool.token2?.symbol}</Td>
             <Td>{pool.pool_address}</Td>
@@ -46,9 +47,10 @@ const Pool = (props: PoolProps) => {
         )}
         {pool.chain === "osmosis" && (
           <>
+            <Td>{pool.chain}</Td>
+            <Td>{pool.pool_address}</Td>
             <Td>{pool.pool_assets?.at(0)?.token.native_name}</Td>
             <Td>{pool.pool_assets?.at(1)?.token.native_name}</Td>
-            <Td>{pool.pool_address}</Td>
             <Td isNumeric>{pool.pool_assets?.at(0)?.token.amount}</Td>
             <Td isNumeric>{pool.pool_assets?.at(0)?.token.amount}</Td>
           </>
@@ -101,16 +103,16 @@ export const Pools = () => {
     );
   }
   const pools =
-    (data as Pool[])?.filter((pool) => !chains.includes(pool.chain || "")) ||
-    [];
+    (data as Pool[])?.filter((pool) => chains.includes(pool.chain || "")) || [];
   return (
     <TableContainer overflowY={"scroll"} maxHeight={"md"}>
       <Table variant="simple">
         <Thead>
           <Tr>
+            <Th>Chain</Th>
+            <Th>Pool Address</Th>
             <Th>Token 1</Th>
             <Th>Token 2</Th>
-            <Th>Address</Th>
             <Th isNumeric>Reserve 1</Th>
             <Th isNumeric>Reserve 2</Th>
           </Tr>
