@@ -82,7 +82,7 @@ const Home: NextPage = () => {
             Powered by{" "}
             <span className={styles.logo}>
               <Image
-                src="/images/daubit_apps_logo-opt-256.webp"
+                src="/images/daubit_logo.png"
                 alt="Vercel Logo"
                 width={72}
                 height={16}
