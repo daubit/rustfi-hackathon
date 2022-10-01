@@ -80,6 +80,7 @@ impl OsmosisPool {
         )
     }
 
+    // TODO: gRPC parameter
     async fn estimate_quote(
         &self,
         amount: u128,
@@ -176,6 +177,10 @@ impl Pool for OsmosisPool {
 
     fn to_json(&self) -> String {
         serde_json::to_string(self).unwrap()
+    }
+
+    fn chain(&self) -> String {
+        String::from("osmosis")
     }
 }
 

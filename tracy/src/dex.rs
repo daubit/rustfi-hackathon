@@ -1,23 +1,35 @@
-use std::path::Path;
+use std::{collections::HashMap, path::Path};
 
-use crate::{pools::load_osmo_pools_from_file_boxed, Pool};
+use crate::{
+    juno_pool::load_juno_pools_from_file, pools::load_osmo_pools_from_file_boxed, Pool, PoolConfig,
+};
 use eyre::Result;
 
 #[derive(Clone)]
 pub struct DexAgg {
     pub pools: Vec<Box<dyn Pool>>,
+    pub config: HashMap<String, PoolConfig>,
 }
 
 impl DexAgg {
     pub fn new() -> Result<Self> {
         let mut osmo_pools =
             load_osmo_pools_from_file_boxed(Path::new("./osmosis_pools_hackathon.json"))?;
-
-        Ok(DexAgg {
-            pools: osmo_pools
+        let mut juno_pools = load_juno_pools_from_file(Path::new("./juno_pools_hackathon.json"))?;
+        let mut pools: Vec<Box<dyn Pool>> = osmo_pools
+            .drain(..)
+            .map(|x| Box::<dyn Pool>::from(x))
+            .collect();
+        pools.append(
+            &mut juno_pools
                 .drain(..)
                 .map(|x| Box::<dyn Pool>::from(x))
-                .collect(),
+                .collect::<Vec<Box<dyn Pool>>>(),
+        );
+        let config = HashMap::new();
+        Ok(DexAgg {
+            pools: pools,
+            config: config,
         })
     }
 
