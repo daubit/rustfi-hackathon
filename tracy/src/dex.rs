@@ -1,7 +1,8 @@
 use std::{collections::HashMap, path::Path, sync::Arc};
 
 use crate::{
-    juno_pool::load_juno_pools_from_file, pools::load_osmo_pools_from_file_boxed, Pool, PoolConfig,
+    pools::{juno_pool::load_juno_pools_from_file, osmosis_pool::load_osmo_pools_from_file_boxed},
+    Pool, PoolConfig,
 };
 use eyre::Result;
 use tokio::sync::Mutex;

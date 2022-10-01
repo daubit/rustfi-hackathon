@@ -2,6 +2,10 @@ use async_trait::async_trait;
 use dyn_clone::DynClone;
 use eyre::Result;
 
+pub mod dex;
+pub mod pools;
+pub mod util;
+
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct Quote {
     pub token_in: Option<u128>,
@@ -37,8 +41,3 @@ pub trait Pool: DynClone + Send + Sync {
 }
 
 dyn_clone::clone_trait_object!(Pool);
-
-pub mod dex;
-pub mod juno_pool;
-pub mod pools;
-pub mod util;
