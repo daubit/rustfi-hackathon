@@ -71,26 +71,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                         .help("Node to connect to"),
                 ),
         )
-        .subcommand(
-            Command::new("update")
-                .about("Update pool data")
-                .arg(
-                    Arg::new("chain")
-                        .short('s')
-                        .long("chain")
-                        .action(ArgAction::Set)
-                        .num_args(1..)
-                        .help("Chain to update"),
-                )
-                .arg(
-                    Arg::new("node")
-                        .short('n')
-                        .long("node")
-                        .action(ArgAction::Set)
-                        .num_args(1..)
-                        .help("Node to connect to"),
-                ),
-        )
         .get_matches();
 
     match matches.subcommand() {
