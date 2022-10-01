@@ -19,7 +19,9 @@ import {
   Tr,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useAtomValue } from "jotai";
 import { usePools } from "../hooks/usePools";
+import { chainsAtom } from "../state/menu";
 
 interface Token {
   name: String | null;
@@ -35,8 +37,8 @@ interface Denom {
 }
 
 enum Chain {
-  JUNO,
-  OSMOSIS,
+  JUNO = "juno",
+  OSMOSIS = "osmosis",
 }
 interface Pool {
   chain?: Chain | null;
@@ -98,6 +100,8 @@ const Pool = (props: PoolProps) => {
 
 export const Pools = () => {
   const { data, isLoading } = usePools();
+  const chains = useAtomValue(chainsAtom);
+
   if (isLoading) {
     return (
       <Spinner
@@ -109,6 +113,8 @@ export const Pools = () => {
       />
     );
   }
+  const pools =
+    (data as Pool[])?.filter((pool) => !chains.includes(pool.chain || "")) || [];
   return (
     <TableContainer overflowY={"scroll"} maxHeight={"md"}>
       <Table variant="simple">
@@ -122,7 +128,7 @@ export const Pools = () => {
           </Tr>
         </Thead>
         <Tbody>
-          {data?.map((pool, key) => (
+          {pools.map((pool, key) => (
             <Pool key={key} pool={pool} />
           ))}
         </Tbody>
