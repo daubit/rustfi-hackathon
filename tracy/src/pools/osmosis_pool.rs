@@ -2,13 +2,13 @@ use std::fmt;
 use std::fs::File;
 use std::io::{Read, Write};
 use std::path::Path;
-use std::time::Duration;
 
 use async_trait::async_trait;
 use eyre::Result;
-use tokio::time::sleep;
 
-use crate::util::denom_trace::denom_trace;
+use crate::util::denom_trace::{
+    load_denom_trace_cache_from_file, resolve_ibc, save_denom_trace_cache_to_file,
+};
 use crate::util::proto::osmosis_gamm_v1beta1::query_client::QueryClient;
 use crate::util::proto::osmosis_gamm_v1beta1::{QuerySwapExactAmountInRequest, SwapAmountInRoute};
 use crate::{Pool, PoolConfig, Quote};
@@ -220,38 +220,35 @@ struct OsmosisPoolsFetchResult {
     pools: Vec<OsmosisPool>,
 }
 
-pub async fn fetch_osmosis_pools() -> Result<()> {
+pub async fn fetch_osmosis_pools(lcd_api: &str) -> Result<()> {
     // TODO: currently only ~800 pools, may need to use pagination
-    let resp: OsmosisPoolsFetchResult =
-        reqwest::get("https://lcd.osmosis.zone/osmosis/gamm/v1beta1/pools?pagination.limit=1000")
-            .await?
-            .json()
-            .await?;
+    let resp: OsmosisPoolsFetchResult = reqwest::get(format!(
+        "{}/osmosis/gamm/v1beta1/pools?pagination.limit=1000",
+        lcd_api
+    ))
+    .await?
+    .json()
+    .await?;
 
     let pools_raw = resp.pools;
     // TODO: can we not copy here?
     let mut pools: Vec<OsmosisPool> = vec![];
+    let mut ibc_cache = load_denom_trace_cache_from_file(Path::new("denom_traces.json"))?;
 
-    // #TODO: this loop is parallelizable but that makes no sense at this time because the api server would rate limit us
+    // #TODO: this loop is parallelizable ~~but that makes no sense at this time because the api server would rate limit us~~
+    // nevermind, this is already pretty fast using the cache
     for pool in pools_raw {
         // TODO: this should probably be mapable
         let mut assets: Vec<OsmosisPoolAssets> = vec![];
         for asset in pool.pool_assets {
-            sleep(Duration::from_millis(200)).await;
+            let (native_denom, cache) =
+                resolve_ibc(ibc_cache, lcd_api, asset.token.denom.clone(), true).await?;
+            ibc_cache = cache;
             assets.push(OsmosisPoolAssets {
                 token: OsmosisPoolToken {
-                    denom: asset.token.denom.clone(),
+                    denom: asset.token.denom,
                     amount: asset.token.amount,
-                    native_name: if asset.token.denom.starts_with("ibc/") {
-                        // TODO: cache results? there is a endpoint to get all traces but that is missing the hash
-                        let native_denom =
-                            denom_trace("https://lcd.osmosis.zone", &asset.token.denom[4..])
-                                .await?;
-
-                        Some(native_denom.base_denom)
-                    } else {
-                        Some(asset.token.denom)
-                    },
+                    native_name: native_denom,
                 },
                 weight: asset.weight,
             })
@@ -268,9 +265,12 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
         })
     }
 
+    let save_result = save_denom_trace_cache_to_file(Path::new("denom_traces.json"), ibc_cache);
+    if let Err(x) = save_result {
+        println!("could not save trace cache file error: {}", x);
+    }
     let text = serde_json::to_string(&pools)?;
     let path = Path::new("osmosis_pools_hackathon.json");
-    //let text = serde_json::to_string(&request)?;
     let mut file = File::create(path)?;
     file.write(text.as_bytes())?;
 
