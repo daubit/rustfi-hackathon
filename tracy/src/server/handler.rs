@@ -1,20 +1,16 @@
-use std::{
-    convert::Infallible,
-    net::{Ipv4Addr, SocketAddrV4},
-    sync::Arc,
-};
+use std::{convert::Infallible, sync::Arc};
 
 use tokio::sync::Mutex;
-use tracy::{dex::DexAgg, PoolConfig, Quote};
+use tracy::{dex::DexAgg, Quote};
 use warp::{http::Response, Filter};
 
 pub type Db = Arc<Mutex<DexAgg>>;
 
-fn with_db(db: Db) -> impl Filter<Extract = (Db,), Error = std::convert::Infallible> + Clone {
+pub fn with_db(db: Db) -> impl Filter<Extract = (Db,), Error = std::convert::Infallible> + Clone {
     warp::any().map(move || db.clone())
 }
 
-async fn list_pools_for_denom(param: String, db: Db) -> Result<impl warp::Reply, Infallible> {
+pub async fn list_pools_for_denom(param: String, db: Db) -> Result<impl warp::Reply, Infallible> {
     let db = db.lock().await;
     let text = db
         .with_denom(&param)
@@ -33,7 +29,7 @@ async fn list_pools_for_denom(param: String, db: Db) -> Result<impl warp::Reply,
         .unwrap())
 }
 
-async fn list_pools_for_denoms(
+pub async fn list_pools_for_denoms(
     denom1: String,
     denom2: String,
     db: Db,
@@ -55,7 +51,7 @@ async fn list_pools_for_denoms(
         .unwrap())
 }
 
-async fn get_quotes(
+pub async fn get_quotes(
     denom1: String,
     denom2: String,
     amount: String,
@@ -93,17 +89,9 @@ async fn get_quotes(
         })
         .collect();
     Ok(warp::reply::json(&returnarray))
-    /*let body = match text {
-        Some(text) => format!("[{}]", returnarray),
-        None => format!("[]"),
-    };
-    Ok(Response::builder()
-        .header("content-type", "application/json")
-        .body(body)
-        .unwrap())*/
 }
 
-async fn get_pool_by_address_handler(
+pub async fn get_pool_by_address_handler(
     address: String,
     db: Db,
 ) -> Result<impl warp::Reply, Infallible> {
@@ -120,7 +108,7 @@ async fn get_pool_by_address_handler(
         .unwrap())
 }
 
-async fn get_pools_handler(db: Db) -> Result<impl warp::Reply, Infallible> {
+pub async fn get_pools_handler(db: Db) -> Result<impl warp::Reply, Infallible> {
     let db = db.lock().await;
     let objs = db
         .pools
@@ -132,75 +120,4 @@ async fn get_pools_handler(db: Db) -> Result<impl warp::Reply, Infallible> {
         .header("content-type", "application/json")
         .body(format!("[{}]", objs.unwrap_or("".to_owned())))
         .unwrap())
-}
-
-fn pools_with_denom(
-    dexAgg: Db,
-) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
-    warp::path("pools_for_denom")
-        .and(warp::get())
-        .and(warp::path::param())
-        // TODO: hacky af
-        .and(with_db(dexAgg))
-        .and_then(list_pools_for_denom)
-}
-
-fn pools_with_denoms(
-    dexAgg: Db,
-) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
-    warp::path("pools_for_denoms")
-        .and(warp::path::param())
-        .and(warp::path::param())
-        // TODO: hacky af
-        .and(with_db(dexAgg))
-        .and_then(list_pools_for_denoms)
-}
-
-fn get_quotes_route(
-    dexAgg: Db,
-) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
-    warp::path!("quote" / String / String / String)
-        // TODO: hacky af
-        .and(with_db(dexAgg))
-        .and_then(get_quotes)
-}
-
-fn get_pool_by_address(
-    dexAgg: Db,
-) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
-    warp::path!("pool" / String)
-        // TODO: hacky af
-        .and(with_db(dexAgg))
-        .and_then(get_pool_by_address_handler)
-}
-
-fn get_pools(
-    dexAgg: Db,
-) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
-    warp::path!("pools")
-        // TODO: hacky af
-        .and(with_db(dexAgg))
-        .and_then(get_pools_handler)
-}
-
-fn init_routes(
-    dexAgg: Db,
-) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
-    pools_with_denom(dexAgg.clone())
-        .or(pools_with_denoms(dexAgg.clone()))
-        .or(get_quotes_route(dexAgg.clone()))
-        .or(get_pool_by_address(dexAgg.clone()))
-        .or(get_pools(dexAgg.clone()))
-}
-
-#[tokio::main]
-async fn main() {
-    println!("server");
-
-    // TODO: do we need arc?
-    let dexes: Db = Arc::new(Mutex::new(DexAgg::new().unwrap()));
-    let api = init_routes(dexes);
-    warp::serve(api)
-        .run(SocketAddrV4::new(Ipv4Addr::new(127, 0, 0, 1), 8080))
-        .await;
 }
