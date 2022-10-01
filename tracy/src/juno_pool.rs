@@ -9,7 +9,7 @@ use std::path::Path;
 use std::str::{self, from_utf8};
 
 use crate::util::denom_trace::denom_trace;
-use crate::{Pool, Quote};
+use crate::{Pool, PoolConfig, Quote};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WasmContractResponse {
@@ -21,7 +21,7 @@ pub struct WasmContractRaw {
     pub smart: String,
 }
 
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Serialize, Deserialize, PartialEq, Clone)]
 pub struct JunoToken {
     name: Option<String>,
     symbol: Option<String>,
@@ -30,20 +30,20 @@ pub struct JunoToken {
     decimals: Option<u64>,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct WasmPool {
-    pool_address: Option<String>,
-    lp_token_address: String,
-    lp_token_supply: String,
-    token1: Option<JunoToken>,
-    token1_denom: JunoDenom,
-    token1_reserve: String,
-    token2: Option<JunoToken>,
-    token2_denom: JunoDenom,
-    token2_reserve: String,
+    pub pool_address: Option<String>,
+    pub lp_token_address: String,
+    pub lp_token_supply: String,
+    pub token1: Option<JunoToken>,
+    pub token1_denom: JunoDenom,
+    pub token1_reserve: String,
+    pub token2: Option<JunoToken>,
+    pub token2_denom: JunoDenom,
+    pub token2_reserve: String,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct JunoDenom {
     native: Option<String>,
     cw20: Option<String>,
@@ -215,11 +215,11 @@ pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub fn load_juno_pools_from_file(path: &Path) -> Result<Vec<WasmPool>> {
+pub fn load_juno_pools_from_file(path: &Path) -> Result<Vec<Box<WasmPool>>> {
     let mut file = File::open(path)?;
     let mut text: String = "".to_string();
     file.read_to_string(&mut text)?;
-    let pools: Vec<WasmPool> = serde_json::from_str(&text)?;
+    let pools: Vec<Box<WasmPool>> = serde_json::from_str(&text)?;
     Ok(pools)
 }
 
@@ -237,63 +237,50 @@ pub struct JunoPoolConfig {
     pub api: String,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
-pub struct JunoPool {}
-
-impl JunoPool {
-    pub fn new() -> Self {
-        JunoPool {}
-    }
-}
-
 #[async_trait]
-impl Pool<JunoPoolConfig> for JunoPool {
+impl Pool for WasmPool {
     async fn get_quote(
         &self,
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: JunoPoolConfig,
+        config: PoolConfig,
     ) -> Result<Quote> {
-        let path = &Path::new(&config.path);
-        let pools = load_juno_pools_from_file(&path)?;
-        for pool in pools {
-            let token1_denom = pool.token1.unwrap().symbol.unwrap();
-            let token2_denom = pool.token2.unwrap().symbol.unwrap();
-            if (token_in_denom == token1_denom && token_out_denom == token2_denom)
-                || (token_in_denom == token1_denom && token_out_denom == token2_denom)
-            {
-                if token_in_denom == token1_denom {
-                    let amount_out = get_price_for(
-                        config.api.as_str(),
-                        pool.pool_address.expect("Pool address not found").as_str(),
-                        amount as u64,
-                        true,
-                    )
-                    .await
-                    .unwrap();
-                    let amount_out = amount_out.parse::<u128>()?;
-                    return Ok(Quote {
-                        token_in: amount,
-                        token_out: amount_out,
-                    });
-                }
-                if token_in_denom == token2_denom {
-                    let amount_out = get_price_for(
-                        config.api.as_str(),
-                        pool.pool_address.expect("Pool address not found").as_str(),
-                        amount as u64,
-                        false,
-                    )
-                    .await
-                    .unwrap();
-                    let amount_out = amount_out.parse::<u128>()?;
-                    return Ok(Quote {
-                        token_in: amount,
-                        token_out: amount_out,
-                    });
-                }
-                break;
+        let token1_denom = &self.token1.clone().unwrap().symbol.unwrap();
+        let token2_denom = &self.token2.clone().unwrap().symbol.unwrap();
+        let pool_address = self.pool_address.clone().unwrap();
+        if (token_in_denom == token1_denom && token_out_denom == token2_denom)
+            || (token_in_denom == token1_denom && token_out_denom == token2_denom)
+        {
+            if token_in_denom == token1_denom {
+                let amount_out = get_price_for(
+                    config.rest_url.unwrap().as_str(),
+                    &pool_address,
+                    amount as u64,
+                    true,
+                )
+                .await
+                .unwrap();
+                let amount_out = amount_out.parse::<u128>()?;
+                return Ok(Quote {
+                    token_in: amount,
+                    token_out: amount_out,
+                });
+            }
+            if token_in_denom == token2_denom {
+                let amount_out = get_price_for(
+                    config.rest_url.unwrap().as_str(),
+                    &pool_address,
+                    amount as u64,
+                    false,
+                )
+                .await
+                .unwrap();
+                let amount_out = amount_out.parse::<u128>()?;
+                return Ok(Quote {
+                    token_in: amount,
+                    token_out: amount_out,
+                });
             }
         }
         Err(eyre!(
@@ -301,5 +288,12 @@ impl Pool<JunoPoolConfig> for JunoPool {
             token_in_denom,
             token_out_denom
         ))
+    }
+
+    fn token_denoms(&self) -> Vec<String> {
+        todo!()
+    }
+    fn to_json(&self) -> String {
+        todo!()
     }
 }
