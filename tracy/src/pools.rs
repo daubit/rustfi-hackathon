@@ -10,9 +10,9 @@ use tokio::time::sleep;
 use crate::util::denom_trace::denom_trace;
 use crate::util::proto::osmosis_gamm_v1beta1::query_client::QueryClient;
 use crate::util::proto::osmosis_gamm_v1beta1::{QuerySwapExactAmountInRequest, SwapAmountInRoute};
-use crate::{Pool, Quote};
+use crate::{Pool, PoolConfig, Quote};
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPool {
     address: String,
     id: String,
@@ -25,11 +25,6 @@ pub struct OsmosisPool {
     pool_assets: Vec<OsmosisPoolAssets>,
     #[serde(alias = "totalWeight")]
     total_weight: String,
-}
-
-#[derive(Debug)]
-pub struct OsmosisPoolConfig {
-    pub estimate_quote: bool,
 }
 
 impl OsmosisPool {
@@ -94,13 +89,13 @@ impl OsmosisPool {
 }
 
 #[async_trait]
-impl Pool<OsmosisPoolConfig> for OsmosisPool {
+impl Pool for OsmosisPool {
     async fn get_quote(
         &self,
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: OsmosisPoolConfig,
+        config: PoolConfig,
     ) -> Result<Quote> {
         if config.estimate_quote {
             Ok(Quote {
@@ -138,9 +133,27 @@ impl Pool<OsmosisPoolConfig> for OsmosisPool {
             })
         }
     }
+    fn token_denoms(&self) -> Vec<String> {
+        let mut denoms: Vec<String> = self
+            .pool_assets
+            .iter()
+            .map(|x| x.token.denom.clone())
+            .collect();
+        let native_denoms: Vec<String> = self
+            .pool_assets
+            .iter()
+            .map(|x| x.token.native_name.clone())
+            .filter(|x| x.is_some())
+            .map(|x| x.unwrap())
+            .collect();
+
+        denoms.extend(native_denoms);
+
+        denoms
+    }
 }
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolParams {
     #[serde(alias = "swapFee")]
     swap_fee: String,
@@ -148,14 +161,14 @@ pub struct OsmosisPoolParams {
     exit_fee: String,
 }
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolToken {
     denom: String,
     amount: String,
     native_name: Option<String>,
 }
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolAssets {
     token: OsmosisPoolToken,
     weight: String,
@@ -223,11 +236,12 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
     Ok(())
 }
 
-pub fn load_osmo_pools_from_file(path: &Path) -> Result<Vec<OsmosisPool>> {
+// TODO: move fetch + load to trait
+pub fn load_osmo_pools_from_file_boxed(path: &Path) -> Result<Vec<Box<OsmosisPool>>> {
     let mut file = File::open(path)?;
 
     let mut text: String = "".to_string();
     file.read_to_string(&mut text)?;
-    let pools: Vec<OsmosisPool> = serde_json::from_str(&text)?;
+    let pools: Vec<Box<OsmosisPool>> = serde_json::from_str(&text)?;
     Ok(pools)
 }

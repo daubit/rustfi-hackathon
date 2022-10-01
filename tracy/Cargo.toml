@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 async-trait = "0.1.57"
+dyn-clone = "1.0.9"
 eyre = "0.6.8"
 prost = "0.11.0"
 prost-types = "0.11.1"
@@ -18,3 +19,8 @@ tonic = "0.8.2"
 
 [build-dependencies]
 tonic-build = "0.8.2"
+
+[[bin]]
+bench = false
+path = "src/server.rs"
+name = "server"
