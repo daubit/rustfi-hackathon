@@ -25,6 +25,7 @@ pub async fn list_pools_for_denom(param: String, db: Db) -> Result<impl warp::Re
 
     Ok(Response::builder()
         .header("content-type", "application/json")
+        .header("access-control-allow-origin", "*")
         .body(body)
         .unwrap())
 }
@@ -48,6 +49,7 @@ pub async fn list_pools_for_denoms(
     };
     Ok(Response::builder()
         .header("content-type", "application/json")
+        .header("access-control-allow-origin", "*")
         .body(body)
         .unwrap())
 }
@@ -90,7 +92,10 @@ pub async fn get_quotes(
             },
         })
         .collect();
-    Ok(warp::reply::json(&returnarray))
+    Ok(Response::builder()
+        .header("access-control-allow-origin", "*")
+        .body(serde_json::to_string(&returnarray).unwrap())
+        .unwrap())
 }
 
 pub async fn get_pool_by_address_handler(
@@ -106,6 +111,7 @@ pub async fn get_pool_by_address_handler(
 
     Ok(Response::builder()
         .header("content-type", "application/json")
+        .header("access-control-allow-origin", "*")
         .body(body)
         .unwrap())
 }
@@ -122,6 +128,7 @@ pub async fn get_pools_handler(db: Db) -> Result<impl warp::Reply, Infallible> {
 
     Ok(Response::builder()
         .header("content-type", "application/json")
+        .header("access-control-allow-origin", "*")
         .body(format!("[{}]", objs.unwrap_or("".to_owned())))
         .unwrap())
 }
