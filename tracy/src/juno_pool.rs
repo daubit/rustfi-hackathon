@@ -231,12 +231,6 @@ pub fn load_juno_assets_from_file(path: &Path) -> Result<Vec<JunoToken>> {
     Ok(pools)
 }
 
-#[derive(Debug)]
-pub struct JunoPoolConfig {
-    pub path: String,
-    pub api: String,
-}
-
 #[async_trait]
 impl Pool for WasmPool {
     async fn get_quote(
@@ -252,36 +246,19 @@ impl Pool for WasmPool {
         if (token_in_denom == token1_denom && token_out_denom == token2_denom)
             || (token_in_denom == token1_denom && token_out_denom == token2_denom)
         {
-            if token_in_denom == token1_denom {
-                let amount_out = get_price_for(
-                    config.rest_url.unwrap().as_str(),
-                    &pool_address,
-                    amount as u64,
-                    true,
-                )
-                .await
-                .unwrap();
-                let amount_out = amount_out.parse::<u128>()?;
-                return Ok(Quote {
-                    token_in: amount,
-                    token_out: amount_out,
-                });
-            }
-            if token_in_denom == token2_denom {
-                let amount_out = get_price_for(
-                    config.rest_url.unwrap().as_str(),
-                    &pool_address,
-                    amount as u64,
-                    false,
-                )
-                .await
-                .unwrap();
-                let amount_out = amount_out.parse::<u128>()?;
-                return Ok(Quote {
-                    token_in: amount,
-                    token_out: amount_out,
-                });
-            }
+            let amount_out = get_price_for(
+                config.rest_url.unwrap().as_str(),
+                &pool_address,
+                amount as u64,
+                token_in_denom == token1_denom,
+            )
+            .await
+            .unwrap();
+            let amount_out = amount_out.parse::<u128>()?;
+            return Ok(Quote {
+                token_in: amount,
+                token_out: amount_out,
+            });
         }
         Err(eyre!(
             "Cannot find pair: {} | {}",
@@ -291,10 +268,12 @@ impl Pool for WasmPool {
     }
 
     fn token_denoms(&self) -> Vec<String> {
-        todo!()
+        let token1_denom: String = self.token1.clone().unwrap().symbol.unwrap();
+        let token2_denom: String = self.token2.clone().unwrap().symbol.unwrap();
+        vec![token1_denom, token2_denom]
     }
     fn to_json(&self) -> String {
-        todo!()
+        serde_json::to_string(&self).unwrap()
     }
     fn chain(&self) -> String {
         String::from("juno")
