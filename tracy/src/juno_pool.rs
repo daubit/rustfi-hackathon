@@ -256,8 +256,10 @@ impl Pool for WasmPool {
             .unwrap();
             let amount_out = amount_out.parse::<u128>()?;
             return Ok(Quote {
-                token_in: amount,
-                token_out: amount_out,
+                token_in: Some(amount),
+                token_out: Some(amount_out),
+                pool_address: Some(pool_address),
+                error: None,
             });
         }
         Err(eyre!(

@@ -4,8 +4,10 @@ use eyre::Result;
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct Quote {
-    pub token_in: u128,
-    pub token_out: u128,
+    pub token_in: Option<u128>,
+    pub token_out: Option<u128>,
+    pub pool_address: Option<String>,
+    pub error: Option<String>,
 }
 
 #[derive(Debug, Clone)]

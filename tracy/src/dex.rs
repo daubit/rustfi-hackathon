@@ -15,7 +15,7 @@ impl DexAgg {
     pub fn new() -> Result<Self> {
         let mut osmo_pools =
             load_osmo_pools_from_file_boxed(Path::new("./osmosis_pools_hackathon.json"))?;
-        let mut juno_pools = load_juno_pools_from_file(Path::new("./juno_pools_hackathon.json"))?;
+        let mut juno_pools = load_juno_pools_from_file(Path::new("./juno_pools.json"))?;
         let mut pools: Vec<Box<dyn Pool>> = osmo_pools
             .drain(..)
             .map(|x| Box::<dyn Pool>::from(x))

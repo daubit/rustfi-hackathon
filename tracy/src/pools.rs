@@ -122,10 +122,13 @@ impl Pool for OsmosisPool {
     ) -> Result<Quote> {
         if config.estimate_quote {
             Ok(Quote {
-                token_in: amount,
-                token_out: self
-                    .estimate_quote(amount, token_in_denom, token_out_denom)
-                    .await?,
+                token_in: Some(amount),
+                token_out: Some(
+                    self.estimate_quote(amount, token_in_denom, token_out_denom)
+                        .await?,
+                ),
+                pool_address: Some(self.address.clone()),
+                error: None,
             })
         } else {
             let token_in_index = self.asset_for_denom(token_in_denom).unwrap();
@@ -143,8 +146,8 @@ impl Pool for OsmosisPool {
             let token_out_decimals = 6;
 
             Ok(Quote {
-                token_in: amount,
-                token_out: self.calculate_quote(
+                token_in: Some(amount),
+                token_out: Some(self.calculate_quote(
                     amount,
                     token_in_amount,
                     token_out_amount,
@@ -152,7 +155,9 @@ impl Pool for OsmosisPool {
                     token_out_weight,
                     token_in_decimals,
                     token_out_decimals,
-                )?,
+                )?),
+                pool_address: Some(self.address.clone()),
+                error: None,
             })
         }
     }

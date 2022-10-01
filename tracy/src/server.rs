@@ -5,7 +5,7 @@ use std::{
 };
 
 use tokio::sync::Mutex;
-use tracy::{dex::DexAgg, PoolConfig};
+use tracy::{dex::DexAgg, PoolConfig, Quote};
 use warp::{http::Response, Filter};
 
 pub type Db = Arc<Mutex<DexAgg>>;
@@ -83,11 +83,16 @@ async fn get_quotes(
         quotes.push(quote);
     }
 
-    let returnarray: Vec<String> = quotes
+    let returnarray: Vec<Quote> = quotes
         .into_iter()
         .map(|x| match x {
-            Ok(x) => serde_json::to_string(&x).unwrap(),
-            Err(x) => format!("{{{}}}", x).to_string(),
+            Ok(x) => x,
+            Err(x) => Quote {
+                error: Some(format!("{{{}}}", x).to_string()),
+                token_in: None,
+                token_out: None,
+                pool_address: None,
+            },
         })
         .collect();
     Ok(warp::reply::json(&returnarray))
