@@ -1,3 +1,4 @@
+use std::fmt;
 use std::fs::File;
 use std::io::{Read, Write};
 use std::path::Path;
@@ -27,6 +28,26 @@ pub struct OsmosisPool {
     total_weight: String,
 }
 
+#[derive(Debug)]
+pub enum TracyError {
+    Only2AssersError,
+}
+
+impl std::error::Error for TracyError {}
+unsafe impl Sync for TracyError {}
+unsafe impl Send for TracyError {}
+
+impl fmt::Display for TracyError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match self {
+            TracyError::Only2AssersError => write!(
+                f,
+                "Can only calculate quote for pools with 2 assets, estimate quote instead."
+            ),
+        }
+    }
+}
+
 impl OsmosisPool {
     // takes ibc or native denom and converts to correct type
     fn asset_for_denom(&self, denom: &str) -> Option<usize> {
@@ -48,14 +69,15 @@ impl OsmosisPool {
         token_out_weight: u128,
         token_in_decimals: u32,
         token_out_decimals: u32,
-    ) -> u128 {
-        assert!(
-            self.pool_assets.len() == 2,
-            "Can only calculate quote for pools with 2 assets, estimate quote instead."
-        );
+    ) -> Result<u128> {
+        if self.pool_assets.len() != 2 {
+            return Err(TracyError::Only2AssersError.into());
+        }
         // only on block by block basis, no time weighted average
-        (token_out_amount * token_out_weight * u128::from(token_out_decimals) * amount)
-            / (token_in_amount * token_in_weight * u128::from(token_in_decimals))
+        Ok(
+            (token_out_amount * token_out_weight * u128::from(token_out_decimals) * amount)
+                / (token_in_amount * token_in_weight * u128::from(token_in_decimals)),
+        )
     }
 
     // TODO: gRPC parameter
@@ -96,14 +118,17 @@ impl Pool for OsmosisPool {
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: PoolConfig,
+        config: &PoolConfig,
     ) -> Result<Quote> {
         if config.estimate_quote {
             Ok(Quote {
-                token_in: amount,
-                token_out: self
-                    .estimate_quote(amount, token_in_denom, token_out_denom)
-                    .await?,
+                token_in: Some(amount),
+                token_out: Some(
+                    self.estimate_quote(amount, token_in_denom, token_out_denom)
+                        .await?,
+                ),
+                pool_address: Some(self.address.clone()),
+                error: None,
             })
         } else {
             let token_in_index = self.asset_for_denom(token_in_denom).unwrap();
@@ -121,8 +146,8 @@ impl Pool for OsmosisPool {
             let token_out_decimals = 6;
 
             Ok(Quote {
-                token_in: amount,
-                token_out: self.calculate_quote(
+                token_in: Some(amount),
+                token_out: Some(self.calculate_quote(
                     amount,
                     token_in_amount,
                     token_out_amount,
@@ -130,7 +155,9 @@ impl Pool for OsmosisPool {
                     token_out_weight,
                     token_in_decimals,
                     token_out_decimals,
-                ),
+                )?),
+                pool_address: Some(self.address.clone()),
+                error: None,
             })
         }
     }
@@ -159,6 +186,10 @@ impl Pool for OsmosisPool {
 
     fn chain(&self) -> String {
         String::from("osmosis")
+    }
+
+    fn address(&self) -> Result<String> {
+        Ok(self.address.clone())
     }
 }
 

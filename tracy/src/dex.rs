@@ -7,6 +7,7 @@ use eyre::Result;
 
 #[derive(Clone)]
 pub struct DexAgg {
+    // TODO: maybe Arc<Mutex<_>> that vec? see usage in server
     pub pools: Vec<Box<dyn Pool>>,
     pub config: HashMap<String, PoolConfig>,
 }
@@ -15,7 +16,7 @@ impl DexAgg {
     pub fn new() -> Result<Self> {
         let mut osmo_pools =
             load_osmo_pools_from_file_boxed(Path::new("./osmosis_pools_hackathon.json"))?;
-        let mut juno_pools = load_juno_pools_from_file(Path::new("./juno_pools_hackathon.json"))?;
+        let mut juno_pools = load_juno_pools_from_file(Path::new("./juno_pools.json"))?;
         let mut pools: Vec<Box<dyn Pool>> = osmo_pools
             .drain(..)
             .map(|x| Box::<dyn Pool>::from(x))
@@ -26,7 +27,25 @@ impl DexAgg {
                 .map(|x| Box::<dyn Pool>::from(x))
                 .collect::<Vec<Box<dyn Pool>>>(),
         );
-        let config = HashMap::new();
+        let mut config = HashMap::new();
+        config.insert(
+            "osmosis".to_owned(),
+            PoolConfig {
+                grpc_url: None,
+                rest_url: None,
+                rpc_url: None,
+                estimate_quote: true,
+            },
+        );
+        config.insert(
+            "juno".to_owned(),
+            PoolConfig {
+                grpc_url: None,
+                rest_url: Some("https://lcd-juno.itastakers.com".to_owned()),
+                rpc_url: None,
+                estimate_quote: true,
+            },
+        );
         Ok(DexAgg {
             pools: pools,
             config: config,
@@ -41,6 +60,7 @@ impl DexAgg {
             .collect()
     }
 
+    // TODO make &str
     pub fn with_denoms(&self, denoms: Vec<String>) -> Vec<Box<dyn Pool>> {
         self.pools
             .clone()
@@ -50,5 +70,14 @@ impl DexAgg {
                 denoms.iter().all(|x| token_denoms.contains(x))
             })
             .collect()
+    }
+
+    pub fn with_address(&self, addr: &str) -> Result<Box<dyn Pool>> {
+        let index = self
+            .pools
+            .iter()
+            .position(|x| x.address().unwrap() == addr)
+            .unwrap();
+        Ok(self.pools[index].clone())
     }
 }

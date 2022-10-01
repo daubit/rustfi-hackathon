@@ -238,7 +238,7 @@ impl Pool for WasmPool {
         amount: u128,
         token_in_denom: &str,
         token_out_denom: &str,
-        config: PoolConfig,
+        config: &PoolConfig,
     ) -> Result<Quote> {
         let token1_denom = &self.token1.clone().unwrap().symbol.unwrap();
         let token2_denom = &self.token2.clone().unwrap().symbol.unwrap();
@@ -247,7 +247,7 @@ impl Pool for WasmPool {
             || (token_in_denom == token1_denom && token_out_denom == token2_denom)
         {
             let amount_out = get_price_for(
-                config.rest_url.unwrap().as_str(),
+                config.rest_url.clone().unwrap().as_str(),
                 &pool_address,
                 amount as u64,
                 token_in_denom == token1_denom,
@@ -256,8 +256,10 @@ impl Pool for WasmPool {
             .unwrap();
             let amount_out = amount_out.parse::<u128>()?;
             return Ok(Quote {
-                token_in: amount,
-                token_out: amount_out,
+                token_in: Some(amount),
+                token_out: Some(amount_out),
+                pool_address: Some(pool_address),
+                error: None,
             });
         }
         Err(eyre!(
@@ -272,10 +274,16 @@ impl Pool for WasmPool {
         let token2_denom: String = self.token2.clone().unwrap().symbol.unwrap();
         vec![token1_denom, token2_denom]
     }
+
     fn to_json(&self) -> String {
         serde_json::to_string(&self).unwrap()
     }
+
     fn chain(&self) -> String {
         String::from("juno")
+    }
+
+    fn address(&self) -> Result<String> {
+        Ok(self.pool_address.clone().unwrap())
     }
 }
