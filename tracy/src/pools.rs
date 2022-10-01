@@ -155,6 +155,10 @@ impl Pool for OsmosisPool {
     fn to_json(&self) -> String {
         serde_json::to_string(self).unwrap()
     }
+
+    fn chain(&self) -> String {
+        String::from("osmosis")
+    }
 }
 
 #[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
