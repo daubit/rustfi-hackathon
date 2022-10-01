@@ -7,6 +7,7 @@ use eyre::Result;
 
 #[derive(Clone)]
 pub struct DexAgg {
+    // TODO: maybe Arc<Mutex<_>> that vec? see usage in server
     pub pools: Vec<Box<dyn Pool>>,
     pub config: HashMap<String, PoolConfig>,
 }
@@ -71,7 +72,7 @@ impl DexAgg {
             .collect()
     }
 
-    pub fn with_address(&self, addr: String) -> Result<Box<dyn Pool>> {
+    pub fn with_address(&self, addr: &str) -> Result<Box<dyn Pool>> {
         let index = self
             .pools
             .iter()

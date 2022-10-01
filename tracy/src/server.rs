@@ -103,6 +103,37 @@ async fn get_quotes(
         .unwrap())*/
 }
 
+async fn get_pool_by_address_handler(
+    address: String,
+    db: Db,
+) -> Result<impl warp::Reply, Infallible> {
+    let db = db.lock().await;
+    let pool = db.with_address(&address);
+    let body = match pool {
+        Ok(p) => p.to_json(),
+        Err(e) => format!("{{\"error\": \"{}\"}}", e.to_string()),
+    };
+
+    Ok(Response::builder()
+        .header("content-type", "application/json")
+        .body(body)
+        .unwrap())
+}
+
+async fn get_pools_handler(db: Db) -> Result<impl warp::Reply, Infallible> {
+    let db = db.lock().await;
+    let objs = db
+        .pools
+        .iter()
+        .map(|x| x.to_json())
+        .reduce(|acc: String, x: String| format!("{},{}", acc, x));
+
+    Ok(Response::builder()
+        .header("content-type", "application/json")
+        .body(format!("[{}]", objs.unwrap_or("".to_owned())))
+        .unwrap())
+}
+
 fn pools_with_denom(
     dexAgg: Db,
 ) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
@@ -134,12 +165,32 @@ fn get_quotes_route(
         .and_then(get_quotes)
 }
 
+fn get_pool_by_address(
+    dexAgg: Db,
+) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
+    warp::path!("pool" / String)
+        // TODO: hacky af
+        .and(with_db(dexAgg))
+        .and_then(get_pool_by_address_handler)
+}
+
+fn get_pools(
+    dexAgg: Db,
+) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
+    warp::path!("pools")
+        // TODO: hacky af
+        .and(with_db(dexAgg))
+        .and_then(get_pools_handler)
+}
+
 fn init_routes(
     dexAgg: Db,
 ) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
     pools_with_denom(dexAgg.clone())
         .or(pools_with_denoms(dexAgg.clone()))
         .or(get_quotes_route(dexAgg.clone()))
+        .or(get_pool_by_address(dexAgg.clone()))
+        .or(get_pools(dexAgg.clone()))
 }
 
 #[tokio::main]
