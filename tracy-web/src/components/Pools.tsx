@@ -110,11 +110,15 @@ export const Pools = () => {
         emptyColor="gray.200"
         color="blue.500"
         size="xl"
+        marginTop={"5rem"}
+        marginBottom={"5rem"}
+
       />
     );
   }
   const pools =
-    (data as Pool[])?.filter((pool) => !chains.includes(pool.chain || "")) || [];
+    (data as Pool[])?.filter((pool) => !chains.includes(pool.chain || "")) ||
+    [];
   return (
     <TableContainer overflowY={"scroll"} maxHeight={"md"}>
       <Table variant="simple">
