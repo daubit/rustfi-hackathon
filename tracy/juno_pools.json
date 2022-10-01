@@ -1,5 +1,6 @@
 [
   {
+    "pool_address": "juno1qzfqnvq3wflgjeqs248vq7m0cx209efxv6ztepwmp8celm636l3qruh6jk",
     "lp_token_address": "juno1m8dtfd70wr84wjsu7r7qr0tqzyg0n0cnl6a6ljagk2l7n94qykuq0aju3x",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -14,6 +15,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1qz6akg3dt9agqrrsy9xd7f7e5skelgnkd68jptk23q8zezf0qdpssxug4d",
     "lp_token_address": "juno1zrd9zr699rj38ewwf0w3zqfcr2x5cy4m2ayjecf8hnh4zum969as35nlqr",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -28,6 +30,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1qr69r7g50978yhjpgdgdt2cjnqnp98xk0tte6mds2c4sff2rmtdsv4tyrh",
     "lp_token_address": "juno1tay6mvea4rhm5ewxalrsqq3sanm5cfjrpx07zvakep3ld7enhmas3ajf5d",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -42,6 +45,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1qg9m2zdqaxx4udxxyun4cjq5myazlldymdmhkuy7fmvretyxz92q89zdvv",
     "lp_token_address": "juno1te6t7zar4jrme4re7za0vzxf72rjkwwzxrksu83505l89gdzcy9sd93v4c",
     "lp_token_supply": "2027704055206693",
     "token1_denom": {
@@ -56,6 +60,7 @@
     "token2_reserve": "121761496470"
   },
   {
+    "pool_address": "juno1qfgq82v6ddj35jv5nyh5rnxhdmsrg8khn0s70hz6qg5s2avdxzwsr4m05s",
     "lp_token_address": "juno18x37hgnyt8w32rs77srk0a9n7xgrzsl73wm98lgzcjp3getrc0jqgn5xnw",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -67,6 +72,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1qsmywlded2sdggud5wft44gq2u6c3epl3qhzr4qv7psj536t8yhsfvrcf6",
     "lp_token_address": "juno1fdj5u026t828yuskgq9h5ehx2gncjjjxvrydtnljn9xchj6xdhdsjx6lxy",
     "lp_token_supply": "2683821030",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -78,6 +84,7 @@
     "token2_reserve": "12279012837"
   },
   {
+    "pool_address": "juno1qsm5yuwr26wj5s92j6sr7maey0tahxucd4ceyt25creklx8txvlq28r4q3",
     "lp_token_address": "juno1znm270man5564crj90zdgkk9sxkrkr2h8kn8uqhnxd7vuws9rpwqmv3hpd",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -89,6 +96,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1pr3w0macketryjdf5pyvysp38ss0l4n3ch95ewgc870k52lcsh6syynl3w",
     "lp_token_address": "juno1sssd02fn0extk3t6uulsvte7kzkhz5qpv07mme3wvty3vxwaewsqc5ddcm",
     "lp_token_supply": "1000000",
     "token1_denom": {
@@ -103,6 +111,7 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno1prn7xau6fvvvns82yydslk9gh2yvftk24rtwlekcswsfv7pwf8ps7v3daa",
     "lp_token_address": "juno1v9zsp2zy5xg02ljryu6gyfasjcm2y5ejvwd5wrsgf8ldu5ufzycqen8hen",
     "lp_token_supply": "10000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -114,6 +123,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1p9jry0tfg46yrsv7ru29guj7szzaeza2mfvv66ft8a4jglvemlkqhjxl0d",
     "lp_token_address": "juno18vfyj75w0jtmhle293lschl0n3y3s7g0hpr2mxycqutvu7rhc0fsexwlcu",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -125,6 +135,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1p2p7eldjjsxy6kynlekfeztfq7p8t66kzree0yxam5vdmfc4r8nqhzxhjx",
     "lp_token_address": "juno1ywmeqryave6vdrw0clpxjck4sllhtpv0fsrpmk7p3vxxd7hr6f2s63ggh3",
     "lp_token_supply": "100000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -136,6 +147,7 @@
     "token2_reserve": "9000"
   },
   {
+    "pool_address": "juno1pvycl242y3hgeer4j6dwh0nwwfn0765hpams4zh6ah94zyk0e8csjux6ha",
     "lp_token_address": "juno14m70wej7g47mvn8a97eyrka599zqp4ly2v2k2cd3krd93gd05efqc6av9j",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -147,6 +159,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1pv7y743lze97jetaju6zrh80lvtj38kknk03s7rd76zllkuspgtqh89pad",
     "lp_token_address": "juno18d6fx5dajez7jgnqjmx5tcxsxk7wdeuvcd7s70lt33j94ank4m0qny9ycn",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -158,6 +171,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1pw95xca9gkt00leqq28pfwtpwwcdz88e0lpxm4k8pkdh2dyz5tustlvcl2",
     "lp_token_address": "juno1ak4cwg87dt8sxyd8tkpqrxm540cxs7k3swehxlxkpc8z9g04jxvqruuzny",
     "lp_token_supply": "5000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -169,6 +183,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1pwls8dxsdg05zm485gq486au43gz2pyxhy6tsrcuqlcn9pywyc0qs8mdnp",
     "lp_token_address": "juno12qkzh9maw2hdq95ns2pyvnzht3eywehe5c8hxrg92cke59h7spuq6ztsge",
     "lp_token_supply": "250",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -180,6 +195,7 @@
     "token2_reserve": "1000"
   },
   {
+    "pool_address": "juno1pmygz7f62x6eqv67g6468lzj9z2exeyg8qml5004lnq3gza0wszs96uxn3",
     "lp_token_address": "juno1pfeqfdhg9504njadfl8ah39nfdr3xf8qz943uhphfw77e758sreq9jyrvy",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -194,6 +210,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1pmjfry5npeeup5sclf490e043e0rvye5u2dfdypk5hta7zl3084sp78eny",
     "lp_token_address": "juno1kfn82j0cyz63gtjaqhtqxjghq6qtevk63zt63x828tl9pd722y3qxceht8",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -205,6 +222,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zpzly7h44ufudce5juaxwc54whvheq9exhndn294x9xw6kc25wzqn5n0y7",
     "lp_token_address": "juno1mcu7p5as6a62ks0557j2mepa9v6cu72wgr7cps979lsvhjp6tnmskgmrcr",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -219,6 +237,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zpv53vs79que4x6ks5v5q26pt44j7ehrcfc5zxxnhautklzv76mspmj0yg",
     "lp_token_address": "juno18qktcj9erzr297vpuaq6tz4s3rpu9vuxnww8838ytx9xp3aggasspznxrg",
     "lp_token_supply": "173270",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -230,6 +249,7 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno1zz8vspvcq7a3t40sy6xfxa3yk8wuy3vr8clyn3pt8pthpucnvpyqes54md",
     "lp_token_address": "juno1quce89l8clsn8s5tmq5sylg370h58xfnkwadx72crjv90jmetp4s3fkysl",
     "lp_token_supply": "250",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -241,6 +261,7 @@
     "token2_reserve": "1000"
   },
   {
+    "pool_address": "juno1zy3u3ngdqspefsa90nyuvfseu0jd7c9a9zvm759at0g9vf746v8qf7w8rc",
     "lp_token_address": "juno1ydgtgewa7xm0hc6xgpp2edfxnzh3azwc9e7nxl4c555qrfg49jlsa2tpag",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -252,6 +273,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1z92wq4hv2zd3ar9duzrhxuhr5jzljww4wk84me9e9h3xfjgzl48qenwg30",
     "lp_token_address": "juno1f0j7thz2qz0g6l36z63l5ey5xjcexfpr84t0txchj5nxhek5m84qsmefjx",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -263,6 +285,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zxue9s8gnarj8dyw5t43mefyfmt560wukz39trx8qkjukwqxxyzqrn4y6u",
     "lp_token_address": "juno1yyrt909gyr5s2sxqe3ecqjm0nnc2sxlc0nppc25f4hqg8mvx0rus3fchqd",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -277,6 +300,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zgqxxg4k7huu42yvrflsnyq65j2hp00uezjz0lntdfcr3zghrdhsqfagtj",
     "lp_token_address": "juno1fg53hkngqagksa3ykl69czhfptmdlrmagz70nfdw70qv5qj4ux8sah0mxr",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -288,6 +312,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zf2zzudhd9ng9nd9zhlkp20mpwqcxsp4m3ljxq6fdmqnnw40mcfqwfaxjh",
     "lp_token_address": "juno1egcwyuq5knsxh6s5np4etx8xa9vj9ur96hd7m7ftxvqrxufzvyyqwxw4pe",
     "lp_token_supply": "10000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -299,6 +324,7 @@
     "token2_reserve": "1000"
   },
   {
+    "pool_address": "juno1zw582a97ahy7qef37xenmzskkuj5tgn93nklerffx8fpwtcxa3vsdgtkhu",
     "lp_token_address": "juno1xgt3lglfdz97dhqvr8q0qtdcguwr0e2w26w824fj9h2ep70xva2s6njwwa",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -310,6 +336,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zw4t64evjnyl5z3jxrf23h0p33806d4lnq00py0h767sgacmk6vqwgms7u",
     "lp_token_address": "juno1ssjdw9m7kxqw6ga7mzvv7hp3ahclgq76ev2g9eq7m4m4uem459uqhq8rdj",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -321,6 +348,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zsws7uhe2cz89qsu70ncuv33aemsc2szmld97mx2yy8gkx7fld6q04kmyd",
     "lp_token_address": "juno1jqzxrr9n77r4jmve9lj3gwgmcasnv0p3awf39lm7eypm4hnw87csnhkemx",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -332,6 +360,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1zjzxr9p685fg5tge4xphetkrhtlzg3995xnhjau42jyrycnt0q9qsacamk",
     "lp_token_address": "juno156np7sdmvavtjvtz6w45jafdxvlvldchx8zhmau2vylztgu963tstlj592",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -346,17 +375,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1z5vukf037r6acgln3n37tr8a5rv7wafqzhcq29ddn9etwwtfrytsn6xvux",
     "lp_token_address": "juno1dhmd8lredr9psu4afk8j3lstdg896pme49mje6maxucuuugmmptstzaj07",
     "lp_token_supply": "8237719991",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "5234302030",
+    "token1_reserve": "5234368957",
     "token2_denom": {
       "native": "ibc/F6B367385300865F654E110976B838502504231705BAC0849B0651C226385885",
       "cw20": null
     },
-    "token2_reserve": "574783036955"
+    "token2_reserve": "574775709788"
   },
   {
+    "pool_address": "juno1z4qak60uavmf9c0cgeg6zqg5a9ypf07yt023ltjj8fk52u7x0nvskhq5eg",
     "lp_token_address": "juno1vvr0xds27s5wpxvmtzr3d0sl224fn9vgdtzh7ja7ygezpzdr9h4qxg86rw",
     "lp_token_supply": "187114567",
     "token1_denom": {
@@ -368,6 +399,7 @@
     "token2_reserve": "1087323"
   },
   {
+    "pool_address": "juno1z698dxy9gj4fnrs76xwmtqwh84lamav9xl0w35pd35vnfx7987nqudxyge",
     "lp_token_address": "juno15g2ghm8u9jtkp5pu2y0n6dlzsewxltdjvygwcg5ggusp7tghxnlqjtvw87",
     "lp_token_supply": "7458713",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -379,6 +411,7 @@
     "token2_reserve": "148820534"
   },
   {
+    "pool_address": "juno1zm4uw8u72z4cn74p98wmm90zukfnhs78yu0ft30ud5lcwv6a49dspkw0ag",
     "lp_token_address": "juno10gvx5au4ejkagk3z3hm6afx4ryve52y7e2nagl4lyp9kt0qptcss268y6k",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -390,6 +423,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1z7z39ltgderys048pkxw53ndq783jdtetcnmctzsfs389zs5ydmscxnf8x",
     "lp_token_address": "juno1f7v08futpdm6pcujh6ues9jeqfj8h828zsldmpg7cmf3xsj0r07qlk7rfn",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -401,6 +435,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1rqlcesmxygfqgnn9zrdlgsxhn8zevkgdcnjselj8eptgkhk6tykqd8y236",
     "lp_token_address": "juno1r2mk9wpexrgv9hkuu4gapmdz68yr99w66pksfmk99h0c532g0y2qczge57",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -412,6 +447,7 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno1rp8jfgmpkqezkcl4j96quqr3xwda37263psqj5q3dakgeddyuj2qv4l79h",
     "lp_token_address": "juno1c0qmg4eddur046ukx2tvexdz5qzylwa04lxzn8nkcwhgdx3zhmwqc0kt8x",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -423,6 +459,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1rzs2vufjujrr4p7pdzltxvtxm7m4q9nnwhnrn2n5r5mgsap3xkrqufwu5h",
     "lp_token_address": "juno1u9mqjy902zywzwcgz2txwae9cuk5xrkpuk4jcngemns9mfddverq7d7wps",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -434,6 +471,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ry5ypp0x4hvsr44nv86awc4p2gdcwrz8nlc3lyrqf2ckjwlnuzfs76ddf3",
     "lp_token_address": "juno16d0umhmgvsexdukvdrkhxzhl3ahay6wlq7cjdechcr2sx7r8905sct9gc9",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -448,6 +486,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1rft4xp5e6ffta5a8aqwtu4kgdfjqw4jhnleu8agmmedzrxsat7pqxfgfrs",
     "lp_token_address": "juno10dvm495wxtlxtda8492dsc2yut0wk2lpnz6h7wad3ecrym5k4a6qh4uvzc",
     "lp_token_supply": "3684971503",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -459,6 +498,7 @@
     "token2_reserve": "287971148920"
   },
   {
+    "pool_address": "juno1r2a69328282p6k424t2xctr6w0pqt7m7qam07x5zlqp3egscyy8sww0xn7",
     "lp_token_address": "juno14zldkjqv7dze877xrwrhwvs8wr0c3e9y9nl8xvu4jc4llp0ft7aqkpdezg",
     "lp_token_supply": "100000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -470,6 +510,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1rspqzd8p83ss4ajjnpcscrdt7jd23022hhqaup9axxu8feacfmgsreqsxz",
     "lp_token_address": "juno1tft3vfnrm0zpjrr86rspghnz65agj4qcrfmn8h6pyyfr45rl76xsx30xs8",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -481,6 +522,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1r35khypn89ra7sqc93u409yjgmzrt8r69y7xvskhlchxjpk8hrfslxpy97",
     "lp_token_address": "juno1xn7ywphphh3v0lxlre8m7cqxa6522rgsg3nknkv3073u46xcluasqf9u83",
     "lp_token_supply": "3000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -492,6 +534,7 @@
     "token2_reserve": "4900000"
   },
   {
+    "pool_address": "juno1rkxu0mgg3y8nl9ass3scrx987rdw0xggy0lqj0kfhy86v6uj8hks8y52x2",
     "lp_token_address": "juno1c5y402hekegf2jvqy09gpfvgy46zfxr8qgkd0qmp8779qjkydzcsq2y7uv",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -506,20 +549,22 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1r72th8l800djmhu8f0xhfkw046a4zlm0kcrela2vxwf0ehh3l68qumh53q",
     "lp_token_address": "juno129xs226p0lqtdmkca7p27ajc6y8lv3xqgx9mzzyueazd8fzd8y6svnvu4q",
     "lp_token_supply": "20429366873126755",
     "token1_denom": {
       "native": null,
       "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
     },
-    "token1_reserve": "1235109882667326",
+    "token1_reserve": "1235108547456019",
     "token2_denom": {
       "native": null,
       "cw20": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl"
     },
-    "token2_reserve": "10378723880257"
+    "token2_reserve": "10378735133914"
   },
   {
+    "pool_address": "juno1r7apava9h240g4c0y4pmklemy6q5qtjaglavnmhzq4chzwx42rnqsnzutd",
     "lp_token_address": "juno1md7t8edlf9dkh3qz0nut2jx2qspvtxswlwrjnz40ugdw6lq9rdgq8sn0ms",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -534,6 +579,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ypcslfy8u66ta47nmrkdjz4ggd63zrxlx6l36387rsstqeqpl3hqcj4klf",
     "lp_token_address": "juno1chdeq0a2xhty360h38g7elh6lf82s7vyvf680uhyekyp4uwg3uvqx9a937",
     "lp_token_supply": "5000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -545,6 +591,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1y2x2ur4ptfurdca3gk05n62h93tgqluzj5zvm03c0vhxu8pu3pjs9flzz6",
     "lp_token_address": "juno1h0ce9ff2ekgq9aq3lwumrqyam9rl8yfmpmemyparnvwka9l47a3setumzu",
     "lp_token_supply": "3232639866303",
     "token1_denom": {
@@ -556,6 +603,7 @@
     "token2_reserve": "31135967"
   },
   {
+    "pool_address": "juno1y2mure58rpvu420r6cdynm04ysetce3vueyfejhvlr6w4nnrvatqep5223",
     "lp_token_address": "juno1ttnyk6glynelrm8wc40mexmn4nrcf6wr3056hj3yppem6gknfqpq8aj6xs",
     "lp_token_supply": "10000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -567,6 +615,7 @@
     "token2_reserve": "10000"
   },
   {
+    "pool_address": "juno1yt4t7xsd5km7zrr66jn074xw8phvjyu24erdzh7sj2w6980c0wss9hkuqg",
     "lp_token_address": "juno13e9sve6zyy7h0uv3vfmwy5rfnrh0p6gpj4f25jemz386wfmfhmsssl6ws0",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -578,6 +627,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ydx8je0mscv53rtz6xk09n0pakutc7cxagc5av5zlguy3fcndsjqhwf92m",
     "lp_token_address": "juno1zl9v8yc0esruqh0q76ycd799nswp4rx5t0ydthlnj42sw64h0utqyjqust",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -589,6 +639,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ykj7ytuy5pv6fr6y7kv3508uz7wvp4cpt6f9xy0u44cpwwwx7cmqxgdqnu",
     "lp_token_address": "juno190t7d759wsq5fr5xnkty2t7ahvtgs0gfvawa5lnjgyx64pplderqnmx484",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -600,6 +651,7 @@
     "token2_reserve": "50000000000"
   },
   {
+    "pool_address": "juno1yu6ml5048j9tl7345jfa9en64e280jjtyrk7lmfl7am8gayhx5wsmpnkyd",
     "lp_token_address": "juno16mrux43f0srkwjqwzu7aslm83f0g0hf82tg47wl8w0582hnhjwdswe8htf",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -611,6 +663,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1yaff0t6tfheqcdep24euu7w0xhnhs2yjwwv7r2c280vlns8trghq5d72pd",
     "lp_token_address": "juno1jeh4eqlsge0w8kcmjlt82rzzwe4vr5yxe69nvqt2jcgg4q4e8ypq0c7h7f",
     "lp_token_supply": "994572473",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -622,6 +675,7 @@
     "token2_reserve": "5497803882"
   },
   {
+    "pool_address": "juno1ylyyn5059psp5q6wuxnpdsmlw7z4k2ukpc5jrtzhf52kkned9h6q5vahfz",
     "lp_token_address": "juno14keee4zf0ugzffqepkwrvq848ukgvm4lqkfwa9ghhewl59juhsjsfu69f7",
     "lp_token_supply": "100000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -633,6 +687,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno19859m5x8kgepwafc3h0n36kz545ngc2vlqnqxx7gx3t2kguv6fws93cu25",
     "lp_token_address": "juno1vayeejfdzr32rg3kkzqvl7euxqzferxstdal3qlask5f37sxcvxsvk6mse",
     "lp_token_supply": "5189803887",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -644,6 +699,7 @@
     "token2_reserve": "109645287130812533"
   },
   {
+    "pool_address": "juno19wja7gpxpwag06m7nlam7vmdwungvk5r4cjwvsd6js03sz4cqqus7f0mg9",
     "lp_token_address": "juno18rgnvlt8dsgpzle32dywa974hcdzje8f7snfnfjpcg8znwdq39vqd4hcpc",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -655,6 +711,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno19356ef5jmmc5zn6azxxuaul3dfpp3r29wcs0we66ey96mguzm7ps5al0f9",
     "lp_token_address": "juno16faph6xqdyp7guq5pd2fs6rhvxsjtf4399hcmglgdzrpg707e3yqu59xka",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -666,6 +723,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno19jlnnqvgehj7vex48p7sjfpl6te98els8ca6txrmvhesrlzgytcq0aankj",
     "lp_token_address": "juno19slke7wag7ujcxcgql7cs52xanefh4gyl3vxt04sxjggkph5nvqq0wqh6v",
     "lp_token_supply": "300000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -677,6 +735,7 @@
     "token2_reserve": "12"
   },
   {
+    "pool_address": "juno194590eq30cashthwyq7gfzy24k7zxge0ryqrk2dac8rkppw54xwsvz7khj",
     "lp_token_address": "juno1aewm0g7wpyn93tkz20hq3v70wvdhuwnehtutq5n8n9h5k072fepqjrp935",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -688,6 +747,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno19kh7apqqgp82qt4tec233metrrqy0zv5pq8shkh6ur2r3k7ulgjs5075kt",
     "lp_token_address": "juno1ksypenwngs5jx397vznv89w5kj6cava4sejmqncgn8lyfnqvdg3su4jsf4",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -699,6 +759,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno197de7r2mlmgey2zth29w9qcjfeapsm0s2gqvsjujwr0y6gt66fpquqmfzr",
     "lp_token_address": "juno1tha2ghyp3kmxauquk6c2cc8w2jua2kf7y0sgq2pj0062nwctfaks682283",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -713,6 +774,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1x9v4y4w4zp3tthv5h9wn6gqyy5gt9lyjesw857vts73qlq8m48tsxdyxkm",
     "lp_token_address": "juno1suzyuhpu7e8ulzhj2fxuazszvkhsxfjzllgdfqr74ueyew97k4dsjchrmm",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -724,6 +786,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1x85ss4shd83qsfc5qdpd3eqmpyj3c84p3222hwz4pr0wgdf4ftts34s3m4",
     "lp_token_address": "juno1dfr0y0e0ez2wyqgzhejgqcmm473sn5fvlce5a0p22fmjd73yuu0slf0xy7",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -738,6 +801,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1xf32js0lc6v7quxj5twuna97hwff7dhkz6psujavvknh2yzty5uq6wut8j",
     "lp_token_address": "juno1jzz4t6p2dpcteqay5yt4khyha0z3u3uhghzszv7c24r7pj02scwswsygzh",
     "lp_token_supply": "67046421698998",
     "token1_denom": {
@@ -749,17 +813,19 @@
     "token2_reserve": "4756516742"
   },
   {
+    "pool_address": "juno1xkm8tmm7jlqdh8kua9y7wst8fwcxpdnk6gglndfckj6rsjg4xc5q8aaawn",
     "lp_token_address": "juno1jq40jyxg57kumvaceskedcgsaje8tfagtpxsu8gnray525333yxsk8sl7f",
     "lp_token_supply": "4596255",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "21769781088",
+    "token1_reserve": "21769789444",
     "token2_denom": {
       "native": null,
       "cw20": "juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l"
     },
-    "token2_reserve": "5527115656"
+    "token2_reserve": "5527114316"
   },
   {
+    "pool_address": "juno1xhqrl6mrz2rwnsqfvl9r8qwedznf66lajsmnhnc88985thuaunaslf4atw",
     "lp_token_address": "juno1ymlcfn47gezrmlractf6m8pzu5t8vss5d472pp27gufe598a7lxs6y3uzv",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -774,6 +840,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1x7mgehx7eafej6ckxxsaahc9sv4vavnadl9ck7tlj5m2qxgt3tpqy4egp9",
     "lp_token_address": "juno1caw0c5szlnavakpyf9czn53htjkuktpvduw6wxejmcfa7u7ap63sza0e2s",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -788,6 +855,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno180jzqh7vefwuks6eyvf0lkecdl2mp8u08d844245faunja969p3s8w3t3q",
     "lp_token_address": "juno17sf282da63uwxfht9nuzslgan4jh7qvya0k78mc9v3muuckvjndsu8dy9m",
     "lp_token_supply": "14794927035387",
     "token1_denom": {
@@ -802,6 +870,7 @@
     "token2_reserve": "695749"
   },
   {
+    "pool_address": "juno183yyxu73uqzqp7gkz770ksm6m2kefuqjtlu79fl495f4accgturqn2y77f",
     "lp_token_address": "juno18fu7eflqly085nxmass9m5pll7gjuehn9ztmcza340yjteczfm7sxq6hk8",
     "lp_token_supply": "2000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -813,6 +882,7 @@
     "token2_reserve": "250000000"
   },
   {
+    "pool_address": "juno18nflutunkth2smnh257sxtxn9p5tq6632kqgsw6h0c02wzpnq9rq927heu",
     "lp_token_address": "juno17w75xxt0uxc8tsrcdtdkx9xgvspkzt7p5fz07lec4azjudnrjvcqhnr2kk",
     "lp_token_supply": "52555781",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -824,6 +894,7 @@
     "token2_reserve": "625346796"
   },
   {
+    "pool_address": "juno18mezc7x8heg23l3xrqgqrcwzthrag8a2cdwkrydfh487v5pvf8ysq90gcd",
     "lp_token_address": "juno1qy6ngwyevvjxmupgf7v55zr8sk65zahh7mdyjuyu6zv0e2342ansawjh3l",
     "lp_token_supply": "20",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -835,6 +906,7 @@
     "token2_reserve": "2001"
   },
   {
+    "pool_address": "juno1gpa5ardzal22el6czj4j0d2pwy0m9qj06lr20t2l8fca3gkws63qfnx8eq",
     "lp_token_address": "juno1fweq070y8lvxmtn7j3p7yltphg8uuksk7p875suwppyzg259rt0s29qgss",
     "lp_token_supply": "629913946",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -846,6 +918,7 @@
     "token2_reserve": "1256375066128"
   },
   {
+    "pool_address": "juno1gv2gswtan8wsk54h663waefffywnuc9wcxr7xl5pnnxvjaqunpgs20t39g",
     "lp_token_address": "juno1gj4rprgp9uvwx25ssez6yl2ll2z32fmv7a3mungqz5nxzqfpvrnsteqejd",
     "lp_token_supply": "9044223666",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -857,6 +930,7 @@
     "token2_reserve": "297946395852"
   },
   {
+    "pool_address": "juno1gd88sd56tzjvk7294g0cfxmt3mauv46w8xfr86prj4r3yldzl42s5xx75l",
     "lp_token_address": "juno1f0fzax2k376a4dscv9zq2a5ye6rm052rm0ez0437x263hx6ql6fq6ku0hr",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -871,6 +945,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1gj2laue2ujzdvjlplauc8nwffxe6rnmtjg02ut83xchsy5y9azeqvhdal5",
     "lp_token_address": "juno1e435dmr9vl553ay2k3743whvcvj48vxqpt6uqca7m6ld2ecldacqa36h30",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -885,6 +960,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1g6z3z2vgcckq9d8qc8q4608cm0slcvw0a6sx008e60sjz9npufxsqdmz36",
     "lp_token_address": "juno1l7edz4u69gn054asldv65s8cncfwtsemm07lftg4t7d9h5ccwc9qar5tyn",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -896,6 +972,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1gmtxzulcql0g8905px3l2z8065d70ua4c03mu3z03e9a0yz7vuss8xgzxx",
     "lp_token_address": "juno1krpd6uk74klzwe5g29dqpp7tfxh82c2guemagw4a3w9zx2jydmgsuk667z",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -910,6 +987,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1g7xvx9n4l4xv30p3040cykugncde3vvy7yjm24j8rs4rpz90r5xqk47c4l",
     "lp_token_address": "juno1w8kfqtmkwlppymth5xrexurwnrpffe0srt6g0xers0q5d0t7aenswnvztt",
     "lp_token_supply": "100000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -921,6 +999,7 @@
     "token2_reserve": "9900000"
   },
   {
+    "pool_address": "juno1glnstjavzp67tfz68045aylwgdy3tueuc764mwcp0x3ms3mx4ukq6kujeq",
     "lp_token_address": "juno125t6vwmg3s7u4u55pcjmcfjshgr93mkf0lumq5vx4umu306e98jsmhkz76",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -932,6 +1011,7 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno1fpphzkkq5uyezm7amk6sslyz8r94wl658zg2ku47v8mtslueyx5q29rkzq",
     "lp_token_address": "juno1cnggcz546d65mzya527mweksujwmkhhh6gf2juuzrrd4zu6n8tgswxh80c",
     "lp_token_supply": "502203936",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -943,6 +1023,7 @@
     "token2_reserve": "6287634761"
   },
   {
+    "pool_address": "juno1fppamm333qqu7hwes9qhq26maexs0s7ry0y9cnkyljl8zx0uef7qavhegm",
     "lp_token_address": "juno1af65zj7vx4r0fwllts43g7ayu6wx50qh9pdutcekw5yze40w8qasj8h89d",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -957,6 +1038,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1fzl79pekf8wtd0y37q92dmz5h9dxtfpl97w3kguyc59m7ufnlzvsf46vf8",
     "lp_token_address": "juno1vqvnmf4vpkkrjp9caahtfxgkcg2zcud3a7t6080rwzceusk8qxjs35n4s5",
     "lp_token_supply": "3639777215",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -968,6 +1050,7 @@
     "token2_reserve": "8779841208389"
   },
   {
+    "pool_address": "juno1fref96xgjpqeh7fss0qwxs7ytf5g97sf9ah76ck7l7q5awjm3paschpkdl",
     "lp_token_address": "juno1jssydgqzz9ds5pjtyhw2u0lc3xcvgfhr7ta8sw3muvpyq2w30wtsxjuxm4",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -979,6 +1062,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1fv5px6jd6lsfq0ln6yll3szwfqw6qdsgk35q0zl3l5fkwdprhruqq3ey48",
     "lp_token_address": "juno1t859v6npt2s9ajr6svp2tvs3n94g4sstp9mszshv3fujrvy6jkaq46zzax",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -993,6 +1077,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1fs6zzlkqme4lt6yg98hrk0g2d5x03qcl8k9f6ap3ghd46sd4fwjq33l7f0",
     "lp_token_address": "juno1c8v8ltagjpdkve3alx26c6za869rmcjn5aaxu2uugls6qq2m82gqpj3are",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1004,6 +1089,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1f3ppx7ghwfu96qrkqp5hjzlllfmj8h90v3ml4mmy4jtrl4z020mqmlc8tf",
     "lp_token_address": "juno16405h0470eghz407rsl7frkq7u2wsth3n760ahlzd5ar7j3ze4kqqulyyy",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1015,6 +1101,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1fhlthn58j7th6ykgvcl4c3tpyhgus5w0z7fzpat9klh7nv4tud4q77gmd8",
     "lp_token_address": "juno1yqahtf59qh33at90kujc6up6nqw98xk4k9vxr55qsv07hpn9w2fstqzepk",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1026,6 +1113,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno12p855epr89yfrlc0xrmpdcr96xrq2whtgy7h2sf2p84wayj32n9svtey4f",
     "lp_token_address": "juno1s7ncantu5ru4y706afalaez2q5n4ql4y9ca9090fdl582lgqf2pq5f62hf",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1037,6 +1125,7 @@
     "token2_reserve": "10"
   },
   {
+    "pool_address": "juno12xm73zsrw0eh5acrxlhjyl7p9ayal0q27t9ly0jgwu7ecr50ernq4a98he",
     "lp_token_address": "juno1vwx2nnj708zcktmjkpuzg2y8qy049y5xnwy0dakv2gc5gq9hqprs6ehdve",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1048,6 +1137,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno122uwvcwd23sef20y9ryl57h2y07zs6dnrkk4xwrucuvtdqlk4urqnlff3m",
     "lp_token_address": "juno1huc9hxkhtvmkwngehhw3ng5g9jjvxxkf8afayxmhtt9awrhllh5sheh8us",
     "lp_token_supply": "4",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1059,6 +1149,7 @@
     "token2_reserve": "400"
   },
   {
+    "pool_address": "juno120gxmcjc60zs2seufu6fsj8s3egcrj8zaru9834nth3y6pmxc9xs3masz3",
     "lp_token_address": "juno13n2pv4ka497e4y3vdyregy88xfs9elarkkgqeje26q596s46330quh3dkc",
     "lp_token_supply": "14638929",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1070,6 +1161,7 @@
     "token2_reserve": "5000000000000000"
   },
   {
+    "pool_address": "juno123ck9egd7mcngdt5d4g9snz6pt3e8xmn7p72cjm8yalv4ydh93zqz2zpev",
     "lp_token_address": "juno1th8k8sagfwmapzklsag4qyqspluxdz0pr3rqxrrugcjqgd3m7pcqezr9xn",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1081,6 +1173,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno125cfdrefpmvjehwdztfahfclx3dp6a66panqgvgg9rgu4nns80dqkjv0dw",
     "lp_token_address": "juno12nrp4lhlz9u06mp5el2yw29dafkrhxh9lwk4fj5chevfwrtpeqrs24z2v2",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1092,17 +1185,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno124d0zymrkdxv72ccyuqrquur8dkesmxmx2unfn7dej95yqx5yn8s70x3yj",
     "lp_token_address": "juno1u57ju64c5qdmkrjgch2e3amutpjqrez6cq0jp7h2pytuthpfns7s4jln57",
-    "lp_token_supply": "1841478799727",
+    "lp_token_supply": "1841560213258",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "650733706772",
+    "token1_reserve": "650746094504",
     "token2_denom": {
       "native": null,
       "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
     },
-    "token2_reserve": "122659814358400"
+    "token2_reserve": "122668336709956"
   },
   {
+    "pool_address": "juno12eceq2gfdxuge3c70cf3pa952uktjkqacesw50cdlx4hfkvrz7jsynm2w9",
     "lp_token_address": "juno1jkdxz4n7p43uk8nvdjkq4rwmax53pyy3vjd6w9w7xpfqtunac2gsxjjtcv",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1117,6 +1212,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno12m8cvcxw6c0np5zktu5rhg0defzesvma2k0tjuprzdydtzu7wsvqjgunp6",
     "lp_token_address": "juno1c945q6yafkrlkvpddnq4numcjyc4nhm5w4tk8eervcvmade9mwfs56tlrp",
     "lp_token_supply": "10",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1128,6 +1224,7 @@
     "token2_reserve": "10"
   },
   {
+    "pool_address": "juno1tdlua8353uhls7jxwnak5dsnurwynzjdrwpl0c9vg0sagwa0httqquvgwx",
     "lp_token_address": "juno153u6lwdfszn0uj2au0gtu74vlwaywll70xy3rfwl5t079qc283gqd8ufre",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1139,6 +1236,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1twdwn57td4z703c8da75hjsylcw5etpvdv8drwsplxx6re6472ss76p7ey",
     "lp_token_address": "juno10vth9ac8zstr5k6hxfdyflag33xw84wsddcg36vad6edz737y67smh0egl",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1150,6 +1248,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1tsldfg79nq86kyp6kv5r28wpkcajdp36cm8gfquuy46uppkc4dws4aktgs",
     "lp_token_address": "juno1k88l4wgvhgday40u64gt6peh9qtp22kt39ffn3qgnezkx44wwjts6snffu",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1164,6 +1263,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1t5rcnn4cpdtkmfppyv8dnrdmfenmjmeqzzjfqa3kazvwq8dnunpsfkqcty",
     "lp_token_address": "juno1agftygx73p0xgwphc08jpz5w466zskjh2n8fa38mq3sddw8n2u5ss6yara",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1178,6 +1278,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1t5uhk3s34jy322ps4z4ffwmzs2zraqh8whv2fze20kq6avclpu4qgdswq5",
     "lp_token_address": "juno13kys802wnpzlyp57uyua3zaa0uvmkv0ytmcjqsax8ea3cysm2wyqsxnxn3",
     "lp_token_supply": "143151343383334",
     "token1_denom": {
@@ -1192,6 +1293,7 @@
     "token2_reserve": "57006808530239"
   },
   {
+    "pool_address": "juno1tmxx3rdnnrcckkh7pjde924lftjs724rzd44sqte5xh8xax0yf2sc7v7dk",
     "lp_token_address": "juno1plauy5jh7dggc0pvcduaaj4slk7l9w883mecxkew7xaff6uzmztq4d0003",
     "lp_token_supply": "1524525566",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1203,6 +1305,7 @@
     "token2_reserve": "17382827638"
   },
   {
+    "pool_address": "juno1tlzh9mafkn7surc6m6uzvhs0jl488yajdxchkw0tm4qtj29tvuzqejlygm",
     "lp_token_address": "juno194849tezdvn8hkx085x9rtwr5fq0rhgr9769jttwg8424y6lf5tse4v04m",
     "lp_token_supply": "50049600000",
     "token1_denom": {
@@ -1217,6 +1320,7 @@
     "token2_reserve": "841448"
   },
   {
+    "pool_address": "juno1v8dgc2lzf83xhgv7u3dcr5xg30s7qrxej7k8dsf7ytkfv33462ksqa7r24",
     "lp_token_address": "juno14kzlep8ms5qyxvnp9au7r0hvlmgn7xzlqtt2deqvcdv9c8m42hgq6c8tjh",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1231,6 +1335,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1vjrmh8n3xk2mqq7dkd8z0y0nhgvzmkzdhqnz5pf5a6l6jk38rm2srh6pwn",
     "lp_token_address": "juno197vvek2xxnnk596ehass5p4ne58ge4g4tsp5dh4mdk300sawsm7st5mate",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1245,6 +1350,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1v5r8q0pywqscvykzfqkxnqv2nnahy8deglpq59qa9f2yqad2v2kqh0wmxn",
     "lp_token_address": "juno1ey0023t9g3d6vaqx9szxjhewf80rhedvev4tutgs76hcy6vtuuuszg39yg",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1256,6 +1362,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1drg5j9ft48shh9zplj5t9jwdjdcvx5twmxsfqvv9rf3m0z4f35gsf8lxq9",
     "lp_token_address": "juno1huzrlas82l6cjtpf3cswqa4r8ykqwl5dldr595uqxt4hjdp2ayxqg5jcku",
     "lp_token_supply": "100496",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1267,6 +1374,7 @@
     "token2_reserve": "1009987049118"
   },
   {
+    "pool_address": "juno1dvtr64ra58mu2lffya38jlw673rat33uw73jh8dxvhyy9rz8afxsguzys7",
     "lp_token_address": "juno143f75700srn2efqjausw9vuyfhrhnfsj9hqw2n9qnaawck97708sw4dus2",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1278,6 +1386,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1dwyxnp00a92hvk6pj9wz0pn9vxvj0la59tyzh5vhj6makalv5v7q3vmc3d",
     "lp_token_address": "juno1adv2v2gzefhxurdh7ywvqchhyf22zj2xajk89kgx25t26klydpts6m4c52",
     "lp_token_supply": "5000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1289,6 +1398,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1d545c5x0rt4lgz0fh67aq2jhv93kn7y8a63g6avtqjykeutvgtsqxzsjqd",
     "lp_token_address": "juno1k9wmqydnqmc4w06jgsqfpsrq7r38ccuswy3nzlw0eygue6cxzx9qmvekkr",
     "lp_token_supply": "1377318",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1300,6 +1410,7 @@
     "token2_reserve": "10584638"
   },
   {
+    "pool_address": "juno1d6xs8za2z7r8jnjpev9valt6gmj69ggphj9n8930g8rz2mrfde0spnppdj",
     "lp_token_address": "juno1cmmpty2dgs9h36vtrwxk53pmkwe3fgn5833wpay4ap0unm6svgks7aajke",
     "lp_token_supply": "20000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1311,6 +1422,7 @@
     "token2_reserve": "20000001"
   },
   {
+    "pool_address": "juno1d6tpwltnpkjud35dvmqmv7cpharn98l8895cx3738x4cy309w3ksa9mtqt",
     "lp_token_address": "juno1x6ncr35fp7zmfesrkh6asqfpvw9u3rt2yune69sreegqhscf02zq3cu8wf",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1322,20 +1434,22 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1dug89d22vtu7v27ee9gg4xq5seu2tu705d6eh3kmvh0uvy7depaqg45qdj",
     "lp_token_address": "juno19qetspgghczk5hvw3su602vjqqdhgl062eftgh897cdka6lny5sq6yhmg4",
     "lp_token_supply": "27627494181995367",
     "token1_denom": {
       "native": null,
       "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
     },
-    "token1_reserve": "1277367492659385",
+    "token1_reserve": "1277365973235349",
     "token2_denom": {
       "native": null,
       "cw20": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7"
     },
-    "token2_reserve": "209542208920948656"
+    "token2_reserve": "209542458920948656"
   },
   {
+    "pool_address": "juno1daqqvkpnrctgal6dkkh76d0ezlmd6azn8gndps3umm5vc8kujw5qq4jg60",
     "lp_token_address": "juno16cwtges6p3pqpe6q43dlspa93rrnl6632qw96vagcnwk5ah8fp9qcmxrlz",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1347,6 +1461,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1wyrlpndk5gr2dzhwhhux8zt9nn00u9yenkzqd7ldvpyvymyls4hszza96v",
     "lp_token_address": "juno1qhtlkk2r2wfn05pj0dqu99dyg0q0hht99hvgeqjwegs9gxtfmt0sarnjuv",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1358,6 +1473,7 @@
     "token2_reserve": "10099900000"
   },
   {
+    "pool_address": "juno1w9m4er9dflyddpf9y0cxx2awfmmkr06nvt6fdqd2dx5x0ppjgs3qggmumu",
     "lp_token_address": "juno1vs2j2hzzy7msfdwhtghquz26m6hww2vazchgjyns0rltghhf4vdsv6td5g",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1369,6 +1485,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1wxgxsyjp2dupujtdzg7sw8eeqt0td07wy5qpsyttca2vu2crglkst7m2n7",
     "lp_token_address": "juno12lqshf0g3j49krtwxrakcz229ur6jn03vhnn7du55w0q30wnsa8ql8pqur",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1380,6 +1497,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1wdfrzgyl79r4rqhjzqn2s4pc446004wrtsnjt6fkz7r4zwg4ptcqttzu2u",
     "lp_token_address": "juno13e8nz9ekzvvh29vjwa3806cp8j9qgas8r6teuc8f8ky6jvddvmpqjkm383",
     "lp_token_supply": "23093487869537",
     "token1_denom": {
@@ -1394,6 +1512,7 @@
     "token2_reserve": "2900434511"
   },
   {
+    "pool_address": "juno1wjpdhpv7x5cusg028xglazr8ldxr7cnm0tss8sd9pg4r959rlgtqjkf70x",
     "lp_token_address": "juno10v5rhl4rth8ce77rld5m5wm79apxqjctkjquwx2qgrs9npvtjlqq5syjxw",
     "lp_token_supply": "783082101350222",
     "token1_denom": {
@@ -1408,6 +1527,7 @@
     "token2_reserve": "408095083"
   },
   {
+    "pool_address": "juno1whfwhda5nxmyng95jsw7782a92cduh3698v9fkp57qv67qm4s78svyx6pd",
     "lp_token_address": "juno1uw6jh6zvwz3265xyh4r8zydm44s7mqup89nzkmd0k5zh9n52tztqmj90vx",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1422,6 +1542,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1wh5ph8n6y5fg42r28y89rznnzncmakec6gckjtcxwpdn6wea7w5setv8az",
     "lp_token_address": "juno1ykrjv7x2y33djgnpvsnd2y3ksus0z57wr7edy9520cdane4wyghqyvsdsd",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1433,6 +1554,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1wclw3zyfpa0hg6ldwp5u0r94jyxldwa795s0kum9emucefdj83qqpdns9x",
     "lp_token_address": "juno1s3t9dm8yk2js757eq2hcpv8ksur0rp7ah0lqdfga25w4p8f9c3gsdqvn7w",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1444,6 +1566,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1w6czf3n0vnezwqxp6rldg9mpncsary96lme8eu7wcnqghmjwc40q5mtmq5",
     "lp_token_address": "juno19p9htk4ua6jzx05r9kg8m504tzwgahjqe8vnvdke7guh55w5ww0s5pq2tr",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1455,17 +1578,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1wuu8nwr37kmg0njg6p3ag7j4qcm08vs6z9e9j28aendnfnuxmd3sc4yrhm",
     "lp_token_address": "juno1jsl0d3e3ncrzmkyz77kkkcdpu4r638l35jpzs7hmqg5g7ypwwsnsln5hvt",
     "lp_token_supply": "921849926844404",
     "token1_denom": {
       "native": null,
       "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
     },
-    "token1_reserve": "4234698566485984",
+    "token1_reserve": "4234700311961776",
     "token2_denom": { "native": "ujuno", "cw20": null },
-    "token2_reserve": "956334988"
+    "token2_reserve": "956334596"
   },
   {
+    "pool_address": "juno1w7l7hetsm4x6hxa55dsjwszqh9elzwqrd6cud2qkqhafrd6u9vrqc2zh48",
     "lp_token_address": "juno1v7y2wgj4d45t9kcl7qtrezncxr5k6anjqx4avv22s2rj595av2qqrpyw4f",
     "lp_token_supply": "1287672850",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1477,6 +1602,7 @@
     "token2_reserve": "200439785012"
   },
   {
+    "pool_address": "juno10qxx8a2kvjyq88ks7v4q5nw6847jt54c6am5xth8x3dmm0k4rh8st2h7g0",
     "lp_token_address": "juno1p9dttzfkc86rld3n3420tht3az9avz56txs3lzjd5wvcw0y7vwgqgenjj6",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1488,6 +1614,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno10zr62fmrkum7hgjstzt83e7amgmjzpnvcm7zhmgnrg8phf3rhs2st8klua",
     "lp_token_address": "juno1jetpvsd2azlf8elqcusd4jexhfhv2fh7e4j4wefxf2vq7zmy3hjq6ksd5j",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1499,6 +1626,7 @@
     "token2_reserve": "1"
   },
   {
+    "pool_address": "juno109u5kfeh64tlpspa5nlshsdl4kyqsu6aj64c4uz0mkxc03me4xnqv0vnph",
     "lp_token_address": "juno1ha2j63000054x40eqhdnwa34nkx5f087vdl77lgdhezw58ceksvslsnrdp",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1513,6 +1641,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1029mryzv9sdg0cccgsd207lsc8sle77r8s7fwwkvs3g32st5fzkss3tk7s",
     "lp_token_address": "juno1clhgcnlkg5p29rxgrtgj4ljq72ajya53mzl36098m9kqwu5ypn0qeq8x9e",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1524,6 +1653,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno102uzz4rv36jz3etylangunpe7856t7lvyhdtgr2qughq4su0tlds8e2856",
     "lp_token_address": "juno1vqjp0u07thp4ddufd04r5ulpssj8qe3j3vd2qvng6cu6qd7gk4xsn6hqq0",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1535,6 +1665,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno10ctcmnvtw868uz09yp08vwdvpulmtwkav93d3mwtahcss888rysqezagge",
     "lp_token_address": "juno1mnw5k7ux8z9sg6vxwpvqt4l0ltj9tcnq4v6u6q4aarrs6vy3jggqlaqw9r",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1546,17 +1677,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno10mrlcttkwt99wxnqfyk6327lq3ac9yhfle2fd0c5s4rp8dzqy9ps3sjzyf",
     "lp_token_address": "juno1jpdjyc3c973frxkjkmvgr5ececzf9qslzrunxd2xkstem8zr338scnzt27",
     "lp_token_supply": "7011013843",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "49096827",
+    "token1_reserve": "50369947",
     "token2_denom": {
       "native": "ibc/8F865D9760B482FF6254EDFEC1FF2F1273B9AB6873A7DE484F89639795D73D75",
       "cw20": null
     },
-    "token2_reserve": "713153607253"
+    "token2_reserve": "695181310463"
   },
   {
+    "pool_address": "juno10ug9jn9pzwm0rmd3k880mx3yaaud0g2hvmha7fl8hrc2nz9l4kescekm2y",
     "lp_token_address": "juno1d6mqh2zjtrwv3dd6dmfxamlrgwnzjyh5nurfj9uwjetsfw2adzyqdl82uk",
     "lp_token_supply": "1174604",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1568,6 +1701,7 @@
     "token2_reserve": "9000000"
   },
   {
+    "pool_address": "juno1sy7ef04nqsef6heldt4998p3yxph6fq2gd339yxhwj393gvjemyskdc4qd",
     "lp_token_address": "juno12attnuv682ycd0amgs044pkg6vgu68nlhm0ve26vgq45s3k0vzxskqpkrf",
     "lp_token_supply": "100000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1579,17 +1713,19 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno1sg6chmktuhyj4lsrxrrdflem7gsnk4ejv6zkcc4d3vcqulzp55wsf4l4gl",
     "lp_token_address": "juno18ckrreffz9jwmkw84axsvncexfqt7gpgckskk0yy0vzwm9huqkyq6v78xu",
-    "lp_token_supply": "981755982539",
+    "lp_token_supply": "981894103434",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "1182167466620",
+    "token1_reserve": "1181795092052",
     "token2_denom": {
       "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
       "cw20": null
     },
-    "token2_reserve": "352490181251"
+    "token2_reserve": "352701183591"
   },
   {
+    "pool_address": "juno13qlt89h4wwufpvwrx8jtrk55fkcdlkamefxun6yq63snqsp36vlq60mdqd",
     "lp_token_address": "juno16yuczc7h9af7h0jsgctp5s0zayatzznyl5tx9wkhc3qdxnhmw7aszqyvkw",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1601,6 +1737,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno13zlqnzx66hekutwcwp6c2uysjjhjwgycjxtz5832s2vr0zahwlvs3xhddj",
     "lp_token_address": "juno1stm70szzv39ffwtuxjrz6jnzkdgenc4t7pdwk02eudw23fawzwsqq60p3z",
     "lp_token_supply": "4000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1612,6 +1749,7 @@
     "token2_reserve": "400000000"
   },
   {
+    "pool_address": "juno13r8ccgszy3x4qsck3k02rn48ceux4tp8sl0kzumeuedsvgdekg2stvu345",
     "lp_token_address": "juno1yyt04ac2n9l03sqpj6glkzz0jxdfca8uqsetjzjw9nuslugshmpqmf96v8",
     "lp_token_supply": "23002312",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1623,6 +1761,7 @@
     "token2_reserve": "250000000000"
   },
   {
+    "pool_address": "juno13y55famn8ux22m05zzmxkljdz29p6nkhu4sy7z3qyt88usjmxxeskwm8v9",
     "lp_token_address": "juno1t7r3zut9j6ztvhx0y4shs0xejaulnvnjhqlf0uj6vyh48twyxrlsu8dknr",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1634,6 +1773,7 @@
     "token2_reserve": "1"
   },
   {
+    "pool_address": "juno13xfk3xuak28p0qswtaldc3h2mdt9vga5ln0wyqycpd9v8vmfyats9zzjf7",
     "lp_token_address": "juno1fvu2ektv7ja0rry4ed7wluzu327mvqqtzplq7ymdxq4q0es8ch2srg7jwd",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1645,6 +1785,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno13dukr9csj3jqvp2zu832lpmcuprngmckwhe9f2pvhn9d9k87gt3qnplfad",
     "lp_token_address": "juno13knsffyw7zjdcxzzdt4a5588ntkm6n3843rzect8qn36r0lk5wjsvd8mxc",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1656,6 +1797,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno133xa84qnue3uy0mj9emvauddxzw554rfl9rr6eadhfau50ws7gvs4ynm79",
     "lp_token_address": "juno1khupy0j42e4xlc6x6qp70gzrf80x90m9ff0067l2zyn3qdg6djlsw8h404",
     "lp_token_supply": "305098483",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1667,6 +1809,7 @@
     "token2_reserve": "1954521"
   },
   {
+    "pool_address": "juno13jtr5avmue4xcfn4vkjw9yep3nr6n2zf97cx9q9928e63lwg5vase3ce0x",
     "lp_token_address": "juno1965n8asupl7v7yndwpvgp74r77p9u8fmgn4fu0j2rr47pdxeames5mpknk",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1678,6 +1821,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno13ng6n6q9ruk4plkshsju660c3hgmzurjeptvg93y747yxuwvm2ssdsmn2f",
     "lp_token_address": "juno16rqzreq72060dnnajry92khd444qpxacyw3rxdfwygav4uvcr34s4je9c6",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1689,6 +1833,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno13k5sfk6hs53sjltc5mu4evp2z7x4e8vcmxxzah525z0xukmk0hfqc6lu6d",
     "lp_token_address": "juno1hxhcknlvsswyczva8zhm7fueslesd0qrvyrmtzh9tg7wcxxqrcjsra29nc",
     "lp_token_supply": "1000001",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1700,6 +1845,7 @@
     "token2_reserve": "2"
   },
   {
+    "pool_address": "juno1376s6hcnctnw6k42fpvzy02mu5mhzc6jun2fg6c2fzsseas3grcs55wy30",
     "lp_token_address": "juno1df69wjkwuzyzm66fhlfr9hucc4llwn6m4p3v3yqz60mmessgeg4quzw83s",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1714,17 +1860,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1jz50fj5zkcv3h6hmcfr3nr6eer7rj5pmsry5qj5jc8rfvpeavyzsgknm83",
     "lp_token_address": "juno18t52fyupsh8fu48kufyqwneks4enr0u2e0gdvwzvsfravvmkszmswj32nu",
     "lp_token_supply": "1063268742",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "3281710979",
+    "token1_reserve": "3284874763",
     "token2_denom": {
       "native": null,
       "cw20": "juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k"
     },
-    "token2_reserve": "241929970716"
+    "token2_reserve": "241697657649"
   },
   {
+    "pool_address": "juno1j8klycgel6knuwsksgslaunlrmvw6hpqumldpxjw8rrvtnxs9m9qqqeynl",
     "lp_token_address": "juno1k82a6nmydug0pg4ep7qed9xhsxh668wlf6ph9wky7c8kycesd40qf6cx04",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1736,6 +1884,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1jkwpfmmqvrgzvhk86hnerxnns6qefa667654qgnjmxhtwrxxzq8swwwxfx",
     "lp_token_address": "juno1le9w24cpulmr48jy9wxg38khkg2ulwj5y7d4qfhr8uhd66vecmwsql2995",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1750,6 +1899,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1jckkjg73vp5djjm0ujd8xha9q2x8xte5yhx60gm2pkha3x7szrpq0ys7zm",
     "lp_token_address": "juno1khc2nvhkgrdasedjyw6pesnhsnk7tu3aymeg6rr04nyq5w5yq7nsj6dm0c",
     "lp_token_supply": "59706",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1761,6 +1911,7 @@
     "token2_reserve": "481380"
   },
   {
+    "pool_address": "juno1juw0rz70afg995jnptzmy4h2elrrml7p6t04zk2jarqurutlm0tqagt8zz",
     "lp_token_address": "juno1r7cxl3vs6vt6z6ryyx6dwwrj3azcuu686j3yzz3sp2wp3lpg8w5qzjqyut",
     "lp_token_supply": "10",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1772,6 +1923,7 @@
     "token2_reserve": "494999992"
   },
   {
+    "pool_address": "juno1j7pdtemw0qvl6rmnl0sf324409gz2p4sdt6rv659482x9rqqz6mqd653dg",
     "lp_token_address": "juno18hu00pwvd8kq0cgzk03l2nmp8rr0h5gp6tektz6qazwfapqsl4cqwfgdsv",
     "lp_token_supply": "3073390147",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1783,6 +1935,7 @@
     "token2_reserve": "296146234636"
   },
   {
+    "pool_address": "juno1npzyc49ew66y7ft3pks3fh8nplzrdzfkhv55mdmfp52qz085g4yswrdznd",
     "lp_token_address": "juno1z8jpy9hhs32ncdtcs8pu667v7rfamhsfmytctcg2s0sgcw9c98ps0k683n",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1794,6 +1947,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1np9amrmdffxtevqptjswvkcrdhdmzgura6nltswwkkp0kgs3teuqhsg3hh",
     "lp_token_address": "juno1ncqj9jtldsscxa89crgm5js2wmeyl6kfp39k6ypxnyel0tvtyxfs04sw57",
     "lp_token_supply": "7878",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1805,6 +1959,7 @@
     "token2_reserve": "50000"
   },
   {
+    "pool_address": "juno1npx6t0tenwkrwaudc0hfl7sw5j0qvqdw7n79w86d3t7rrywfz77qdhmrvq",
     "lp_token_address": "juno1fe3aj3pfs0qk7u6gw7tjz80t6k0kws6j6lz4yy9atrg2hyt5e9rstrwxsk",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1816,6 +1971,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ng763g6zcl3rtuz37xhelz4r277tsua0dszqnxekdndpp3rrfuxqr480l0",
     "lp_token_address": "juno1m9xw6dw4l7gu6p72raxu5nepw08uwuzzvrc26jg8887k3xe2gm4qafsdc2",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1827,6 +1983,7 @@
     "token2_reserve": "1"
   },
   {
+    "pool_address": "juno1n3ncclg7pz6sn8syhahg9t6w0a8atetl2prcucze4nvlmgnnhfnq05yhhl",
     "lp_token_address": "juno16584w044d7yg27u5drp9703tq6akw7pneumyxw4k99mgjt4z9usq8ek08t",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1838,6 +1995,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1nhuesnm7tk2c8tzgemgnav7g8c66zuyzh0tlf4x2uzr6gjj2mdts9udpc9",
     "lp_token_address": "juno1gmj9ny4dckleaw4z8fne7tu4t5duznz24gej357lma5d94luzp7qym22pw",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1849,6 +2007,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1nljy8gst5agtc0zstfjytf2hrnj8vcxgcdzrp4qj7k2dcnrfz4wsu6ty4f",
     "lp_token_address": "juno1eqj3unwgq5najlyzyjtqdjjqx9esxpmkv2gffjsvhyszasyzwejqerpwgl",
     "lp_token_supply": "12745981002050",
     "token1_denom": {
@@ -1863,6 +2022,7 @@
     "token2_reserve": "313578477"
   },
   {
+    "pool_address": "juno152lfpmadpxh2xha5wmlh2np5rj8fuy06sk72j55v686wd4q4c9jsvwj0gm",
     "lp_token_address": "juno1s82s62c3q5cnjfhcqmvthjd58t6jetxmf8rxp9xmqmyy05fu2qusp9fg97",
     "lp_token_supply": "1795016679",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1874,6 +2034,7 @@
     "token2_reserve": "21158042204"
   },
   {
+    "pool_address": "juno15v6j408f0g8zehczddht3m7kfpz4kdxf60wdrrx4wj8fc7t4k9tscq0zl9",
     "lp_token_address": "juno1kvjnmpnxhy9rynt0s98r8dkxd5yye8ygfj6spdd0huq2q5he3p8qryfhhs",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -1885,6 +2046,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno15dss3qx9vpxj34jr99e7a6tqs7y47gz84jtta0cjhq240gnde8ns4rhjem",
     "lp_token_address": "juno1a3x7hh5jmmyzmy2t5jj948ekmun732d2tqesvemwmmhkldrayy4suxdn2n",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1896,6 +2058,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno15wtwa38sk4qhdmg67ndkwdhgvggytkcalek9n3nsphxu9t6mvhvqk20plv",
     "lp_token_address": "juno13f5s8r2lldnzpadf4ptel0ywun60crpx099er72red6ghfta9mls2k5j7r",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1907,6 +2070,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno15nd7t2nkjlvjcm4c66v69vk0yf7vlua7lm8vqcze9f268w8j0mws2wqdvh",
     "lp_token_address": "juno1qn8vrqqgsrz20lpcn3n4qlgg3duy7wjent94wx0ntzr4gnn9r0vsmrqn5u",
     "lp_token_supply": "10",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1918,6 +2082,7 @@
     "token2_reserve": "5"
   },
   {
+    "pool_address": "juno15c2gv3h3w2wgkfz4symtrjzeha83zys8q34uyg3t3myvlu7v7xkqlew743",
     "lp_token_address": "juno1yvz849sw4wp6564z252weu4esdsvvm7ezqxvtkksakrny4ewq8usrc8803",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1929,6 +2094,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno156nq0ps5a99a3xcdarlac82w3h2l75jdxxslze2r72gwxp0qed7sw3j0h0",
     "lp_token_address": "juno1pdewu4zel0k5shqsudwjavdv6ffv6xx8aj2we7d434w4krcvdcwset5ezj",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1940,6 +2106,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno15ujwmyl6700f2xncgs094gzv4jp3ej50pd6deqlws4vz0r4v4r9sa8pjqa",
     "lp_token_address": "juno1t70t3uph72s5nz00298nhr8jgtwldmcc8ylcmnyd64e3fu6spymshhmskr",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1951,6 +2118,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1572zk45sjrhrtlq6d4mdkyr86sas3sp4768fkp7k7hdvfmj5ypyqe7g5mj",
     "lp_token_address": "juno1j4k7l7drvu2m7t4g9rfpqt8j37zz7qvpe047wcer2v56ezlk967su4q5nu",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1962,6 +2130,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno14p3wvpeezqueenfu9jy29s96xuk0hp38k5d5k4ysyzk789v032sqp8uvh3",
     "lp_token_address": "juno1g62krgjk45ww5kle0nxugxfl5rskse5gd6zgh8hazn87uf8l942sfpxm8a",
     "lp_token_supply": "42859084",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1973,6 +2142,7 @@
     "token2_reserve": "1358940785"
   },
   {
+    "pool_address": "juno14vtaw8gx6zv0pg8cf3p9d5jsfq2fcw7vm587h9csc3muw64cltgsjnn502",
     "lp_token_address": "juno15r5qxwrkr9dxussagzq6vgs7c4ade2fyyr4fzzns7g3v24048pmsl3dcg4",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -1984,6 +2154,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno14wh95tv40z5jd76ppxv08jzpqr2lfvujl9tvxj0zac5tx3sfjdqqvuzs5t",
     "lp_token_address": "juno1p4y3la4h4ckmsndsgrhvs90f2vtsw8t3edehj39dup768r5087nsmt6kzc",
     "lp_token_supply": "1111287343460017",
     "token1_denom": {
@@ -1998,6 +2169,7 @@
     "token2_reserve": "4487248547397007"
   },
   {
+    "pool_address": "juno14j5wq74lkh5a8qhuwfxsheh9nwdp280c92yts2q5jjtnygehggnq4u0kyz",
     "lp_token_address": "juno1er9hvfvupl7gwkvlhlzhew4f64la4zsnh74tljuzc4yx5sx2z6ps3vsa26",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2009,6 +2181,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno14nak8v6xeawstrq7r7qmpa67qqfc9xzzymfdfpnp0luycv8knyuq5a6w2m",
     "lp_token_address": "juno15jjyzdr4e9jc6ztnpdev4xzf5zzg0wm3tx96szn320r6q2nvgj9snyx0jc",
     "lp_token_supply": "99471594",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2020,6 +2193,7 @@
     "token2_reserve": "3605960842"
   },
   {
+    "pool_address": "juno14kj6l9k0wcgxvlvlclw4f0p5zwx7dtvxy74azt32um7f36253nfsvgrn22",
     "lp_token_address": "juno1dsnvfvsfhmwtkpmyjg887wyuhmlcsxz8v25xrq884d52cfkdky3qdwam2s",
     "lp_token_supply": "365000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2031,6 +2205,7 @@
     "token2_reserve": "50000000"
   },
   {
+    "pool_address": "juno14awv3w44zyv0gzj9s2mzsmfre3tmd4306jvq6hff9lqj4gkdtpjsakw75w",
     "lp_token_address": "juno1t5acdsqh3dxh2jesjgwf528r20hf8ge0vanpgc0dyycftlj7htgs4ed6tq",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2042,6 +2217,7 @@
     "token2_reserve": "3000060"
   },
   {
+    "pool_address": "juno14l6zp52acap8w3dn8v67ettuh4u3sualxyxuw70gujcpfxfhw72q7k3m92",
     "lp_token_address": "juno1gcvsqfe6ztw036zys7zxdpttkyln2lhjd7eeffk5ehxwxcxvpresr8kv4g",
     "lp_token_supply": "191000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2053,6 +2229,7 @@
     "token2_reserve": "250000000"
   },
   {
+    "pool_address": "juno1kqqt4vazysym6v3vdq9ws5zxzk8y2zcgpxrf2g5efresvq9y3ujsupt82e",
     "lp_token_address": "juno1ynn8ut274p3ejs6w4c050dc3qpygt28mhtfly5nvjkkq6mnxv8qs5zxz8y",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2067,6 +2244,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1kfvnpswxzltw73qzug03ps0wpz2rr9965d7zrun3k0vhg82vn33qzhyk9v",
     "lp_token_address": "juno1qn4k8te7w7as5fjgl53m6efvvgchycj0lk2lqtvf9vr0x4n6yjxs86wl39",
     "lp_token_supply": "10000000",
     "token1_denom": {
@@ -2078,6 +2256,7 @@
     "token2_reserve": "23000"
   },
   {
+    "pool_address": "juno1k3guraedhr3muefdxhhcp2mm0mkmru6arcvmycxrglfuzmefyupsh5455m",
     "lp_token_address": "juno1wa7va2aehdmuuztndmsst5rmlkdrysf9jz5p4tz237rj6hmyq84q3r7t6f",
     "lp_token_supply": "10000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2089,6 +2268,7 @@
     "token2_reserve": "10000"
   },
   {
+    "pool_address": "juno1kmgxv9v3v57nwaeel689jvtwjma7sk279hdjcyalyahtja32zn0q4gwwjy",
     "lp_token_address": "juno1f0n5cyl7tw346fvk6dphuhk03feea3az6xlfcu99qu4s0qpra9jsnzlzkp",
     "lp_token_supply": "4",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2100,6 +2280,7 @@
     "token2_reserve": "400"
   },
   {
+    "pool_address": "juno1k7f39frhk2ux8dr600aa90h904s2mtlkzyjlxnmaatr8gfdv5trqpxffeu",
     "lp_token_address": "juno1933yvdkw0m6aywunkledsk4yph4lrx8fxs72tzsxf9zhyz7ps8cqurda47",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2111,6 +2292,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hpfjz8xu9vhsaa56uv3vsh4f8d3zf2wxlmyzhmxnx685xf20ag0q24c5cl",
     "lp_token_address": "juno164sv6qpvtctgdykt7dl9nrv0pzekx9ssfkja6unntzqwcsa27y4s3kmnv6",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2122,6 +2304,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hz9gum88zsl8aqk6c68sdzjwa465dud8pztjmlq0tgakrcxhhjvqn60kx0",
     "lp_token_address": "juno1xr7s0wlu7xetry5ftvp63gw2e3fuu43n50q0j0ht2323ftfc8usqc3mzl6",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2136,6 +2319,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hyp87lafnv5udmldfqa9nfm5gya5tttyhefm64a8kwrz5um9jh6q7u8z7v",
     "lp_token_address": "juno1h0m8lsz7flfzl4ep7sae08tjxejry35s3qujthh3x43adzzqugqqlte9um",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2147,6 +2331,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hy0er7upwzcwu950de6gehuwre3js0l5n4kwqhltrnh23mkc553s6qvcty",
     "lp_token_address": "juno1l9m04zxkyv9xmygz9q54w6ny05j8y00aptcapkqsya06fw0qpvtqm62hhw",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2161,6 +2346,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hghzqvuxx8n4cm23svx4mfxq00r3j6dufd88rj424azqlwecmces8fxh2w",
     "lp_token_address": "juno1jnsuf0gu78syf95rretjmndhprp0a2phwyct8dlccz39ryd8nxrs504qh6",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2175,6 +2361,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hgu7thj0mxrrrc5vfsjutw8c0lhvaetrmam065mt70kk7gj9s35sktthxc",
     "lp_token_address": "juno1ust6vy5j8wsg3dylhpgsnmjhepajy3tlsspfv5s4awglkg7myzlsarq0y9",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2186,6 +2373,7 @@
     "token2_reserve": "10000000"
   },
   {
+    "pool_address": "juno1hw5e5knegyd6h54eu72pmff3awe7ty42z76e7ycd5l57mp9gnu2s9pw567",
     "lp_token_address": "juno1qsxenq4znvv8yujz25hkn49s2rhlxp5c2s0q24afsk4guz8qeptq40w505",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2197,6 +2385,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hjkz4t0r8wt7yeyw8xfw3ds0559zly8tle87e500alrgtd6zclyqvvy8cl",
     "lp_token_address": "juno1fv98m43f4rpcjwdt0ase0xak9ap6m5zrkavcj8qjg8dne4jsm3fsg0xcee",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2208,6 +2397,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hkz5dhn59w6l29k8w8ceuramqx2f35qpen7xtlx6ezketwh8ndxq8rwq2a",
     "lp_token_address": "juno1ukhxlrtje0dt2n7k54m8l83rxjrta7fqwvzzhapgzafwzt38u8pqsdfrh8",
     "lp_token_supply": "5779778261",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2219,6 +2409,7 @@
     "token2_reserve": "7596638825"
   },
   {
+    "pool_address": "juno1hcsuhvxtygxg8gcrdxmzen2wmywf8sqpjgh0mxn3asz0e8na58vq2e4hls",
     "lp_token_address": "juno14ztq7s3zamwskzefgepfv8cmsz6j0hk9pprqqcphmc47ht7gkkxqhxdncr",
     "lp_token_supply": "0",
     "token1_denom": { "native": "JUNO", "cw20": null },
@@ -2230,17 +2421,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hue3dnrtgf9ly2frnnvf8z5u7e224ctc4hk7wks2xumeu3arj6rs9vgzec",
     "lp_token_address": "juno1l0z6d7wlwpwequtenwt8pd44685jyhqys6jdnp8xa8ektn0un4zsadyw8y",
     "lp_token_supply": "5238393996",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "1911388701",
+    "token1_reserve": "1911321774",
     "token2_denom": {
       "native": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
       "cw20": null
     },
-    "token2_reserve": "284724602875"
+    "token2_reserve": "284734602875"
   },
   {
+    "pool_address": "juno1hlfdjvc6sv0thj9tz7686jg9u2yzu6vw49439weguuhkw9rkj6hqa58ru6",
     "lp_token_address": "juno17dysz8935aqmf0qnx8v04wjvy6ktz8gx47ydecym2uh7ama665xqlm2wa5",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2255,6 +2448,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1cg9gz7uvprtc7keawqx2jk4zkqvtmwy0p8xs0h3yeet29xetlhfs4cdydp",
     "lp_token_address": "juno19s9nzwyexgj5qdfts0y9tjrfnfkzz5dm2t9gw0ld639k94558ftq6aldnd",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2266,17 +2460,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ctsmp54v79x7ea970zejlyws50cj9pkrmw49x46085fn80znjmpqz2n642",
     "lp_token_address": "juno1uwp9rs0ya4p6qk8zezl2y666vvtnfvxfmuwngu95pg6m55mg6xpq65jrje",
     "lp_token_supply": "275833704183",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "394601386649",
+    "token1_reserve": "394647818690",
     "token2_denom": {
       "native": "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034",
       "cw20": null
     },
-    "token2_reserve": "1533387065727"
+    "token2_reserve": "1533207485308"
   },
   {
+    "pool_address": "juno1ct3ukn5j4y4ghtda0er6m4vscxevyt306xymy7taxytcpp24zc0sgjpe6d",
     "lp_token_address": "juno1mv9tvlz9pzzls8qa7gdqlezkc2sv8zk7zptswsfrk4nj82060kgs62ptry",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2288,17 +2484,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1cvjuc66rdg34guugmxpz6w59rw6ghrun5m33z3hpvx6q60f40knqglhzzx",
     "lp_token_address": "juno1h0sqa8qtngwe3jl9qpfg03whjvcgczsk985vrpt6h94t0yp8uspssfvugp",
     "lp_token_supply": "585712359",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "951260263",
+    "token1_reserve": "952410263",
     "token2_denom": {
       "native": null,
       "cw20": "juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl"
     },
-    "token2_reserve": "727447"
+    "token2_reserve": "726572"
   },
   {
+    "pool_address": "juno1cjtj9u76l9grhkeew4yef98fvagkl4e8ddex2hf6f4aqu0p9f65qrgv5dq",
     "lp_token_address": "juno1c7cajk3akx90egke2s4s699receslnnle48dzv9sxc42zh38uhaq5fmp8k",
     "lp_token_supply": "10000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2310,6 +2508,7 @@
     "token2_reserve": "10000"
   },
   {
+    "pool_address": "juno1ey4g8zuh32kp600e4vhh960zy6rkjktwr3c5deqzn42zvvz6x0esjcu8nk",
     "lp_token_address": "juno1l53kdre0vzd9xwg4uxxpt3knmwlvtdgu39eatjh7ntjcl2trf92qumdwqh",
     "lp_token_supply": "10000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2321,17 +2520,19 @@
     "token2_reserve": "10000"
   },
   {
+    "pool_address": "juno1e8n6ch7msks487ecznyeagmzd5ml2pq9tgedqt2u63vra0q0r9mqrjy6ys",
     "lp_token_address": "juno1jmechmr7w6kwqu8jcy5973rtllxgttyetarys60rtsu0g675mkjsy96t8l",
-    "lp_token_supply": "150503680431",
+    "lp_token_supply": "150619863784",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "73958114093",
+    "token1_reserve": "73956952617",
     "token2_denom": {
       "native": null,
       "cw20": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr"
     },
-    "token2_reserve": "3848129071"
+    "token2_reserve": "3854142252"
   },
   {
+    "pool_address": "juno1etqkzzcuzlpfrrzgltpunu379kzqlre9r8me77ylq0649xkxkmlqachwtw",
     "lp_token_address": "juno1zx2wy2q34etnueaczyvs93v67hkcrzh3r47cehssmhuqf5hkfvuq85eyj8",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2346,6 +2547,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ewwwcs4yhdn6zsytazy5uegm9745mtvdqwrgny35ptgag05vm5lq9grc7h",
     "lp_token_address": "juno1yfvu3nqnzutk3y3d87a0630wjf0zawhk5vjzn93tae8f3u49azrq3s4a3z",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2357,6 +2559,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1e3dv6wxwe85qksgaldd6erk6ayzgat6ceat6hewr4wyrg8d742ysphv7mt",
     "lp_token_address": "juno1k4gt59s4e2jyec06y6rp20y7trk9v9j00acdpr58wk33cu5ej57slluwuy",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2368,6 +2571,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ennt29adv2vt773d8r8jj9w94t893lvg8u36jal0tk82d6pdxaqs5lcwe5",
     "lp_token_address": "juno1hfqzretvgsez9u03cj6q6megsuvp3qxtwz7cs367kvunsg2yg28qh4v3kw",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2379,6 +2583,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1enl842z00cklnathpv8f3t3w2u70dkrq22crz3gxg38we7xjfq5s8lktmg",
     "lp_token_address": "juno12snvzgec29vvzhmcc3m4dq2a86vl5apn2gemveqj73ypxhylty3q2ndad4",
     "lp_token_supply": "464669103",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2390,6 +2595,7 @@
     "token2_reserve": "15087388081"
   },
   {
+    "pool_address": "juno1enltydewnurfucvn08kk28j0yur59rcgh7vqqwnvudrq7fjavfjqtzjlut",
     "lp_token_address": "juno1scp9pv6w8k3zcsumzjlptc9ec0ktq09nnkgdf5wjd94tc2hpa2fq7k7730",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2401,6 +2607,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1enlufkvehg3nhtsynr6jma3nca6hxzv4ughwjgxsec7h9wgjku8qxyht2p",
     "lp_token_address": "juno1nskdesxzhxvk7qxd85afupxm39y03gv0kee72xyph8jsrhjcua2q8hz2la",
     "lp_token_supply": "2",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2412,6 +2619,7 @@
     "token2_reserve": "3"
   },
   {
+    "pool_address": "juno1ehnmjq4232yxh7t2xfkjfqkeddsflcc4z5xd2f7lfcms904szf4skk7pju",
     "lp_token_address": "juno12andc7fqgfs5fa7svq2tm0f5ccq5tehj9f44x9hevpmflejg0guq6q87gg",
     "lp_token_supply": "98662",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2423,6 +2631,7 @@
     "token2_reserve": "86519"
   },
   {
+    "pool_address": "juno1elpkfdn5kxse9quht2xex72h2sepm2wcm3gqs0r62gy5s437p2cqv3p6le",
     "lp_token_address": "juno1968e9tuh5lyk65l7ew2md37llhttew44q5v57hj4gplqmxhnme6q2h0z94",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2437,17 +2646,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1el6rfmz6h9pwpdlf6k2qf4dwt3y5wqd7k3xpyvytklsnkt9uv2aqe8aq4v",
     "lp_token_address": "juno100pmxfny54wktum5jklg9vme7d5pe44h7va6uw4smccte6wkfaust0untw",
     "lp_token_supply": "178355559119",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "129958899498",
+    "token1_reserve": "129958975227",
     "token2_denom": {
       "native": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
       "cw20": null
     },
-    "token2_reserve": "457886854534"
+    "token2_reserve": "457886588518"
   },
   {
+    "pool_address": "juno16ptl3sf4w2t4ng6pn7kek02w6u8sa8vcs58phulrfene4x9fg0qsyj5hvy",
     "lp_token_address": "juno1vdvf89tzj2yz3c3863vkc00za7l7kj0ywtdj0adm5rmmauvy4mms7r5u6a",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2462,6 +2673,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno16zn96yf3vnxengke3vcf6mg9x7qyppgsdh3dnnmvdd8hvtpw58wsrjuu56",
     "lp_token_address": "juno1pe2umwzqea0hvstzug2mm2ntrcxm336374954p5f6e52s5gf2zusklhqqr",
     "lp_token_supply": "48712059965",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2473,6 +2685,7 @@
     "token2_reserve": "209209856854893"
   },
   {
+    "pool_address": "juno16yngwxhh5gcqgtgl63gccve9nx84e2q2tz4664qfv5kqp09m5ypq9xtq0q",
     "lp_token_address": "juno1s8kz538t2hkt9jaz6shg7e3q8nl0wqz3wqtl0lr6lgmwf0dzus5sqra49w",
     "lp_token_supply": "10000000",
     "token1_denom": {
@@ -2487,6 +2700,7 @@
     "token2_reserve": "27000"
   },
   {
+    "pool_address": "juno16y6t3fxqxq7f4l85cjsqrtxmratf8485fdtur4038hs2styf867qwk8wmp",
     "lp_token_address": "juno1v0e5dwj2ckevsf5jj5flyqga9vdnwwlpus2jp27vgzzqp6nqxm5qh7syzw",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2498,6 +2712,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno16x2qr82cfpwn6asgcv4csulhuheqhm2jkv2vedz4uawgqnvdnazs50tvwf",
     "lp_token_address": "juno1ng2p3ddss957h0lyv9sg734dujcnh7qwn87ks3qe68twfzlrdw0skgpyqr",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2512,6 +2727,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1689r2g790gdxhyd0m9wfw5n9c8ukc86artdq5hq95w6fa2qjn3dqvg407h",
     "lp_token_address": "juno12x970v4emjhqz74c8anhmz5ua2gjrl5x09m3u6vws0zn5rzn8ygsrfx6gr",
     "lp_token_supply": "23333",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2523,6 +2739,7 @@
     "token2_reserve": "1534384"
   },
   {
+    "pool_address": "juno16we78l2pu286cv9q7rtrq8ukxg9ew8mxjv045q803elmws59vslqgk97nq",
     "lp_token_address": "juno1frhgj9jfh5ta3fpwzu2hfafjpyuzwypxgx48vxwhzz78gcc64skq98u4lu",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2534,6 +2751,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1653nhx2330rnhmzk2qe9w74kwwa3jtxe4lrfs5cfq8szfms8pqzsra5fvq",
     "lp_token_address": "juno1dtmjggsjx56ehpdjccqlzzls7u4wsnxejt4rj46x3g2jqayls87svgemgq",
     "lp_token_supply": "432510",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2545,6 +2763,7 @@
     "token2_reserve": "16175519"
   },
   {
+    "pool_address": "juno16mcxtk7pucpwkf5ng7wtnjk8lvd272un3uvet45fef6wcs3v2uxqw4ge7n",
     "lp_token_address": "juno1g63x26j00pa9rqf8kntu75jc88x20rsfwv8rymf7h8wu0fvmsyvszmr5la",
     "lp_token_supply": "20",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2556,6 +2775,7 @@
     "token2_reserve": "10000"
   },
   {
+    "pool_address": "juno16785zjr8c2wdpehyqpa6xewcv6feayrqmnr7htxgh8n7mcs87l0qjxzxev",
     "lp_token_address": "juno157u0c8thyxrrtgy9vw766uwak4tkjkukvxxlqxqm0d3mfhp65c2syn2ydu",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2567,6 +2787,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1mqzpjhafh03n77ygu8d92pmxn3rlkpfejxhnntqy7yexslxxrcwsg6yu76",
     "lp_token_address": "juno1wwfvc4nh3k0gem2qxfhry3zf3kdz86wcx9ye9y72mwlgawtddkxqsmq0a8",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2581,6 +2802,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1mx050ust9szjxua7z6jfrk0ym7kn52kn0fmznd5u6g29ckch66qqe8g70n",
     "lp_token_address": "juno1zp3wdrka0afz9xf65kc8p8hhuftf0y68kjtglylwc6awj7204masjqct6v",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2592,6 +2814,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1m2dyha2zjcmxjwpu96ym3nlxcvmwkcsalg0nx964wk34avn6y7ds7kl3x4",
     "lp_token_address": "juno1pgk8f6ehwllckm0jjuncsrluf9fnh6wm3y9x5zca6jrhmt2nqa3q9y8306",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2603,6 +2826,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1mvx5vgxelzr58zfdhzrzhdnq7t7uuug3z5rsy3deft4uvfuj8h4szlpw48",
     "lp_token_address": "juno1kl3w907ezcqq503xgwcue5qpuege630lf7sltwn2g6kwey2rxaes8dp85h",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2614,17 +2838,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1m08vn7klzxh9tmqwajuux202xms2qz3uckle7zvtturcq7vk2yaqpcwxlz",
     "lp_token_address": "juno10cdmzmh5yya0d0686407qrn92elx4q7ecmmdq0vrprpartjhz99q50frz2",
     "lp_token_supply": "14763412254",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "6910182383",
+    "token1_reserve": "6910221083",
     "token2_denom": {
       "native": null,
       "cw20": "juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa"
     },
-    "token2_reserve": "113845742790"
+    "token2_reserve": "113845107124"
   },
   {
+    "pool_address": "juno1muw3wrnvx2a470pq642fql7p5h3lsv7tknun9lf8eterjzrderns9qqeqt",
     "lp_token_address": "juno1d0hprdwl4f6u926nmh8t3gxfep8mevtpacurc9dsyjkqg74c3xkqttj9ue",
     "lp_token_supply": "0",
     "token1_denom": { "native": "JUNO", "cw20": null },
@@ -2636,6 +2862,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1u35zc9604dfw2y6lamvug770p5axtpskjkc3apl7qw2zprz3srhsju83lc",
     "lp_token_address": "juno1s5g4rehkansq4pamj42usczezqkchjke4j2kk7qm3a5vkejz0xuqughkke",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2647,6 +2874,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ujsvmr9q0uj7rspj6epwtssuftd8zxxelxr3qh6v6ld77esv6jyshdjzau",
     "lp_token_address": "juno16l99mh9u0hglw0ds579k56vagjhtx2nugh6qt2s040kjn3yk2jcsptc02x",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2661,6 +2889,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1atgswmqvndsml5hvgg90clrynr7u7mhh0plempsk98ug7yrnjnnqdvndrv",
     "lp_token_address": "juno10a958wh2hekdvzfwqgkevx8qp0war3v2w6tgryur0knezl7g4nzqqg3v8l",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2672,6 +2901,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1aseyrnv2u4qx6k9xfaamxgpyk857fc8atnv7rshhuq874ydy9elsgkkym7",
     "lp_token_address": "juno13gva8fphcs2pq64025980ja4cyrp57k8vqwcr845g4pyzm5ssy4q2wq70t",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2683,6 +2913,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ajtzf25zp3jt8tgzlhptelsxuj0pfcjsuxw9mkxa2ptt9nd4zqeseldpnc",
     "lp_token_address": "juno1s494eeq9vx596p39na5gqxgjzgn07jgg87940w6y3ap99qvdn95qftzgh6",
     "lp_token_supply": "5676500915937",
     "token1_denom": {
@@ -2697,6 +2928,7 @@
     "token2_reserve": "794288711039"
   },
   {
+    "pool_address": "juno1anc4mn8pkelncggkme574mpvar4csrnpqfld08v3x8qnnc5mspus285yqg",
     "lp_token_address": "juno1sgy52zv39jfqlwx8rgwkavqs9yetrvn55qkhe7hv55krqvnjy6xqjx62a5",
     "lp_token_supply": "10000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2708,6 +2940,7 @@
     "token2_reserve": "9000000"
   },
   {
+    "pool_address": "juno1acs6q36t6qje5k82h5g74plr258y2q90cjf9z4wnktt7caln0mhsx8mt7z",
     "lp_token_address": "juno1k2xzml24sglxlf3hrsmt9a7mtk0jchq279ja5u3asvmtaq3a4uss7xuu5g",
     "lp_token_supply": "1336069580",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2719,6 +2952,7 @@
     "token2_reserve": "167195377"
   },
   {
+    "pool_address": "juno1amn4fp4fgreyn9erxcgzg7u5xf75nl9eqrmqllv9rr36k0l4mwvsygduhk",
     "lp_token_address": "juno1ngkpj8f4kg4qpnt385cs0ne3ucfm3s2x5e72nczlggteedl2t6qst649l7",
     "lp_token_supply": "536862668506",
     "token1_denom": {
@@ -2733,6 +2967,7 @@
     "token2_reserve": "12420263"
   },
   {
+    "pool_address": "juno17qxzvl77357tpjklxqm54v4ch2q24krryr5x2agksrznxfuaw4zq0zhj88",
     "lp_token_address": "juno1ej7vf9vfrcq5wzav6wqcdrvjktuyj2s2d3pmsd87wpyvultfdzzq8pt2x5",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2747,6 +2982,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno17dzeuvc3psx6r90j3qzas3a6nlqtqa3rhx5k0q74vc3qz7kfgj5qv3z6ch",
     "lp_token_address": "juno12cjecjxky9gvn9xasf978md30r8kshc5f3dj2t9ddf9s62fnxs5q7335um",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2758,6 +2994,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno17w3kfsd5tsdvw8urvej5njv3y85lyjlljgt75av054v8lsm7gx9q786nvs",
     "lp_token_address": "juno1hkqxl2j3rk7hutdeeuj7v9lspkvskpml4d27qwue5gasfvyqf50s5epwlw",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2769,17 +3006,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1730cx75d8uevqvrkcwxpy9trhqqfksu5u9xwqss0qe4tn7x0tt3shakhk8",
     "lp_token_address": "juno1lgprt38gkp4nvggjl0dm0e7k5lgd80e525f8rjg60tc6fk2xexcqhpp6sm",
     "lp_token_supply": "3083809327",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "693252725",
+    "token1_reserve": "693284821",
     "token2_denom": {
       "native": "ibc/D836B191CDAE8EDACDEBE7B64B504C5E06CC17C6A072DAF278F9A96DF66F6241",
       "cw20": null
     },
-    "token2_reserve": "34353412829296"
+    "token2_reserve": "34351827190269"
   },
   {
+    "pool_address": "juno175crveehdxywa43x49y5krjv9mu2axdmufs47kj5z0ck43lysqys6thnwx",
     "lp_token_address": "juno1qmn3a2acch2hajddymxrs9ymh6xu9scpnsa750f4nkltrxl50nssddcnyu",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2791,6 +3030,7 @@
     "token2_reserve": "10"
   },
   {
+    "pool_address": "juno17h4sgpaksygdnswpx74szv98hggddc08ny4zv5ca63jv53qptxrshacvku",
     "lp_token_address": "juno1gcamzveq77v32lw7252v0etx9tm2j2jzy3s5ax0cz6dxnzkx5g4qfqunul",
     "lp_token_supply": "9114646251208",
     "token1_denom": {
@@ -2805,6 +3045,7 @@
     "token2_reserve": "190395090562"
   },
   {
+    "pool_address": "juno17usvl08tqzcuc2t7yex3h0a99h9pwnmdxd89p68ung5t2yk0xumsng7cjv",
     "lp_token_address": "juno1fhz2tcqnuz9f0w0rnrpkcftaa5g80u8c99zcmgqtvd2gvypdrhnqh9cuqc",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2816,6 +3057,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno17u78gsp8x86hnd6wrme90nwmn9xlq3q95and86qmthy5s2rq72yqwhp8s2",
     "lp_token_address": "juno1a45kau57tf3xsl2svq78q9lqz6ewdx8n4kpqydmfgjhra494qfeq3fcff8",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2830,6 +3072,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1770puc38e2p6cg4shhmum3q70u9jlx5yx3ryvyrhc958694w77rqfnqxj8",
     "lp_token_address": "juno1u6caqa5k0h6wspdaupyrjcmpklk8hfsv3lp24eax0r2fy3l3myxqmcycwy",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2841,6 +3084,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1lyg9wwjc4psrh6u7c5ummt4er6uzuztd345wmrr7xwrk4amrwkwq2vd2ws",
     "lp_token_address": "juno1f3tfeaz6qnq8r3n3xfsde0r7c20z7k9w0rpzustp7y6y2x3st2hs4yvqjn",
     "lp_token_supply": "18930041387337",
     "token1_denom": {
@@ -2855,6 +3099,7 @@
     "token2_reserve": "781612672654249"
   },
   {
+    "pool_address": "juno1ltmcnc8kj32g6d5zh52ell6nlncs7frv0tdsx4sv48mq9564qapsnv2amc",
     "lp_token_address": "juno1h7d2k7tx9sym54ercezt9rv4vw5tf624utjrrrq2kwrl7a3v5yyswac8gs",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2866,6 +3111,7 @@
     "token2_reserve": "1"
   },
   {
+    "pool_address": "juno1lwcspv76u5a6heds9evdz6aanhnj2nahv8gffsgu5csgjrmjrgzsam7vhq",
     "lp_token_address": "juno10a2gcukh64jlhcus47p0623ywzw5w0xv57fekz7jnkay37v4jh5scqgkke",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -2880,6 +3126,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1lhpsevzd4peqfryxlf3hyvj9nql88mgh5slucc8gjmk4z2rladxq0wajhf",
     "lp_token_address": "juno18jgnjyv5w6yhh774jwuzd5usrmdc2p6esm4kkeqcpt3hq5eaqc5s9xwc9u",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2891,6 +3138,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1cjtwlah45rydyj4xstsnngggkpj6hr36exds9lepd0ymuwktesms0y6kc7",
     "lp_token_address": "juno1fpnzg4pk04u96hvzjxnc9t9u5a0v3mrzr37v7jp2eh460ndpzz9sekxrlt",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2902,6 +3150,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno14mdhwtxfywk6tyyexqx5ju5qqtzzh8gj0g0c9rmj04ms8pc7xjkqxnsg2a",
     "lp_token_address": "juno1y7fzepulmvfl7uhzd22tjxtvcn35hzx3qy6dalvjgk4we3cge8wqjxff72",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2913,6 +3162,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1xz65nyc0e2r0fsp5twnjsvuqmwc3wmagnnp703xdd8ensjswffzqlytff3",
     "lp_token_address": "juno19dc2cu06r0mhzpzlzjp02c7n3ravnu0e6qec27qaxsp03dv6tt5skss0zv",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2924,6 +3174,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1szm3uxwlfjmsmnc05dllnv8z53fc3v9cq0ujq26kjd5p72fd59aq4m4pvf",
     "lp_token_address": "juno1kwx5e8xhug3fvj8r65wd72glsdwlyqqwsyxvr5e83f5j7rq3zrrqmvgren",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2935,28 +3186,31 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno150vj5jusg4g8n82q40nd9cmq3unc255u3hf5qh6pud4dexkgyp0ss7yvwq",
     "lp_token_address": "juno1luhat2afjej7m3aypxyn7hyk0c4w8y823f5qcuxkkljyvwwtwnrsq6qrvy",
-    "lp_token_supply": "2355433105",
+    "lp_token_supply": "2355441687",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "1903540003",
+    "token1_reserve": "1903546939",
     "token2_denom": {
       "native": null,
       "cw20": "juno13926947pmrjly5p9hf5juey65c6rget0gqrnx3us3r6pvnpf4hwqm8mchy"
     },
-    "token2_reserve": "2920723807306"
+    "token2_reserve": "2920734449657"
   },
   {
+    "pool_address": "juno1cugrrrryrpl383kfca0w5swywffa08zwqshrsfre82059vxjlx6syhf73y",
     "lp_token_address": "juno1883e886ujdkgcx94dg35da0l020jcx8y3m6wrf6lf0ntpl5y0mmsq50aru",
-    "lp_token_supply": "64000861436",
+    "lp_token_supply": "64009381832",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "17092097957",
+    "token1_reserve": "17094732243",
     "token2_denom": {
       "native": null,
       "cw20": "juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se"
     },
-    "token2_reserve": "27858273183363"
+    "token2_reserve": "27861403338655"
   },
   {
+    "pool_address": "juno1qdwfjqegta5xk9jfpe5h9njufww4edzlwpxnldngahhvzeznxq2scydfz8",
     "lp_token_address": "juno13a9cdt4glqf92tau4243dkk3nc74equw2j8fnmytte7mq7wd3z7qa4083k",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2968,6 +3222,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno19jfe8367al32w8sjy3qd3ag77e7wmnsq2p3dt2r3fra0leeauauqtpnzvd",
     "lp_token_address": "juno16efx2qjtyahkhs4agnw4gjutus9rzy3ytqxzuq4y7caml2vjgmvqpkhr2m",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2979,6 +3234,7 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno1v63cnaz3qg9fanu8w8mjlx7kawy2q9agzg2uaslz8wjekrtxngkq8qy5cd",
     "lp_token_address": "juno170atyx7xv25rjlqn2gf47z7makum0emkehncpd5lmchwa80jnlqqxfzaxw",
     "lp_token_supply": "12",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -2990,6 +3246,7 @@
     "token2_reserve": "12000000"
   },
   {
+    "pool_address": "juno1r4ud0tjvqg8c4j8fjmm2gndjyyfdgmmeu93qycrv7a0qn7pl679s0pt8lh",
     "lp_token_address": "juno164dqddnk83c0hkpufaazvrst9004chrazj5ukfw22zj6vprcztmskfy6ch",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3001,6 +3258,7 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno17d2xjvkpqn7zdhkw083audacn0v4gr6qvlcjrz9skjc5en754naszmqy8z",
     "lp_token_address": "juno1hw2x4kvpcpr2pfyfet4vkudq6lg45gtw46fx69wtvps6d8kx7t0qyq7yls",
     "lp_token_supply": "12345",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3012,6 +3270,7 @@
     "token2_reserve": "10"
   },
   {
+    "pool_address": "juno1aut4tmae2v5f5rde7lrnhphupwsxq59pag5465zsvzp02y826y8qz22qad",
     "lp_token_address": "juno149pxe53trx4edqwwvaq3mdc5kqaa97tua20j9xhaen78qgn5sqssdrwf29",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3023,6 +3282,7 @@
     "token2_reserve": "1"
   },
   {
+    "pool_address": "juno1ttj4p5m4vpycdh8llwhy90jwje698htk38j2qjs3t3ghuqsfkzns6r73v8",
     "lp_token_address": "juno1yuugtxuv7qv57a5f2kj6uduuxqs04kufvzxhh5zzrrw67gldnkcs57yyga",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3034,6 +3294,7 @@
     "token2_reserve": "1"
   },
   {
+    "pool_address": "juno15y5r3zss4j4f4r2prtzp68cef7a089uxx2j23fn6g028ms5vmg7skfwmm5",
     "lp_token_address": "juno1lwdxmrp8rlh6ae5lrz9s62u5ykt7j5aw0ax0v0yfumg0f60nmmnqhpza2w",
     "lp_token_supply": "1234",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3045,6 +3306,7 @@
     "token2_reserve": "10"
   },
   {
+    "pool_address": "juno1c8undhm2t93mj8qwffudvqevtcwtaaflepakz3k2u4eqktxv2zcs8f4dkl",
     "lp_token_address": "juno1p5ercduu3jqglvrka9sf4u9azls53qefhaamrr560w6fx8e5hv7st5r3sc",
     "lp_token_supply": "10000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3056,6 +3318,7 @@
     "token2_reserve": "1000000"
   },
   {
+    "pool_address": "juno106mz7k2gfj4afv0jnpsqw0zhhtr5y7k4jm86l4dz9dadk5d8200quzc2k3",
     "lp_token_address": "juno1jv5er935334pxck9chd2mj9cuwk8zyq2k4f34jzpggvh8angntks4qnagf",
     "lp_token_supply": "1",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3067,6 +3330,7 @@
     "token2_reserve": "50000"
   },
   {
+    "pool_address": "juno1k43saaqn3pysyuqazsrtwdaupjut7lmu0tylkgev7k5s8fm7p9fs4502xp",
     "lp_token_address": "juno1892ehtg5zq6920jq84jzt07xw80f929ncyfgldrw89xxuzt75caq6lxqlg",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3078,6 +3342,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1hqt3c0wu22rcxw69qkwp9hv6z27ds5c59nltmqjcqpdwwqt49fjsa46050",
     "lp_token_address": "juno1yh2vlxu8yze6zlth0fsfwvshyxytj60v886u3c83dp4ylcu429rsttsmdr",
     "lp_token_supply": "10",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3089,6 +3354,7 @@
     "token2_reserve": "500"
   },
   {
+    "pool_address": "juno1v842hl5mtn2kjeu4sscr4e3y9jmv7tf0h7cy4wm6nusyf4v8j6ssh8gkgp",
     "lp_token_address": "juno16uhnlsrnwgxk2839zr5rqz74xedcxvhknlpvw8yhv7wqpm0ggvzsa2kfae",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -3103,6 +3369,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1ytntasjjyzpdfhsw60yp7rt3ww57nqth45lfaek9ae65ylm0xpkqsp47fz",
     "lp_token_address": "juno1dmtkurpgzyk0p4h26k02txwmk23qu9vq9xn6e6cuahh6n9x52r2qej4gl9",
     "lp_token_supply": "206141",
     "token1_denom": {
@@ -3117,6 +3384,7 @@
     "token2_reserve": "33619451"
   },
   {
+    "pool_address": "juno1maj5xlggctfwm6ct6x2e3456zxm8chadq9prqxl9kjxzzs9edalsk5wzwh",
     "lp_token_address": "juno1th2uaedyeat7a8mer6a709mcq67wr7avlt5tlm4pvt9f6v2cf9lqhxwq25",
     "lp_token_supply": "2737100",
     "token1_denom": {
@@ -3128,6 +3396,7 @@
     "token2_reserve": "2908609"
   },
   {
+    "pool_address": "juno1htpf9u449tjgd0nttgweg6h2a3lk26utwr9l6mmzwavnrhaldmhsyycymg",
     "lp_token_address": "juno17erxhm0unu06h20qrg4995suau7std0e4eda6kf0fk53f6fwf80sdwrucj",
     "lp_token_supply": "1000000",
     "token1_denom": {
@@ -3142,17 +3411,19 @@
     "token2_reserve": "16500000"
   },
   {
+    "pool_address": "juno107l74mj5q7d6zdzqzwpmdkk76628az2p9z08z9cj5pa7s5fpucws96f57e",
     "lp_token_address": "juno1a7cyletk5w0v7w4v2h65w4qx6hfrjq6p054ymeldn57tta0pnrdqlh2enk",
     "lp_token_supply": "7456685809",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "9898582496",
+    "token1_reserve": "9898486207",
     "token2_denom": {
       "native": null,
       "cw20": "juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3"
     },
-    "token2_reserve": "307470295084"
+    "token2_reserve": "307473295084"
   },
   {
+    "pool_address": "juno1d0nzar9wtc298lsq965xjzghyadp08vu7xknp5le9zxvl8njczlqu80jp5",
     "lp_token_address": "juno12djra9uef89rfhklxepr76wjrskpd9exu8g24gpx7ueu3ln8zz0q46tlts",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3164,31 +3435,34 @@
     "token2_reserve": "909339"
   },
   {
+    "pool_address": "juno1fjmrqc5tjj2t5mfwkk5utwz2t0gcpkfajjefllrfahuqanctn9ys968emr",
     "lp_token_address": "juno1dl5efsl4nj07rzc0qrrh0wa2dkn2u6746qtcvnvl0hmfawlm0ctqwmqzm9",
     "lp_token_supply": "5735225112",
     "token1_denom": { "native": "ujuno", "cw20": null },
-    "token1_reserve": "4645176298",
+    "token1_reserve": "4644342118",
     "token2_denom": {
       "native": null,
       "cw20": "juno147t4fd3tny6hws6rha9xs5gah9qa6g7hrjv9tuvv6ce6m25sy39sq6yv52"
     },
-    "token2_reserve": "35970720965"
+    "token2_reserve": "35978349432"
   },
   {
+    "pool_address": "juno1qt7uzjg9su3mk78jpt695rmxce4sa7evz7wa0edexjrsxghy35hsgje5l9",
     "lp_token_address": "juno1s6vnzf94d5sa0ax735y3ug4svmg5pc40lumsqygkc5jxngwccqls7z5xjv",
     "lp_token_supply": "9450462160",
     "token1_denom": {
       "native": null,
       "cw20": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup"
     },
-    "token1_reserve": "20948749455",
+    "token1_reserve": "20737929470",
     "token2_denom": {
       "native": null,
       "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
     },
-    "token2_reserve": "18530085871"
+    "token2_reserve": "18719027937"
   },
   {
+    "pool_address": "juno1vcnna64q553z63402cch4pv2wfdrje2aljf44v76dk5kax4fpmzqnryz5g",
     "lp_token_address": "juno17yufvch87fpyaqnf6nrpys8dmqft439yddtjt0x6hhmd68xk4gdqeuccmg",
     "lp_token_supply": "1000000",
     "token1_denom": {
@@ -3203,6 +3477,7 @@
     "token2_reserve": "16500000"
   },
   {
+    "pool_address": "juno17k3r0zxk6yh9rggzxcma52dahtmwzphxc50gamwrkmdtcl60mylqq5zs6z",
     "lp_token_address": "juno185ya57zyt4z38rek9tz6cu9hkmsq96l49y8flaqf0mwsdgec2qusk27ulj",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -3217,6 +3492,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1rxc9f6zf0ct75t5mctt9q57lfg42ynelm640e0yx6arl4kqgjltqfuqtkk",
     "lp_token_address": "juno16r5dg7dk54249twvltf89ewy0n4qzzs0uc9sy7cku4swfq2t52gsyp73u9",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -3231,6 +3507,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1dlhl4jqelj8va3h4ay9pzypy0nv7xqv84t6sklxzhep4u8j045sst2kms4",
     "lp_token_address": "juno19tzzy5d00q69k4fehjj5hjvfl72fpzlwju6cesqw8k8ahuxlex2qhx9wcz",
     "lp_token_supply": "1000000",
     "token1_denom": {
@@ -3245,6 +3522,7 @@
     "token2_reserve": "650000"
   },
   {
+    "pool_address": "juno10epwgtux4th7ka26lnd7x9r7de90lvurx65ealw5djdt6dyhzp3q4ghpnu",
     "lp_token_address": "juno1w606gnjcvpswgltkj4qzs5avpgrrukjxv7wtsnsl3rund6s6v7zst3g06t",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -3256,6 +3534,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1qgurqffkwm9036x7ua56f4l9vc3hcy7ze8pqjx0xj0uw9d5ccs3qrctfpl",
     "lp_token_address": "juno1sc8qt3zepvkcjlz8xczkafsvds6hkw4yktdn0w3cztsmafhmkq3qdpq8zf",
     "lp_token_supply": "0",
     "token1_denom": {
@@ -3267,56 +3546,61 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1fha0ux5k6xxzzknhwk0j2rtwxtczlp8kzk6w9g383lzjhu337k9swvjdlv",
     "lp_token_address": "juno19dts5x9v2jz2589e42fw8ynn2737a2jawsk8ank8hvu5jveassfqmlvff9",
-    "lp_token_supply": "70459295877",
+    "lp_token_supply": "70462804336",
     "token1_denom": {
       "native": null,
       "cw20": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv"
     },
-    "token1_reserve": "81276002945",
+    "token1_reserve": "81280711337",
     "token2_denom": {
       "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
       "cw20": null
     },
-    "token2_reserve": "25632757631"
+    "token2_reserve": "25633826054"
   },
   {
+    "pool_address": "juno1gxvcltkl0tf20rpsn2wf9q6ex0vr5xk6j3tzezuv6yyjez97w5vqmxk0cv",
     "lp_token_address": "juno1qjt776qcnrjjhdnqe7ds5sn3cr3sfhsv6awfhvx9ujywv92lty7q45ucx9",
-    "lp_token_supply": "47091944794",
+    "lp_token_supply": "47091083561",
     "token1_denom": {
       "native": null,
       "cw20": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv"
     },
-    "token1_reserve": "44476986995",
+    "token1_reserve": "44476173587",
     "token2_denom": {
       "native": null,
       "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
     },
-    "token2_reserve": "8913783892050"
+    "token2_reserve": "8913620874011"
   },
   {
+    "pool_address": "juno1d04vn4t3cw494md0xleyqk6hxt8ctn5gmr353h06uvnudlvk5chq93vmjq",
     "lp_token_address": "juno1m53w7htf3lgtt2mvd336ja8kkwjrhayk7wazpmvjwsenxxeyt4zsgjn6gw",
-    "lp_token_supply": "64410614544",
+    "lp_token_supply": "64967285957",
     "token1_denom": {
       "native": null,
       "cw20": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv"
     },
-    "token1_reserve": "64794759023",
+    "token1_reserve": "65165886113",
     "token2_denom": { "native": "ujuno", "cw20": null },
-    "token2_reserve": "68414567627"
+    "token2_reserve": "69208641632"
   },
   {
+    "pool_address": "juno14hrt7htv42234xwpsxmxaxu7wywak7zflpk9jf5nze3w6e93czdsfwe0ly",
     "lp_token_address": "juno1pca9ws39kps48dd0gmw7nxy5zgha2qhs8mxstswyyhcjd29jwpaq2uk9p8",
-    "lp_token_supply": "208375666630",
+    "lp_token_supply": "208413796258",
     "token1_denom": {
       "native": null,
       "cw20": "juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf"
     },
-    "token1_reserve": "74415129381",
+    "token1_reserve": "74547551080",
     "token2_denom": { "native": "ujuno", "cw20": null },
-    "token2_reserve": "61093553623"
+    "token2_reserve": "61007714755"
   },
   {
+    "pool_address": "juno1vxnppz0cxym35x5vqgd467958nd50g4n4p94hslcw2entk07q6xsesly9h",
     "lp_token_address": "juno1p2qxcpp536hx5gqp7r5a8jhc2lqpyhmykg8m0q8as6haare2ga5se55tev",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3328,6 +3612,7 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno1gnc4704ve77wyecyt5p30kn0vz8r4v9dt7k362r036azchzwfdws0kmzze",
     "lp_token_address": "juno1vtpf03pngalwmmt5h5qc8mfrapaglsunp2rq2ajdvcm7ng200clq5hrhh3",
     "lp_token_supply": "0",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3339,17 +3624,19 @@
     "token2_reserve": "0"
   },
   {
+    "pool_address": "juno17v2d2993me50e6dgzx50ckuuah0vmfyanl0segxsdcg3s4qzqersyrvu8n",
     "lp_token_address": "juno1s4rn507yhlqw8p7haqpmd3uuvttehact7acsgd9s94pvnkw78t4smkuacv",
-    "lp_token_supply": "59582003030",
+    "lp_token_supply": "59601601528",
     "token1_denom": {
       "native": null,
       "cw20": "juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3"
     },
-    "token1_reserve": "60675446009",
+    "token1_reserve": "60436677604",
     "token2_denom": { "native": "ujuno", "cw20": null },
-    "token2_reserve": "60167389786"
+    "token2_reserve": "60445778126"
   },
   {
+    "pool_address": "juno19s8kt9mf667uwku2g5te5lvaaf4uwgwsxwx3frcwtnplgaqzq85qeq32qe",
     "lp_token_address": "juno1mwyjhrvvk32tc3a34qx0pduxer8yhaw7p7me8h0uzg54h0ul5tnqt2ezc7",
     "lp_token_supply": "1000000",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3361,6 +3648,7 @@
     "token2_reserve": "4000000"
   },
   {
+    "pool_address": "juno1na8zlnp3pqsjfzllcncq2ahsxg9zkdkqrz3sl4ae5lergh2wrjes7jl9gr",
     "lp_token_address": "juno1p047hllllt4nu487a8qhsf2lr9unxfknal7jm56se3qplehrlunsr8zwyc",
     "lp_token_supply": "1536051076",
     "token1_denom": { "native": "ujuno", "cw20": null },
@@ -3372,6 +3660,7 @@
     "token2_reserve": "87421720626"
   },
   {
+    "pool_address": "juno1pxn38k3kz9k8cjlrghdwzmkxz67l343k5xuxn744wa56vfddrepsx72j5x",
     "lp_token_address": "juno1n5ljavtmj2heu34yvx7kdu8qrr4dqll2j3j8k86jxd03qyd6e3nqtmfgqx",
     "lp_token_supply": "165472611",
     "token1_denom": { "native": "ujuno", "cw20": null },

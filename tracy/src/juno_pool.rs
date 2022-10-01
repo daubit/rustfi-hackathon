@@ -18,7 +18,7 @@ pub struct WasmContractRaw {
     pub smart: String,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
 pub struct JunoToken {
     name: Option<String>,
     symbol: Option<String>,
@@ -29,6 +29,7 @@ pub struct JunoToken {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct JunoPool {
+    pool_address: Option<String>,
     lp_token_address: String,
     lp_token_supply: String,
     token1_denom: JunoDenom,
@@ -141,7 +142,8 @@ pub async fn fetch_juno_pools(api: &str) -> Result<Vec<JunoPool>, Box<dyn Error>
     let contracts = get_contracts(api, 16).await?;
     let mut res = Vec::new();
     for contract in contracts {
-        let pool = get_pool_info(api, contract.as_str()).await?;
+        let mut pool = get_pool_info(api, contract.as_str()).await?;
+        pool.pool_address = Some(contract);
         res.push(pool);
     }
     let out = serde_json::to_string(&res)?;
@@ -170,11 +172,13 @@ async fn extract_token(api: &str, denom: &JunoDenom) -> Result<JunoToken, Box<dy
             let denom = denom_trace(api, hash).await?;
             return Ok(JunoToken {
                 symbol: Some(denom.base_denom),
-                name: Some("ujuno".to_owned()),
+                name: None,
                 total_supply: None,
                 address: Some(origin),
                 decimals: Some(6),
             });
+        } else if address.starts_with("juno") {
+            return Ok(get_token_info(api, &address).await?);
         }
     }
     return Err(Box::from("We should not be here"));
@@ -185,10 +189,17 @@ pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
     let pools = serde_json::from_str::<Vec<JunoPool>>(&pools)?;
     let mut assets = Vec::new();
     for pool in pools {
+        if pool.token1_reserve == "0" || pool.token2_reserve == "0" {
+            continue; // Empty pool, probably invalid
+        }
         let token1 = extract_token(api, &pool.token1_denom).await?;
         let token2 = extract_token(api, &pool.token2_denom).await?;
-        assets.push(token1);
-        assets.push(token2);
+        if !assets.contains(&token1) {
+            assets.push(token1);
+        }
+        if !assets.contains(&token2) {
+            assets.push(token2);
+        }
     }
     let out = serde_json::to_string(&assets)?;
     let path = Path::new("juno_assets.json");
