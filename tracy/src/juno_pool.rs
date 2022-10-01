@@ -1,10 +1,12 @@
 use serde::{Deserialize, Serialize};
 
 use std::error::Error;
-use std::fs::File;
+use std::fs::{self, File};
 use std::io::Write;
 use std::path::Path;
 use std::str::{self, from_utf8};
+
+use crate::util::denom_trace::{self, denom_trace};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WasmContractResponse {
@@ -57,27 +59,26 @@ pub struct WasmErrorResponse {
     error: String,
 }
 
-#[tokio::main]
 async fn get_query(url: &str, query: &Vec<(&str, &str)>) -> Result<String, Box<dyn Error>> {
     let client = reqwest::Client::new();
     let resp = client.get(url).query(query).send().await?.text().await?;
     Ok(resp)
 }
 
-pub fn get_contracts(api: &str, code_id: u64) -> Result<Vec<String>, Box<dyn Error>> {
+pub async fn get_contracts(api: &str, code_id: u64) -> Result<Vec<String>, Box<dyn Error>> {
     let url = format!("{}/wasm/code/{}/contracts", &api.to_string(), code_id);
-    let res = get_query(&url, &vec![])?;
+    let res = get_query(&url, &vec![]).await?;
     let res = serde_json::from_str::<WasmCodeContracts>(res.as_str())?;
     Ok(res.result)
 }
 
-pub fn query_contract(
+pub async fn query_contract(
     api: &str,
     contract_address: &str,
     msg: &str,
 ) -> Result<String, Box<dyn Error>> {
     let url = format!("{}/wasm/contract/{}/smart/{}", api, contract_address, msg);
-    let res = get_query(&url, &vec![("encoding", "base64")])?;
+    let res = get_query(&url, &vec![("encoding", "base64")]).await?;
     let err = res.clone();
     if let Ok(res) = serde_json::from_str::<WasmErrorResponse>(&err) {
         return Err(Box::from(res.error));
@@ -86,10 +87,13 @@ pub fn query_contract(
     Ok(res.result.smart)
 }
 
-pub fn get_token_info(api: &str, contract_address: &str) -> Result<JunoToken, Box<dyn Error>> {
+pub async fn get_token_info(
+    api: &str,
+    contract_address: &str,
+) -> Result<JunoToken, Box<dyn Error>> {
     let msg = "{ \"token_info\" : {} }";
     let msg = base64::encode(msg);
-    let res = query_contract(api, contract_address, msg.as_str())?;
+    let res = query_contract(api, contract_address, msg.as_str()).await?;
     let decoded = base64::decode_config(res, base64::STANDARD)?;
     let decoded = from_utf8(&decoded)?;
     let mut token = serde_json::from_str::<JunoToken>(&decoded)?;
@@ -97,17 +101,17 @@ pub fn get_token_info(api: &str, contract_address: &str) -> Result<JunoToken, Bo
     Ok(token)
 }
 
-pub fn get_pool_info(api: &str, contract_address: &str) -> Result<JunoPool, Box<dyn Error>> {
+pub async fn get_pool_info(api: &str, contract_address: &str) -> Result<JunoPool, Box<dyn Error>> {
     let msg = "{ \"info\" : {} }";
     let msg = base64::encode(msg);
-    let res = query_contract(api, contract_address, msg.as_str())?;
+    let res = query_contract(api, contract_address, msg.as_str()).await?;
     let decoded = base64::decode_config(res, base64::STANDARD)?;
     let decoded = from_utf8(&decoded)?;
     let pool = serde_json::from_str::<JunoPool>(&decoded)?;
     Ok(pool)
 }
 
-pub fn get_price_for(
+pub async fn get_price_for(
     api: &str,
     contract_address: &str,
     amount: u64,
@@ -120,7 +124,7 @@ pub fn get_price_for(
     };
     let msg = format!("{{ \"{}\" : {{ \"{}\": \"{}\" }} }}", method, arg, amount);
     let msg = base64::encode(msg);
-    let res = query_contract(api, contract_address, msg.as_str())?;
+    let res = query_contract(api, contract_address, msg.as_str()).await?;
     let decoded = base64::decode_config(res, base64::STANDARD)?;
     let decoded = from_utf8(&decoded)?;
     let res = serde_json::from_str::<WasmPoolPriceResponse>(&decoded)?;
@@ -133,17 +137,62 @@ pub fn get_price_for(
     return Err(Box::from("We should not be here"));
 }
 
-pub fn fetch_juno_pools(api: &str) -> Result<Vec<JunoPool>, Box<dyn Error>> {
-    let contracts = get_contracts(api, 16)?;
+pub async fn fetch_juno_pools(api: &str) -> Result<Vec<JunoPool>, Box<dyn Error>> {
+    let contracts = get_contracts(api, 16).await?;
     let mut res = Vec::new();
     for contract in contracts {
-        let pool = get_pool_info(api, contract.as_str())?;
+        let pool = get_pool_info(api, contract.as_str()).await?;
         res.push(pool);
     }
-    let text = serde_json::to_string(&res)?;
+    let out = serde_json::to_string(&res)?;
     let path = Path::new("juno_pools.json");
-    //let text = serde_json::to_string(&request)?;
     let mut file = File::create(path)?;
-    file.write(text.as_bytes())?;
+    file.write(out.as_bytes())?;
     Ok(res)
+}
+
+async fn extract_token(api: &str, denom: &JunoDenom) -> Result<JunoToken, Box<dyn Error>> {
+    if let Some(address) = &denom.cw20 {
+        return Ok(get_token_info(api, &address).await?);
+    }
+    if let Some(address) = &denom.native {
+        if address == "ujuno" {
+            return Ok(JunoToken {
+                symbol: Some("ujuno".to_owned()),
+                name: Some("ujuno".to_owned()),
+                total_supply: None,
+                address: None,
+                decimals: Some(6),
+            });
+        } else if address.starts_with("ibc") {
+            let origin = address.clone();
+            let hash = address.split("/").collect::<Vec<&str>>()[1];
+            let denom = denom_trace(api, hash).await?;
+            return Ok(JunoToken {
+                symbol: Some(denom.base_denom),
+                name: Some("ujuno".to_owned()),
+                total_supply: None,
+                address: Some(origin),
+                decimals: Some(6),
+            });
+        }
+    }
+    return Err(Box::from("We should not be here"));
+}
+
+pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
+    let pools = fs::read_to_string(Path::new("juno_pools.json"))?;
+    let pools = serde_json::from_str::<Vec<JunoPool>>(&pools)?;
+    let mut assets = Vec::new();
+    for pool in pools {
+        let token1 = extract_token(api, &pool.token1_denom).await?;
+        let token2 = extract_token(api, &pool.token2_denom).await?;
+        assets.push(token1);
+        assets.push(token2);
+    }
+    let out = serde_json::to_string(&assets)?;
+    let path = Path::new("juno_assets.json");
+    let mut file = File::create(path)?;
+    file.write(out.as_bytes())?;
+    Ok(())
 }
