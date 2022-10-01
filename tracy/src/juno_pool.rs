@@ -1,6 +1,9 @@
 use serde::{Deserialize, Serialize};
 
 use std::error::Error;
+use std::fs::File;
+use std::io::Write;
+use std::path::Path;
 use std::str::{self, from_utf8};
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -43,6 +46,17 @@ pub struct WasmCodeContracts {
     result: Vec<String>,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub struct WasmPoolPriceResponse {
+    token1_amount: Option<String>,
+    token2_amount: Option<String>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct WasmErrorResponse {
+    error: String,
+}
+
 #[tokio::main]
 async fn get_query(url: &str, query: &Vec<(&str, &str)>) -> Result<String, Box<dyn Error>> {
     let client = reqwest::Client::new();
@@ -64,6 +78,10 @@ pub fn query_contract(
 ) -> Result<String, Box<dyn Error>> {
     let url = format!("{}/wasm/contract/{}/smart/{}", api, contract_address, msg);
     let res = get_query(&url, &vec![("encoding", "base64")])?;
+    let err = res.clone();
+    if let Ok(res) = serde_json::from_str::<WasmErrorResponse>(&err) {
+        return Err(Box::from(res.error));
+    }
     let res = serde_json::from_str::<WasmContractResponse>(&res)?;
     Ok(res.result.smart)
 }
@@ -85,30 +103,47 @@ pub fn get_pool_info(api: &str, contract_address: &str) -> Result<JunoPool, Box<
     let res = query_contract(api, contract_address, msg.as_str())?;
     let decoded = base64::decode_config(res, base64::STANDARD)?;
     let decoded = from_utf8(&decoded)?;
-    println!("{}", decoded);
     let pool = serde_json::from_str::<JunoPool>(&decoded)?;
     Ok(pool)
 }
 
-pub fn get_price_for(api: &str, contract_address: &str, for2: bool) -> Result<u64, Box<dyn Error>> {
+pub fn get_price_for(
+    api: &str,
+    contract_address: &str,
+    amount: u64,
+    for2: bool,
+) -> Result<String, Box<dyn Error>> {
     let (method, arg): (&str, &str) = if for2 {
-        ("get_price_for_token2", "token1")
+        ("token2_for_token1_price", "token2_amount")
     } else {
-        ("get_price_for_token1", "token2")
+        ("token1_for_token2_price", "token1_amount")
     };
-    let msg = format!("{{ \"{}\" : \"{}\" }}", method, arg);
+    let msg = format!("{{ \"{}\" : {{ \"{}\": \"{}\" }} }}", method, arg, amount);
     let msg = base64::encode(msg);
     let res = query_contract(api, contract_address, msg.as_str())?;
     let decoded = base64::decode_config(res, base64::STANDARD)?;
     let decoded = from_utf8(&decoded)?;
-    let amount = serde_json::from_str::<u64>(&decoded)?;
-    Ok(amount)
+    let res = serde_json::from_str::<WasmPoolPriceResponse>(&decoded)?;
+    if let Some(amount) = res.token1_amount {
+        return Ok(amount);
+    }
+    if let Some(amount) = res.token2_amount {
+        return Ok(amount);
+    }
+    return Err(Box::from("We should not be here"));
 }
 
-// pub fn fetch_juno_pools(api: &str) -> Vec<JunoPool> {
-//     let resp: WasmContractResponse =
-//         reqwest::get("https://lcd.osmosis.zone/osmosis/gamm/v1beta1/pools?pagination.limit=1000")
-//             .await?
-//             .json()
-//             .await?;
-// }
+pub fn fetch_juno_pools(api: &str) -> Result<Vec<JunoPool>, Box<dyn Error>> {
+    let contracts = get_contracts(api, 16)?;
+    let mut res = Vec::new();
+    for contract in contracts {
+        let pool = get_pool_info(api, contract.as_str())?;
+        res.push(pool);
+    }
+    let text = serde_json::to_string(&res)?;
+    let path = Path::new("juno_pools.json");
+    //let text = serde_json::to_string(&request)?;
+    let mut file = File::create(path)?;
+    file.write(text.as_bytes())?;
+    Ok(res)
+}
