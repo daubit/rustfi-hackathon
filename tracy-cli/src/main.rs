@@ -148,7 +148,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                     }
                 }
                 "osmosis" => {
-                    let res = fetch_osmosis_pools().await;
+                    let res = fetch_osmosis_pools("https://lcd.osmosis.zone").await;
                     if res.is_err() {
                         println!("Something went wrong while fetching the data for Osmosis")
                     } else {
