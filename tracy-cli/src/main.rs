@@ -1,6 +1,4 @@
-use tracy::juno_pool::JunoPool;
-use tracy::Pool;
-use tracy::juno_pool::JunoPoolConfig;
+use tracy::juno_pool::{JunoPoolConfig, WasmPool};
 use clap::{Arg, ArgAction, Command};
 
 #[tokio::main]
@@ -80,7 +78,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         Some(("quote", query_matches)) => {
             let token_in = query_matches.get_one::<String>("token_in");
             let token_out = query_matches.get_one::<String>("token_out");
-            let chain = query_matches.get_one::<str>("chain");
+            let chain = query_matches.get_one::<String>("chain");
             let node = query_matches.get_one::<String>("node");
             let amount = query_matches.get_one::<u128>("amount");
             if token_in.is_none() {
@@ -110,7 +108,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             let amount = amount.unwrap();
             match chain {
                 "juno" => {
-                    let pool = JunoPool::new();
+                    let pool = WasmPool::new();
                     let config = JunoPoolConfig {
                         path: "./assets/juno_pools.json".to_string(),
                         api: node.to_string(),

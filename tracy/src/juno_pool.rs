@@ -296,4 +296,7 @@ impl Pool for WasmPool {
     fn to_json(&self) -> String {
         todo!()
     }
+    fn chain(&self) -> String {
+        String::from("juno")
+    }
 }

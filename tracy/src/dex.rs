@@ -1,11 +1,14 @@
-use std::path::Path;
+use std::{collections::HashMap, path::Path};
 
-use crate::{juno_pool::load_juno_pools_from_file, pools::load_osmo_pools_from_file_boxed, Pool};
+use crate::{
+    juno_pool::load_juno_pools_from_file, pools::load_osmo_pools_from_file_boxed, Pool, PoolConfig,
+};
 use eyre::Result;
 
 #[derive(Clone)]
 pub struct DexAgg {
     pub pools: Vec<Box<dyn Pool>>,
+    pub config: HashMap<String, PoolConfig>,
 }
 
 impl DexAgg {
@@ -23,7 +26,11 @@ impl DexAgg {
                 .map(|x| Box::<dyn Pool>::from(x))
                 .collect::<Vec<Box<dyn Pool>>>(),
         );
-        Ok(DexAgg { pools: pools })
+        let config = HashMap::new();
+        Ok(DexAgg {
+            pools: pools,
+            config: config,
+        })
     }
 
     pub fn with_denom(&self, denom: &String) -> Vec<Box<dyn Pool>> {

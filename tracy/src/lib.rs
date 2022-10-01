@@ -7,7 +7,7 @@ pub struct Quote {
     pub token_out: u128,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct PoolConfig {
     pub grpc_url: Option<String>,
     pub rest_url: Option<String>,
@@ -28,6 +28,7 @@ pub trait Pool: DynClone + Send + Sync {
 
     fn token_denoms(&self) -> Vec<String>;
     fn to_json(&self) -> String;
+    fn chain(&self) -> String;
 }
 
 dyn_clone::clone_trait_object!(Pool);
