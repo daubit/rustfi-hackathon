@@ -1,0 +1,3555 @@
+[
+  {
+    "pool_address": "juno1qg9m2zdqaxx4udxxyun4cjq5myazlldymdmhkuy7fmvretyxz92q89zdvv",
+    "lp_token_address": "juno1te6t7zar4jrme4re7za0vzxf72rjkwwzxrksu83505l89gdzcy9sd93v4c",
+    "lp_token_supply": "2027704055206693",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "3618832819961800",
+    "token2": {
+      "name": null,
+      "symbol": "uusd",
+      "total_supply": null,
+      "address": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "cw20": null
+    },
+    "token2_reserve": "121761496470"
+  },
+  {
+    "pool_address": "juno1qsmywlded2sdggud5wft44gq2u6c3epl3qhzr4qv7psj536t8yhsfvrcf6",
+    "lp_token_address": "juno1fdj5u026t828yuskgq9h5ehx2gncjjjxvrydtnljn9xchj6xdhdsjx6lxy",
+    "lp_token_supply": "2683821030",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "177026130",
+    "token2": {
+      "name": null,
+      "symbol": "umntl",
+      "total_supply": null,
+      "address": "ibc/5CB906E82B7A88E62644AD811361F5858B74BA9EBD75C84B6D24B20C01A4819F",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/5CB906E82B7A88E62644AD811361F5858B74BA9EBD75C84B6D24B20C01A4819F",
+      "cw20": null
+    },
+    "token2_reserve": "12278321291"
+  },
+  {
+    "pool_address": "juno1pr3w0macketryjdf5pyvysp38ss0l4n3ch95ewgc870k52lcsh6syynl3w",
+    "lp_token_address": "juno1sssd02fn0extk3t6uulsvte7kzkhz5qpv07mme3wvty3vxwaewsqc5ddcm",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": null,
+      "symbol": "uusd",
+      "total_supply": null,
+      "address": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "cw20": null
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno1p2p7eldjjsxy6kynlekfeztfq7p8t66kzree0yxam5vdmfc4r8nqhzxhjx",
+    "lp_token_address": "juno1ywmeqryave6vdrw0clpxjck4sllhtpv0fsrpmk7p3vxxd7hr6f2s63ggh3",
+    "lp_token_supply": "100000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "100000",
+    "token2": {
+      "name": "Mercury Protocol",
+      "symbol": "MERCURY",
+      "total_supply": "10000",
+      "address": "juno12pxhfxq2ffz7crtrywxteu6e8lz4hdg5kp6udc6kwpfgaqkey46sj9h5gr",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno12pxhfxq2ffz7crtrywxteu6e8lz4hdg5kp6udc6kwpfgaqkey46sj9h5gr"
+    },
+    "token2_reserve": "9000"
+  },
+  {
+    "pool_address": "juno1pwls8dxsdg05zm485gq486au43gz2pyxhy6tsrcuqlcn9pywyc0qs8mdnp",
+    "lp_token_address": "juno12qkzh9maw2hdq95ns2pyvnzht3eywehe5c8hxrg92cke59h7spuq6ztsge",
+    "lp_token_supply": "250",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "250",
+    "token2": {
+      "name": "ckxpress",
+      "symbol": "CKX",
+      "total_supply": "9999000000",
+      "address": "juno1g50fgz3yaexwpc44eck2l86a7wgd5hr295dcw2lx5qwuzm4pua6qyxuc6l",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g50fgz3yaexwpc44eck2l86a7wgd5hr295dcw2lx5qwuzm4pua6qyxuc6l"
+    },
+    "token2_reserve": "1000"
+  },
+  {
+    "pool_address": "juno1zpv53vs79que4x6ks5v5q26pt44j7ehrcfc5zxxnhautklzv76mspmj0yg",
+    "lp_token_address": "juno18qktcj9erzr297vpuaq6tz4s3rpu9vuxnww8838ytx9xp3aggasspznxrg",
+    "lp_token_supply": "173270",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "173270",
+    "token2": {
+      "name": "CryptoCrew",
+      "symbol": "CREW",
+      "total_supply": "142000000",
+      "address": "juno18cpnn3cnrr9xq7r0cqp7shl7slasf27nrmskw4rrw8c6hyp8u7rqe2nulg",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno18cpnn3cnrr9xq7r0cqp7shl7slasf27nrmskw4rrw8c6hyp8u7rqe2nulg"
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno1zz8vspvcq7a3t40sy6xfxa3yk8wuy3vr8clyn3pt8pthpucnvpyqes54md",
+    "lp_token_address": "juno1quce89l8clsn8s5tmq5sylg370h58xfnkwadx72crjv90jmetp4s3fkysl",
+    "lp_token_supply": "250",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "250",
+    "token2": {
+      "name": null,
+      "symbol": "uscrt",
+      "total_supply": null,
+      "address": "ibc/CD78EE5B20682E5A61B4D96C9F4DC39361269B88A6B3462C26A18652F7A90A9A",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/CD78EE5B20682E5A61B4D96C9F4DC39361269B88A6B3462C26A18652F7A90A9A",
+      "cw20": null
+    },
+    "token2_reserve": "1000"
+  },
+  {
+    "pool_address": "juno1zf2zzudhd9ng9nd9zhlkp20mpwqcxsp4m3ljxq6fdmqnnw40mcfqwfaxjh",
+    "lp_token_address": "juno1egcwyuq5knsxh6s5np4etx8xa9vj9ur96hd7m7ftxvqrxufzvyyqwxw4pe",
+    "lp_token_supply": "10000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10000",
+    "token2": {
+      "name": "Mercury Protocol",
+      "symbol": "MERCURY",
+      "total_supply": "10000",
+      "address": "juno12pxhfxq2ffz7crtrywxteu6e8lz4hdg5kp6udc6kwpfgaqkey46sj9h5gr",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno12pxhfxq2ffz7crtrywxteu6e8lz4hdg5kp6udc6kwpfgaqkey46sj9h5gr"
+    },
+    "token2_reserve": "1000"
+  },
+  {
+    "pool_address": "juno1z5vukf037r6acgln3n37tr8a5rv7wafqzhcq29ddn9etwwtfrytsn6xvux",
+    "lp_token_address": "juno1dhmd8lredr9psu4afk8j3lstdg896pme49mje6maxucuuugmmptstzaj07",
+    "lp_token_supply": "8237719991",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "5211937813",
+    "token2": {
+      "name": null,
+      "symbol": "ustars",
+      "total_supply": null,
+      "address": "ibc/F6B367385300865F654E110976B838502504231705BAC0849B0651C226385885",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/F6B367385300865F654E110976B838502504231705BAC0849B0651C226385885",
+      "cw20": null
+    },
+    "token2_reserve": "577263339388"
+  },
+  {
+    "pool_address": "juno1z4qak60uavmf9c0cgeg6zqg5a9ypf07yt023ltjj8fk52u7x0nvskhq5eg",
+    "lp_token_address": "juno1vvr0xds27s5wpxvmtzr3d0sl224fn9vgdtzh7ja7ygezpzdr9h4qxg86rw",
+    "lp_token_supply": "187114567",
+    "token1": {
+      "name": "BLOCK",
+      "symbol": "BLCK",
+      "total_supply": "53111488259",
+      "address": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne"
+    },
+    "token1_reserve": "261116443",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "1087323"
+  },
+  {
+    "pool_address": "juno1z698dxy9gj4fnrs76xwmtqwh84lamav9xl0w35pd35vnfx7987nqudxyge",
+    "lp_token_address": "juno15g2ghm8u9jtkp5pu2y0n6dlzsewxltdjvygwcg5ggusp7tghxnlqjtvw87",
+    "lp_token_supply": "7458713",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "35044794",
+    "token2": {
+      "name": null,
+      "symbol": "eeur",
+      "total_supply": null,
+      "address": "ibc/B9F7C1E4CE9219B5AF06C47B18661DBD49CCD7A6C18FF789E2FB62BB365CFF9C",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/B9F7C1E4CE9219B5AF06C47B18661DBD49CCD7A6C18FF789E2FB62BB365CFF9C",
+      "cw20": null
+    },
+    "token2_reserve": "148552751"
+  },
+  {
+    "pool_address": "juno1rqlcesmxygfqgnn9zrdlgsxhn8zevkgdcnjselj8eptgkhk6tykqd8y236",
+    "lp_token_address": "juno1r2mk9wpexrgv9hkuu4gapmdz68yr99w66pksfmk99h0c532g0y2qczge57",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "Blep",
+      "symbol": "BLEP",
+      "total_supply": "10000000000",
+      "address": "juno1pjf4gs82nsfne8979pn63uwu7qaenhzy72mhdnpn0tr8jevtswqqahh68s",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1pjf4gs82nsfne8979pn63uwu7qaenhzy72mhdnpn0tr8jevtswqqahh68s"
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno1rft4xp5e6ffta5a8aqwtu4kgdfjqw4jhnleu8agmmedzrxsat7pqxfgfrs",
+    "lp_token_address": "juno10dvm495wxtlxtda8492dsc2yut0wk2lpnz6h7wad3ecrym5k4a6qh4uvzc",
+    "lp_token_supply": "3684971503",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "2166520044",
+    "token2": {
+      "name": "JoeDAO",
+      "symbol": "JOE",
+      "total_supply": "10127176935000",
+      "address": "juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3"
+    },
+    "token2_reserve": "287971148920"
+  },
+  {
+    "pool_address": "juno1r35khypn89ra7sqc93u409yjgmzrt8r69y7xvskhlchxjpk8hrfslxpy97",
+    "lp_token_address": "juno1xn7ywphphh3v0lxlre8m7cqxa6522rgsg3nknkv3073u46xcluasqf9u83",
+    "lp_token_supply": "3000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "3000000",
+    "token2": {
+      "name": "Husky",
+      "symbol": "HSKY",
+      "total_supply": "10000000",
+      "address": "juno1hpm7ynqwqmstkqzw7aw5c4v0e0nf2zxm9cde0ued62llpdwcehnqnqukqe",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1hpm7ynqwqmstkqzw7aw5c4v0e0nf2zxm9cde0ued62llpdwcehnqnqukqe"
+    },
+    "token2_reserve": "4900000"
+  },
+  {
+    "pool_address": "juno1r72th8l800djmhu8f0xhfkw046a4zlm0kcrela2vxwf0ehh3l68qumh53q",
+    "lp_token_address": "juno129xs226p0lqtdmkca7p27ajc6y8lv3xqgx9mzzyueazd8fzd8y6svnvu4q",
+    "lp_token_supply": "20429366873126755",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "1233331406893888",
+    "token2": {
+      "name": "Grand Fortis Oeconomia Token",
+      "symbol": "gFOT",
+      "total_supply": "122189735862165",
+      "address": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl"
+    },
+    "token2_reserve": "10393735133914"
+  },
+  {
+    "pool_address": "juno1y2x2ur4ptfurdca3gk05n62h93tgqluzj5zvm03c0vhxu8pu3pjs9flzz6",
+    "lp_token_address": "juno1h0ce9ff2ekgq9aq3lwumrqyam9rl8yfmpmemyparnvwka9l47a3setumzu",
+    "lp_token_supply": "3232639866303",
+    "token1": {
+      "name": "WasmSwap_Liquidity_Token",
+      "symbol": "wslpt",
+      "total_supply": "23093487869537",
+      "address": "juno13e8nz9ekzvvh29vjwa3806cp8j9qgas8r6teuc8f8ky6jvddvmpqjkm383",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno13e8nz9ekzvvh29vjwa3806cp8j9qgas8r6teuc8f8ky6jvddvmpqjkm383"
+    },
+    "token1_reserve": "17889578376978",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "31135967"
+  },
+  {
+    "pool_address": "juno1y2mure58rpvu420r6cdynm04ysetce3vueyfejhvlr6w4nnrvatqep5223",
+    "lp_token_address": "juno1ttnyk6glynelrm8wc40mexmn4nrcf6wr3056hj3yppem6gknfqpq8aj6xs",
+    "lp_token_supply": "10000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10000",
+    "token2": {
+      "name": "SAFEMOON",
+      "symbol": "SFM",
+      "total_supply": "1000000000000000",
+      "address": "juno1jklhpvnw33waqzmum42y396vc7t07q7wgxtv0xgcsj5k6rl4752sus3vd7",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1jklhpvnw33waqzmum42y396vc7t07q7wgxtv0xgcsj5k6rl4752sus3vd7"
+    },
+    "token2_reserve": "10000"
+  },
+  {
+    "pool_address": "juno1ykj7ytuy5pv6fr6y7kv3508uz7wvp4cpt6f9xy0u44cpwwwx7cmqxgdqnu",
+    "lp_token_address": "juno190t7d759wsq5fr5xnkty2t7ahvtgs0gfvawa5lnjgyx64pplderqnmx484",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "Scary-Type_159",
+      "symbol": "IMSCARED",
+      "total_supply": "22000000000000",
+      "address": "juno1mf7nspj99zgq8f55m4rrk53d4zrxfvffwv0px5j0du4leehl8mms3csj4d",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1mf7nspj99zgq8f55m4rrk53d4zrxfvffwv0px5j0du4leehl8mms3csj4d"
+    },
+    "token2_reserve": "50000000000"
+  },
+  {
+    "pool_address": "juno1yaff0t6tfheqcdep24euu7w0xhnhs2yjwwv7r2c280vlns8trghq5d72pd",
+    "lp_token_address": "juno1jeh4eqlsge0w8kcmjlt82rzzwe4vr5yxe69nvqt2jcgg4q4e8ypq0c7h7f",
+    "lp_token_supply": "994572473",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "879075086",
+    "token2": {
+      "name": null,
+      "symbol": "uxprt",
+      "total_supply": null,
+      "address": "ibc/7455B3F2F2737906BACF4AE980069A4CAB7C7F9FDAABAEFBA439DF037AEC5898",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/7455B3F2F2737906BACF4AE980069A4CAB7C7F9FDAABAEFBA439DF037AEC5898",
+      "cw20": null
+    },
+    "token2_reserve": "5497803882"
+  },
+  {
+    "pool_address": "juno19859m5x8kgepwafc3h0n36kz545ngc2vlqnqxx7gx3t2kguv6fws93cu25",
+    "lp_token_address": "juno1vayeejfdzr32rg3kkzqvl7euxqzferxstdal3qlask5f37sxcvxsvk6mse",
+    "lp_token_supply": "5168162279",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "149053660",
+    "token2": {
+      "name": "Burned Fortis Oeconomia Token",
+      "symbol": "bFOT",
+      "total_supply": "57531647156700335071",
+      "address": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7"
+    },
+    "token2_reserve": "111080493475894967"
+  },
+  {
+    "pool_address": "juno19jlnnqvgehj7vex48p7sjfpl6te98els8ca6txrmvhesrlzgytcq0aankj",
+    "lp_token_address": "juno19slke7wag7ujcxcgql7cs52xanefh4gyl3vxt04sxjggkph5nvqq0wqh6v",
+    "lp_token_supply": "300000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "300000",
+    "token2": {
+      "name": "#decentralizehk",
+      "symbol": "DHK",
+      "total_supply": "7000000",
+      "address": "juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49",
+      "decimals": 0
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49"
+    },
+    "token2_reserve": "12"
+  },
+  {
+    "pool_address": "juno1xf32js0lc6v7quxj5twuna97hwff7dhkz6psujavvknh2yzty5uq6wut8j",
+    "lp_token_address": "juno1jzz4t6p2dpcteqay5yt4khyha0z3u3uhghzszv7c24r7pj02scwswsygzh",
+    "lp_token_supply": "67029724827471",
+    "token1": {
+      "name": "BLOCK",
+      "symbol": "BLOCK",
+      "total_supply": "338600000000000",
+      "address": "juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq"
+    },
+    "token1_reserve": "128452371591378",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "4755288303"
+  },
+  {
+    "pool_address": "juno1xkm8tmm7jlqdh8kua9y7wst8fwcxpdnk6gglndfckj6rsjg4xc5q8aaawn",
+    "lp_token_address": "juno1jq40jyxg57kumvaceskedcgsaje8tfagtpxsu8gnray525333yxsk8sl7f",
+    "lp_token_supply": "4596255",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "21772923253",
+    "token2": {
+      "name": "POSTHUMAN",
+      "symbol": "PHMN",
+      "total_supply": "53000000000",
+      "address": "juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l"
+    },
+    "token2_reserve": "5526321780"
+  },
+  {
+    "pool_address": "juno180jzqh7vefwuks6eyvf0lkecdl2mp8u08d844245faunja969p3s8w3t3q",
+    "lp_token_address": "juno17sf282da63uwxfht9nuzslgan4jh7qvya0k78mc9v3muuckvjndsu8dy9m",
+    "lp_token_supply": "14794927035387",
+    "token1": {
+      "name": "BLOCK",
+      "symbol": "BLOCK",
+      "total_supply": "338600000000000",
+      "address": "juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq"
+    },
+    "token1_reserve": "24672826441097",
+    "token2": {
+      "name": "MARBLE",
+      "symbol": "MARBLE",
+      "total_supply": "20999990",
+      "address": "juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl"
+    },
+    "token2_reserve": "695749"
+  },
+  {
+    "pool_address": "juno183yyxu73uqzqp7gkz770ksm6m2kefuqjtlu79fl495f4accgturqn2y77f",
+    "lp_token_address": "juno18fu7eflqly085nxmass9m5pll7gjuehn9ztmcza340yjteczfm7sxq6hk8",
+    "lp_token_supply": "2000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "2000000",
+    "token2": {
+      "name": "DaoDoge",
+      "symbol": "DDoge",
+      "total_supply": "1000000000",
+      "address": "juno1g767zq566m66557gtc7lz8vsqhrytyuggknxl5wpca3zqj4wtpys0naxks",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g767zq566m66557gtc7lz8vsqhrytyuggknxl5wpca3zqj4wtpys0naxks"
+    },
+    "token2_reserve": "250000000"
+  },
+  {
+    "pool_address": "juno18nflutunkth2smnh257sxtxn9p5tq6632kqgsw6h0c02wzpnq9rq927heu",
+    "lp_token_address": "juno17w75xxt0uxc8tsrcdtdkx9xgvspkzt7p5fz07lec4azjudnrjvcqhnr2kk",
+    "lp_token_supply": "52555781",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "975221767",
+    "token2": {
+      "name": "HOPE GALAXY",
+      "symbol": "HOPE",
+      "total_supply": "14180000000",
+      "address": "juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1re3x67ppxap48ygndmrc7har2cnc7tcxtm9nplcas4v0gc3wnmvs3s807z"
+    },
+    "token2_reserve": "625346796"
+  },
+  {
+    "pool_address": "juno18mezc7x8heg23l3xrqgqrcwzthrag8a2cdwkrydfh487v5pvf8ysq90gcd",
+    "lp_token_address": "juno1qy6ngwyevvjxmupgf7v55zr8sk65zahh7mdyjuyu6zv0e2342ansawjh3l",
+    "lp_token_supply": "20",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "20",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLOCK",
+      "total_supply": "100000000",
+      "address": "juno132ezr4fkzc3rpua95u5latfsc6fke39lkc7rfz8j8drqncyms34qgnyq7k",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno132ezr4fkzc3rpua95u5latfsc6fke39lkc7rfz8j8drqncyms34qgnyq7k"
+    },
+    "token2_reserve": "2001"
+  },
+  {
+    "pool_address": "juno1gpa5ardzal22el6czj4j0d2pwy0m9qj06lr20t2l8fca3gkws63qfnx8eq",
+    "lp_token_address": "juno1fweq070y8lvxmtn7j3p7yltphg8uuksk7p875suwppyzg259rt0s29qgss",
+    "lp_token_supply": "629913946",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "239990591",
+    "token2": {
+      "name": null,
+      "symbol": "udig",
+      "total_supply": null,
+      "address": "ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A",
+      "cw20": null
+    },
+    "token2_reserve": "1256375066128"
+  },
+  {
+    "pool_address": "juno1gv2gswtan8wsk54h663waefffywnuc9wcxr7xl5pnnxvjaqunpgs20t39g",
+    "lp_token_address": "juno1gj4rprgp9uvwx25ssez6yl2ll2z32fmv7a3mungqz5nxzqfpvrnsteqejd",
+    "lp_token_supply": "9044223666",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1496281641",
+    "token2": {
+      "name": null,
+      "symbol": "ubcna",
+      "total_supply": null,
+      "address": "ibc/0CB5D60E57FD521FA39D11E3E410144389010AC5EF5F292BC9BDD832FA2FDBF9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/0CB5D60E57FD521FA39D11E3E410144389010AC5EF5F292BC9BDD832FA2FDBF9",
+      "cw20": null
+    },
+    "token2_reserve": "297946395852"
+  },
+  {
+    "pool_address": "juno1g7xvx9n4l4xv30p3040cykugncde3vvy7yjm24j8rs4rpz90r5xqk47c4l",
+    "lp_token_address": "juno1w8kfqtmkwlppymth5xrexurwnrpffe0srt6g0xers0q5d0t7aenswnvztt",
+    "lp_token_supply": "100000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "100000",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLCK",
+      "total_supply": "53111488259",
+      "address": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne"
+    },
+    "token2_reserve": "9900000"
+  },
+  {
+    "pool_address": "juno1glnstjavzp67tfz68045aylwgdy3tueuc764mwcp0x3ms3mx4ukq6kujeq",
+    "lp_token_address": "juno125t6vwmg3s7u4u55pcjmcfjshgr93mkf0lumq5vx4umu306e98jsmhkz76",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLOCK",
+      "total_supply": "100000000",
+      "address": "juno132ezr4fkzc3rpua95u5latfsc6fke39lkc7rfz8j8drqncyms34qgnyq7k",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno132ezr4fkzc3rpua95u5latfsc6fke39lkc7rfz8j8drqncyms34qgnyq7k"
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno1fpphzkkq5uyezm7amk6sslyz8r94wl658zg2ku47v8mtslueyx5q29rkzq",
+    "lp_token_address": "juno1cnggcz546d65mzya527mweksujwmkhhh6gf2juuzrrd4zu6n8tgswxh80c",
+    "lp_token_supply": "499971103",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "202854022",
+    "token2": {
+      "name": "Arto DAO",
+      "symbol": "ARTO",
+      "total_supply": "18000000000",
+      "address": "juno1hy0ky3pe742phd4w55tdfej0ez55h4jx4g06rp4wsa0mne9wzudqy4hum2",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1hy0ky3pe742phd4w55tdfej0ez55h4jx4g06rp4wsa0mne9wzudqy4hum2"
+    },
+    "token2_reserve": "6287655380"
+  },
+  {
+    "pool_address": "juno1fzl79pekf8wtd0y37q92dmz5h9dxtfpl97w3kguyc59m7ufnlzvsf46vf8",
+    "lp_token_address": "juno1vqvnmf4vpkkrjp9caahtfxgkcg2zcud3a7t6080rwzceusk8qxjs35n4s5",
+    "lp_token_supply": "3639777215",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "358385919",
+    "token2": {
+      "name": "FUTURE",
+      "symbol": "FUTURE",
+      "total_supply": "1000000000000000",
+      "address": "juno1gzys54drag6753qq75mkt3yhjwyv4rp698kfvesh0wcy5737z4tsn0chtm",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1gzys54drag6753qq75mkt3yhjwyv4rp698kfvesh0wcy5737z4tsn0chtm"
+    },
+    "token2_reserve": "8779841208389"
+  },
+  {
+    "pool_address": "juno12p855epr89yfrlc0xrmpdcr96xrq2whtgy7h2sf2p84wayj32n9svtey4f",
+    "lp_token_address": "juno1s7ncantu5ru4y706afalaez2q5n4ql4y9ca9090fdl582lgqf2pq5f62hf",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "ESUNA",
+      "symbol": "ESUNA",
+      "total_supply": "100000000",
+      "address": "juno1hd6gykfwxr6n4zkshxqefm8un6kamrlzs49mlypk57kzedum43nqtj24c9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1hd6gykfwxr6n4zkshxqefm8un6kamrlzs49mlypk57kzedum43nqtj24c9"
+    },
+    "token2_reserve": "10"
+  },
+  {
+    "pool_address": "juno122uwvcwd23sef20y9ryl57h2y07zs6dnrkk4xwrucuvtdqlk4urqnlff3m",
+    "lp_token_address": "juno1huc9hxkhtvmkwngehhw3ng5g9jjvxxkf8afayxmhtt9awrhllh5sheh8us",
+    "lp_token_supply": "4",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "4",
+    "token2": {
+      "name": "Wokeness",
+      "symbol": "WOKE",
+      "total_supply": "1000000000000",
+      "address": "juno1x7hatwxtexuxt3gaylgenldl0ssrf49r7tupu7l753vy3gxm736qw7tkgj",
+      "decimals": 4
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1x7hatwxtexuxt3gaylgenldl0ssrf49r7tupu7l753vy3gxm736qw7tkgj"
+    },
+    "token2_reserve": "400"
+  },
+  {
+    "pool_address": "juno120gxmcjc60zs2seufu6fsj8s3egcrj8zaru9834nth3y6pmxc9xs3masz3",
+    "lp_token_address": "juno13n2pv4ka497e4y3vdyregy88xfs9elarkkgqeje26q596s46330quh3dkc",
+    "lp_token_supply": "14638929",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "14638929",
+    "token2": {
+      "name": "Junits",
+      "symbol": "Junits",
+      "total_supply": "10000000000000000",
+      "address": "juno1r2lr60fujfmnv4ekguz67gl7ud0xht7l6rrvv320gv28ev50hgfsvzywal",
+      "decimals": 2
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1r2lr60fujfmnv4ekguz67gl7ud0xht7l6rrvv320gv28ev50hgfsvzywal"
+    },
+    "token2_reserve": "5000000000000000"
+  },
+  {
+    "pool_address": "juno124d0zymrkdxv72ccyuqrquur8dkesmxmx2unfn7dej95yqx5yn8s70x3yj",
+    "lp_token_address": "juno1u57ju64c5qdmkrjgch2e3amutpjqrez6cq0jp7h2pytuthpfns7s4jln57",
+    "lp_token_supply": "1835821699595",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "646511783278",
+    "token2": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token2_reserve": "122705272413482"
+  },
+  {
+    "pool_address": "juno12m8cvcxw6c0np5zktu5rhg0defzesvma2k0tjuprzdydtzu7wsvqjgunp6",
+    "lp_token_address": "juno1c945q6yafkrlkvpddnq4numcjyc4nhm5w4tk8eervcvmade9mwfs56tlrp",
+    "lp_token_supply": "10",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10",
+    "token2": {
+      "name": "Santorini Coin",
+      "symbol": "SANTO",
+      "total_supply": "1000000000",
+      "address": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3"
+    },
+    "token2_reserve": "10"
+  },
+  {
+    "pool_address": "juno1t5uhk3s34jy322ps4z4ffwmzs2zraqh8whv2fze20kq6avclpu4qgdswq5",
+    "lp_token_address": "juno13kys802wnpzlyp57uyua3zaa0uvmkv0ytmcjqsax8ea3cysm2wyqsxnxn3",
+    "lp_token_supply": "143151343383334",
+    "token1": {
+      "name": "WasmSwap_Liquidity_Token",
+      "symbol": "wslpt",
+      "total_supply": "1111115476513282",
+      "address": "juno1p4y3la4h4ckmsndsgrhvs90f2vtsw8t3edehj39dup768r5087nsmt6kzc",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1p4y3la4h4ckmsndsgrhvs90f2vtsw8t3edehj39dup768r5087nsmt6kzc"
+    },
+    "token1_reserve": "983476301421101",
+    "token2": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token2_reserve": "57006808530239"
+  },
+  {
+    "pool_address": "juno1tmxx3rdnnrcckkh7pjde924lftjs724rzd44sqte5xh8xax0yf2sc7v7dk",
+    "lp_token_address": "juno1plauy5jh7dggc0pvcduaaj4slk7l9w883mecxkew7xaff6uzmztq4d0003",
+    "lp_token_supply": "1524525566",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1161181843",
+    "token2": {
+      "name": null,
+      "symbol": "uakt",
+      "total_supply": null,
+      "address": "ibc/DFC6F33796D5D0075C5FB54A4D7B8E76915ACF434CB1EE2A1BA0BB8334E17C3A",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/DFC6F33796D5D0075C5FB54A4D7B8E76915ACF434CB1EE2A1BA0BB8334E17C3A",
+      "cw20": null
+    },
+    "token2_reserve": "17382827638"
+  },
+  {
+    "pool_address": "juno1tlzh9mafkn7surc6m6uzvhs0jl488yajdxchkw0tm4qtj29tvuzqejlygm",
+    "lp_token_address": "juno194849tezdvn8hkx085x9rtwr5fq0rhgr9769jttwg8424y6lf5tse4v04m",
+    "lp_token_supply": "50049600000",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "60049600000",
+    "token2": {
+      "name": "Grand Fortis Oeconomia Token",
+      "symbol": "gFOT",
+      "total_supply": "122189735862165",
+      "address": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl"
+    },
+    "token2_reserve": "841448"
+  },
+  {
+    "pool_address": "juno1drg5j9ft48shh9zplj5t9jwdjdcvx5twmxsfqvv9rf3m0z4f35gsf8lxq9",
+    "lp_token_address": "juno1huzrlas82l6cjtpf3cswqa4r8ykqwl5dldr595uqxt4hjdp2ayxqg5jcku",
+    "lp_token_supply": "100496",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "100000",
+    "token2": {
+      "name": "SAFEMOON",
+      "symbol": "SFM",
+      "total_supply": "1000000000000000",
+      "address": "juno1c93f9we96laxpg9clr6kww35fyfar4hzp7pgunkqlcdmv4ch5hlqpv9lwf",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1c93f9we96laxpg9clr6kww35fyfar4hzp7pgunkqlcdmv4ch5hlqpv9lwf"
+    },
+    "token2_reserve": "1009987049118"
+  },
+  {
+    "pool_address": "juno1d545c5x0rt4lgz0fh67aq2jhv93kn7y8a63g6avtqjykeutvgtsqxzsjqd",
+    "lp_token_address": "juno1k9wmqydnqmc4w06jgsqfpsrq7r38ccuswy3nzlw0eygue6cxzx9qmvekkr",
+    "lp_token_supply": "1377318",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1377318",
+    "token2": {
+      "name": null,
+      "symbol": "dai-wei",
+      "total_supply": null,
+      "address": "ibc/171E8F6687D290D378678310F9F15D367DCD245BF06184532B703A92054A8A4F",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/171E8F6687D290D378678310F9F15D367DCD245BF06184532B703A92054A8A4F",
+      "cw20": null
+    },
+    "token2_reserve": "10584638"
+  },
+  {
+    "pool_address": "juno1d6xs8za2z7r8jnjpev9valt6gmj69ggphj9n8930g8rz2mrfde0spnppdj",
+    "lp_token_address": "juno1cmmpty2dgs9h36vtrwxk53pmkwe3fgn5833wpay4ap0unm6svgks7aajke",
+    "lp_token_supply": "20000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "20000",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLCK",
+      "total_supply": "53111488259",
+      "address": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne"
+    },
+    "token2_reserve": "20000001"
+  },
+  {
+    "pool_address": "juno1dug89d22vtu7v27ee9gg4xq5seu2tu705d6eh3kmvh0uvy7depaqg45qdj",
+    "lp_token_address": "juno19qetspgghczk5hvw3su602vjqqdhgl062eftgh897cdka6lny5sq6yhmg4",
+    "lp_token_supply": "27652100389783807",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "1267382558155387",
+    "token2": {
+      "name": "Burned Fortis Oeconomia Token",
+      "symbol": "bFOT",
+      "total_supply": "57531647156700335071",
+      "address": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7"
+    },
+    "token2_reserve": "211576114047585140"
+  },
+  {
+    "pool_address": "juno1wyrlpndk5gr2dzhwhhux8zt9nn00u9yenkzqd7ldvpyvymyls4hszza96v",
+    "lp_token_address": "juno1qhtlkk2r2wfn05pj0dqu99dyg0q0hht99hvgeqjwegs9gxtfmt0sarnjuv",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "BOSON",
+      "symbol": "BSN",
+      "total_supply": "1000000000000",
+      "address": "juno1rqsmf8vetkgjxmqdmm0c68hzksj6vcrkjf8j7gpwffs7a5vvpxwquptfyp",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1rqsmf8vetkgjxmqdmm0c68hzksj6vcrkjf8j7gpwffs7a5vvpxwquptfyp"
+    },
+    "token2_reserve": "10099900000"
+  },
+  {
+    "pool_address": "juno1wdfrzgyl79r4rqhjzqn2s4pc446004wrtsnjt6fkz7r4zwg4ptcqttzu2u",
+    "lp_token_address": "juno13e8nz9ekzvvh29vjwa3806cp8j9qgas8r6teuc8f8ky6jvddvmpqjkm383",
+    "lp_token_supply": "23093487869537",
+    "token1": {
+      "name": "WasmSwap_Liquidity_Token",
+      "symbol": "wslpt",
+      "total_supply": "143151343383334",
+      "address": "juno13kys802wnpzlyp57uyua3zaa0uvmkv0ytmcjqsax8ea3cysm2wyqsxnxn3",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno13kys802wnpzlyp57uyua3zaa0uvmkv0ytmcjqsax8ea3cysm2wyqsxnxn3"
+    },
+    "token1_reserve": "101392757775430",
+    "token2": {
+      "name": null,
+      "symbol": "uusd",
+      "total_supply": null,
+      "address": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "cw20": null
+    },
+    "token2_reserve": "2900434511"
+  },
+  {
+    "pool_address": "juno1wjpdhpv7x5cusg028xglazr8ldxr7cnm0tss8sd9pg4r959rlgtqjkf70x",
+    "lp_token_address": "juno10v5rhl4rth8ce77rld5m5wm79apxqjctkjquwx2qgrs9npvtjlqq5syjxw",
+    "lp_token_supply": "783082101350222",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "5975692504076515",
+    "token2": {
+      "name": null,
+      "symbol": "uatom",
+      "total_supply": null,
+      "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "cw20": null
+    },
+    "token2_reserve": "407761540"
+  },
+  {
+    "pool_address": "juno1wuu8nwr37kmg0njg6p3ag7j4qcm08vs6z9e9j28aendnfnuxmd3sc4yrhm",
+    "lp_token_address": "juno1jsl0d3e3ncrzmkyz77kkkcdpu4r638l35jpzs7hmqg5g7ypwwsnsln5hvt",
+    "lp_token_supply": "921849926844404",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "4241584824913902",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "954787022"
+  },
+  {
+    "pool_address": "juno1w7l7hetsm4x6hxa55dsjwszqh9elzwqrd6cud2qkqhafrd6u9vrqc2zh48",
+    "lp_token_address": "juno1v7y2wgj4d45t9kcl7qtrezncxr5k6anjqx4avv22s2rj595av2qqrpyw4f",
+    "lp_token_supply": "1287672850",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "844666307",
+    "token2": {
+      "name": "OpenNMN",
+      "symbol": "NMN",
+      "total_supply": "22000000000000",
+      "address": "juno17r8dyxuj25muaudhgqgx4xrg6gzr6tvzem6gwtpprnfld58yggcqjhhkjy",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno17r8dyxuj25muaudhgqgx4xrg6gzr6tvzem6gwtpprnfld58yggcqjhhkjy"
+    },
+    "token2_reserve": "200439785012"
+  },
+  {
+    "pool_address": "juno10zr62fmrkum7hgjstzt83e7amgmjzpnvcm7zhmgnrg8phf3rhs2st8klua",
+    "lp_token_address": "juno1jetpvsd2azlf8elqcusd4jexhfhv2fh7e4j4wefxf2vq7zmy3hjq6ksd5j",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "Matrix Coin",
+      "symbol": "MTX",
+      "total_supply": "100000",
+      "address": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt",
+      "decimals": 0
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt"
+    },
+    "token2_reserve": "1"
+  },
+  {
+    "pool_address": "juno10mrlcttkwt99wxnqfyk6327lq3ac9yhfle2fd0c5s4rp8dzqy9ps3sjzyf",
+    "lp_token_address": "juno1jpdjyc3c973frxkjkmvgr5ececzf9qslzrunxd2xkstem8zr338scnzt27",
+    "lp_token_supply": "7011013843",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "50369947",
+    "token2": {
+      "name": null,
+      "symbol": "uluna",
+      "total_supply": null,
+      "address": "ibc/8F865D9760B482FF6254EDFEC1FF2F1273B9AB6873A7DE484F89639795D73D75",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/8F865D9760B482FF6254EDFEC1FF2F1273B9AB6873A7DE484F89639795D73D75",
+      "cw20": null
+    },
+    "token2_reserve": "695181310463"
+  },
+  {
+    "pool_address": "juno10ug9jn9pzwm0rmd3k880mx3yaaud0g2hvmha7fl8hrc2nz9l4kescekm2y",
+    "lp_token_address": "juno1d6mqh2zjtrwv3dd6dmfxamlrgwnzjyh5nurfj9uwjetsfw2adzyqdl82uk",
+    "lp_token_supply": "1174604",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1174604",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLOCK",
+      "total_supply": "100000000",
+      "address": "juno1kz0cdwafl0eu9ym3pmg09ynyal982lv3pjeczxnevatxsd3xmhcs67pc74",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1kz0cdwafl0eu9ym3pmg09ynyal982lv3pjeczxnevatxsd3xmhcs67pc74"
+    },
+    "token2_reserve": "9000000"
+  },
+  {
+    "pool_address": "juno1sy7ef04nqsef6heldt4998p3yxph6fq2gd339yxhwj393gvjemyskdc4qd",
+    "lp_token_address": "juno12attnuv682ycd0amgs044pkg6vgu68nlhm0ve26vgq45s3k0vzxskqpkrf",
+    "lp_token_supply": "100000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "100000",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLCK",
+      "total_supply": "53111488259",
+      "address": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne"
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno1sg6chmktuhyj4lsrxrrdflem7gsnk4ejv6zkcc4d3vcqulzp55wsf4l4gl",
+    "lp_token_address": "juno18ckrreffz9jwmkw84axsvncexfqt7gpgckskk0yy0vzwm9huqkyq6v78xu",
+    "lp_token_supply": "981540814761",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1179257250757",
+    "token2": {
+      "name": null,
+      "symbol": "uatom",
+      "total_supply": null,
+      "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "cw20": null
+    },
+    "token2_reserve": "353209231729"
+  },
+  {
+    "pool_address": "juno13zlqnzx66hekutwcwp6c2uysjjhjwgycjxtz5832s2vr0zahwlvs3xhddj",
+    "lp_token_address": "juno1stm70szzv39ffwtuxjrz6jnzkdgenc4t7pdwk02eudw23fawzwsqq60p3z",
+    "lp_token_supply": "4000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "4000000",
+    "token2": {
+      "name": "Wokeness",
+      "symbol": "WOKE",
+      "total_supply": "1000000000000",
+      "address": "juno1x7hatwxtexuxt3gaylgenldl0ssrf49r7tupu7l753vy3gxm736qw7tkgj",
+      "decimals": 4
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1x7hatwxtexuxt3gaylgenldl0ssrf49r7tupu7l753vy3gxm736qw7tkgj"
+    },
+    "token2_reserve": "400000000"
+  },
+  {
+    "pool_address": "juno13r8ccgszy3x4qsck3k02rn48ceux4tp8sl0kzumeuedsvgdekg2stvu345",
+    "lp_token_address": "juno1yyt04ac2n9l03sqpj6glkzz0jxdfca8uqsetjzjw9nuslugshmpqmf96v8",
+    "lp_token_supply": "23002312",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "23002312",
+    "token2": {
+      "name": "SmartNodes",
+      "symbol": "SMART",
+      "total_supply": "500000000000",
+      "address": "juno1pycyh3fqczmvfcrq6ake8pjvj2y3n7y4exvlgjyckkjkkg5kplsqpqx3a7",
+      "decimals": 4
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1pycyh3fqczmvfcrq6ake8pjvj2y3n7y4exvlgjyckkjkkg5kplsqpqx3a7"
+    },
+    "token2_reserve": "250000000000"
+  },
+  {
+    "pool_address": "juno13y55famn8ux22m05zzmxkljdz29p6nkhu4sy7z3qyt88usjmxxeskwm8v9",
+    "lp_token_address": "juno1t7r3zut9j6ztvhx0y4shs0xejaulnvnjhqlf0uj6vyh48twyxrlsu8dknr",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "Santorini Coin",
+      "symbol": "SANTO",
+      "total_supply": "1000000000",
+      "address": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3"
+    },
+    "token2_reserve": "1"
+  },
+  {
+    "pool_address": "juno133xa84qnue3uy0mj9emvauddxzw554rfl9rr6eadhfau50ws7gvs4ynm79",
+    "lp_token_address": "juno1khupy0j42e4xlc6x6qp70gzrf80x90m9ff0067l2zyn3qdg6djlsw8h404",
+    "lp_token_supply": "305098483",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1582737478",
+    "token2": {
+      "name": "Tuckermint",
+      "symbol": "TUCK",
+      "total_supply": "100000000",
+      "address": "juno1wurfx334prlceydmda3aecldn2xh4axhqtly05n8gptgl69ee7msrewg6y",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1wurfx334prlceydmda3aecldn2xh4axhqtly05n8gptgl69ee7msrewg6y"
+    },
+    "token2_reserve": "1954521"
+  },
+  {
+    "pool_address": "juno13k5sfk6hs53sjltc5mu4evp2z7x4e8vcmxxzah525z0xukmk0hfqc6lu6d",
+    "lp_token_address": "juno1hxhcknlvsswyczva8zhm7fueslesd0qrvyrmtzh9tg7wcxxqrcjsra29nc",
+    "lp_token_supply": "1000001",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000001",
+    "token2": {
+      "name": "HANSUM",
+      "symbol": "HANSUM",
+      "total_supply": "694200000000000",
+      "address": "juno1txtq2w57v5lg5usd8dgdufqznrlvwf2gyqethp9glhpynjsp9yxsr78vwu",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1txtq2w57v5lg5usd8dgdufqznrlvwf2gyqethp9glhpynjsp9yxsr78vwu"
+    },
+    "token2_reserve": "2"
+  },
+  {
+    "pool_address": "juno1jz50fj5zkcv3h6hmcfr3nr6eer7rj5pmsry5qj5jc8rfvpeavyzsgknm83",
+    "lp_token_address": "juno18t52fyupsh8fu48kufyqwneks4enr0u2e0gdvwzvsfravvmkszmswj32nu",
+    "lp_token_supply": "1063955655",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "3278248019",
+    "token2": {
+      "name": "Signal",
+      "symbol": "SGNL",
+      "total_supply": "1350000000000",
+      "address": "juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno14lycavan8gvpjn97aapzvwmsj8kyrvf644p05r0hu79namyj3ens87650k"
+    },
+    "token2_reserve": "242502595824"
+  },
+  {
+    "pool_address": "juno1jckkjg73vp5djjm0ujd8xha9q2x8xte5yhx60gm2pkha3x7szrpq0ys7zm",
+    "lp_token_address": "juno1khc2nvhkgrdasedjyw6pesnhsnk7tu3aymeg6rr04nyq5w5yq7nsj6dm0c",
+    "lp_token_supply": "59706",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "45712",
+    "token2": {
+      "name": "Welike Cash",
+      "symbol": "WKASH",
+      "total_supply": "1000000000",
+      "address": "juno1aw23epxge5t43kuwg8gkm2chgp5hrh74n7tpg6k48ajuxv0n9r7sz0s2jf",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1aw23epxge5t43kuwg8gkm2chgp5hrh74n7tpg6k48ajuxv0n9r7sz0s2jf"
+    },
+    "token2_reserve": "481380"
+  },
+  {
+    "pool_address": "juno1juw0rz70afg995jnptzmy4h2elrrml7p6t04zk2jarqurutlm0tqagt8zz",
+    "lp_token_address": "juno1r7cxl3vs6vt6z6ryyx6dwwrj3azcuu686j3yzz3sp2wp3lpg8w5qzjqyut",
+    "lp_token_supply": "10",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10",
+    "token2": {
+      "name": "Santorini Coin",
+      "symbol": "SANTO",
+      "total_supply": "1000000000",
+      "address": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3"
+    },
+    "token2_reserve": "494999992"
+  },
+  {
+    "pool_address": "juno1j7pdtemw0qvl6rmnl0sf324409gz2p4sdt6rv659482x9rqqz6mqd653dg",
+    "lp_token_address": "juno18hu00pwvd8kq0cgzk03l2nmp8rr0h5gp6tektz6qazwfapqsl4cqwfgdsv",
+    "lp_token_supply": "3073390147",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1145996912",
+    "token2": {
+      "name": null,
+      "symbol": "ubtsg",
+      "total_supply": null,
+      "address": "ibc/008BFD000A10BCE5F0D4DD819AE1C1EC2942396062DABDD6AE64A655ABC7085B",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/008BFD000A10BCE5F0D4DD819AE1C1EC2942396062DABDD6AE64A655ABC7085B",
+      "cw20": null
+    },
+    "token2_reserve": "296146234636"
+  },
+  {
+    "pool_address": "juno1np9amrmdffxtevqptjswvkcrdhdmzgura6nltswwkkp0kgs3teuqhsg3hh",
+    "lp_token_address": "juno1ncqj9jtldsscxa89crgm5js2wmeyl6kfp39k6ypxnyel0tvtyxfs04sw57",
+    "lp_token_supply": "7878",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "7878",
+    "token2": {
+      "name": "Hello1",
+      "symbol": "HLL",
+      "total_supply": "100000",
+      "address": "juno10dvlms4m555jk67qsrun5a87cn9gje967yl8hn5senjxlycdv37sqqukrn",
+      "decimals": 0
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno10dvlms4m555jk67qsrun5a87cn9gje967yl8hn5senjxlycdv37sqqukrn"
+    },
+    "token2_reserve": "50000"
+  },
+  {
+    "pool_address": "juno1ng763g6zcl3rtuz37xhelz4r277tsua0dszqnxekdndpp3rrfuxqr480l0",
+    "lp_token_address": "juno1m9xw6dw4l7gu6p72raxu5nepw08uwuzzvrc26jg8887k3xe2gm4qafsdc2",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "Matrix Coin",
+      "symbol": "MTX",
+      "total_supply": "100000",
+      "address": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt",
+      "decimals": 0
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt"
+    },
+    "token2_reserve": "1"
+  },
+  {
+    "pool_address": "juno1nljy8gst5agtc0zstfjytf2hrnj8vcxgcdzrp4qj7k2dcnrfz4wsu6ty4f",
+    "lp_token_address": "juno1eqj3unwgq5najlyzyjtqdjjqx9esxpmkv2gffjsvhyszasyzwejqerpwgl",
+    "lp_token_supply": "12747285971979",
+    "token1": {
+      "name": "BLOCK",
+      "symbol": "BLOCK",
+      "total_supply": "338600000000000",
+      "address": "juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq"
+    },
+    "token1_reserve": "28026026774356",
+    "token2": {
+      "name": null,
+      "symbol": "uatom",
+      "total_supply": null,
+      "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "cw20": null
+    },
+    "token2_reserve": "313573646"
+  },
+  {
+    "pool_address": "juno152lfpmadpxh2xha5wmlh2np5rj8fuy06sk72j55v686wd4q4c9jsvwj0gm",
+    "lp_token_address": "juno1s82s62c3q5cnjfhcqmvthjd58t6jetxmf8rxp9xmqmyy05fu2qusp9fg97",
+    "lp_token_supply": "1795016679",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "808973445",
+    "token2": {
+      "name": null,
+      "symbol": "ucmdx",
+      "total_supply": null,
+      "address": "ibc/946AD96F278770521526D7283F58268DA2F6ACDDE40324A9D1C86811D78C86A0",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/946AD96F278770521526D7283F58268DA2F6ACDDE40324A9D1C86811D78C86A0",
+      "cw20": null
+    },
+    "token2_reserve": "21327062745"
+  },
+  {
+    "pool_address": "juno15nd7t2nkjlvjcm4c66v69vk0yf7vlua7lm8vqcze9f268w8j0mws2wqdvh",
+    "lp_token_address": "juno1qn8vrqqgsrz20lpcn3n4qlgg3duy7wjent94wx0ntzr4gnn9r0vsmrqn5u",
+    "lp_token_supply": "10",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10",
+    "token2": {
+      "name": "Santorini Coin",
+      "symbol": "SANTO",
+      "total_supply": "1000000000",
+      "address": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g6ffg67yw36pxuu0zfxe936gwmzdsqxzzpy9kjx8wuz5u2garasqmhk2x3"
+    },
+    "token2_reserve": "5"
+  },
+  {
+    "pool_address": "juno14p3wvpeezqueenfu9jy29s96xuk0hp38k5d5k4ysyzk789v032sqp8uvh3",
+    "lp_token_address": "juno1g62krgjk45ww5kle0nxugxfl5rskse5gd6zgh8hazn87uf8l942sfpxm8a",
+    "lp_token_supply": "42859084",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "14635787",
+    "token2": {
+      "name": "DaisyFinance",
+      "symbol": "DAISY",
+      "total_supply": "20000000000",
+      "address": "juno1p32te9zfhd99ehpxfd06hka6hc9p7tv5kyl5909mzedg5klze09qrg08ry",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1p32te9zfhd99ehpxfd06hka6hc9p7tv5kyl5909mzedg5klze09qrg08ry"
+    },
+    "token2_reserve": "1358940785"
+  },
+  {
+    "pool_address": "juno14wh95tv40z5jd76ppxv08jzpqr2lfvujl9tvxj0zac5tx3sfjdqqvuzs5t",
+    "lp_token_address": "juno1p4y3la4h4ckmsndsgrhvs90f2vtsw8t3edehj39dup768r5087nsmt6kzc",
+    "lp_token_supply": "1111115476513282",
+    "token1": {
+      "name": "WasmSwap_Liquidity_Token",
+      "symbol": "wslpt",
+      "total_supply": "27652100389783807",
+      "address": "juno19qetspgghczk5hvw3su602vjqqdhgl062eftgh897cdka6lny5sq6yhmg4",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno19qetspgghczk5hvw3su602vjqqdhgl062eftgh897cdka6lny5sq6yhmg4"
+    },
+    "token1_reserve": "304524027512248",
+    "token2": {
+      "name": "Burned Fortis Oeconomia Token",
+      "symbol": "bFOT",
+      "total_supply": "57531647156700335071",
+      "address": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1vaeuky9hqacenay9nmuualugvv54tdhyt2wsvhnjasx9s946hhmqaq3kh7"
+    },
+    "token2_reserve": "4485862778687769"
+  },
+  {
+    "pool_address": "juno14nak8v6xeawstrq7r7qmpa67qqfc9xzzymfdfpnp0luycv8knyuq5a6w2m",
+    "lp_token_address": "juno15jjyzdr4e9jc6ztnpdev4xzf5zzg0wm3tx96szn320r6q2nvgj9snyx0jc",
+    "lp_token_supply": "99471594",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "8035037",
+    "token2": {
+      "name": "CoinDex",
+      "symbol": "COIN",
+      "total_supply": "20000000000",
+      "address": "juno1cl2ewl842wcnagz5psd68z4dpp4gfxrrm9atm807uvyyg235h85stg7awy",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1cl2ewl842wcnagz5psd68z4dpp4gfxrrm9atm807uvyyg235h85stg7awy"
+    },
+    "token2_reserve": "3605960842"
+  },
+  {
+    "pool_address": "juno14kj6l9k0wcgxvlvlclw4f0p5zwx7dtvxy74azt32um7f36253nfsvgrn22",
+    "lp_token_address": "juno1dsnvfvsfhmwtkpmyjg887wyuhmlcsxz8v25xrq884d52cfkdky3qdwam2s",
+    "lp_token_supply": "365000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "365000",
+    "token2": {
+      "name": "MDAO",
+      "symbol": "MDAO",
+      "total_supply": "100000000",
+      "address": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6"
+    },
+    "token2_reserve": "50000000"
+  },
+  {
+    "pool_address": "juno14awv3w44zyv0gzj9s2mzsmfre3tmd4306jvq6hff9lqj4gkdtpjsakw75w",
+    "lp_token_address": "juno1t5acdsqh3dxh2jesjgwf528r20hf8ge0vanpgc0dyycftlj7htgs4ed6tq",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "999982",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLOCK",
+      "total_supply": "100000000",
+      "address": "juno132ezr4fkzc3rpua95u5latfsc6fke39lkc7rfz8j8drqncyms34qgnyq7k",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno132ezr4fkzc3rpua95u5latfsc6fke39lkc7rfz8j8drqncyms34qgnyq7k"
+    },
+    "token2_reserve": "3000060"
+  },
+  {
+    "pool_address": "juno14l6zp52acap8w3dn8v67ettuh4u3sualxyxuw70gujcpfxfhw72q7k3m92",
+    "lp_token_address": "juno1gcvsqfe6ztw036zys7zxdpttkyln2lhjd7eeffk5ehxwxcxvpresr8kv4g",
+    "lp_token_supply": "191000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "191000",
+    "token2": {
+      "name": "DaoDoge",
+      "symbol": "DDoge",
+      "total_supply": "1000000000",
+      "address": "juno1g767zq566m66557gtc7lz8vsqhrytyuggknxl5wpca3zqj4wtpys0naxks",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g767zq566m66557gtc7lz8vsqhrytyuggknxl5wpca3zqj4wtpys0naxks"
+    },
+    "token2_reserve": "250000000"
+  },
+  {
+    "pool_address": "juno1kfvnpswxzltw73qzug03ps0wpz2rr9965d7zrun3k0vhg82vn33qzhyk9v",
+    "lp_token_address": "juno1qn4k8te7w7as5fjgl53m6efvvgchycj0lk2lqtvf9vr0x4n6yjxs86wl39",
+    "lp_token_supply": "10000000",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "10000000",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "23000"
+  },
+  {
+    "pool_address": "juno1k3guraedhr3muefdxhhcp2mm0mkmru6arcvmycxrglfuzmefyupsh5455m",
+    "lp_token_address": "juno1wa7va2aehdmuuztndmsst5rmlkdrysf9jz5p4tz237rj6hmyq84q3r7t6f",
+    "lp_token_supply": "10000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10000",
+    "token2": {
+      "name": "SAFEMOON",
+      "symbol": "SFM",
+      "total_supply": "1000000000000000",
+      "address": "juno1wv8lnl777lmncwu0jc02xv6c7xfvtzmeprxxm5zcpapu7rxz885svupfhp",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1wv8lnl777lmncwu0jc02xv6c7xfvtzmeprxxm5zcpapu7rxz885svupfhp"
+    },
+    "token2_reserve": "10000"
+  },
+  {
+    "pool_address": "juno1kmgxv9v3v57nwaeel689jvtwjma7sk279hdjcyalyahtja32zn0q4gwwjy",
+    "lp_token_address": "juno1f0n5cyl7tw346fvk6dphuhk03feea3az6xlfcu99qu4s0qpra9jsnzlzkp",
+    "lp_token_supply": "4",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "4",
+    "token2": {
+      "name": "Wokeness",
+      "symbol": "WOKE",
+      "total_supply": "1000000000000",
+      "address": "juno1x7hatwxtexuxt3gaylgenldl0ssrf49r7tupu7l753vy3gxm736qw7tkgj",
+      "decimals": 4
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1x7hatwxtexuxt3gaylgenldl0ssrf49r7tupu7l753vy3gxm736qw7tkgj"
+    },
+    "token2_reserve": "400"
+  },
+  {
+    "pool_address": "juno1hgu7thj0mxrrrc5vfsjutw8c0lhvaetrmam065mt70kk7gj9s35sktthxc",
+    "lp_token_address": "juno1ust6vy5j8wsg3dylhpgsnmjhepajy3tlsspfv5s4awglkg7myzlsarq0y9",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "W Coin",
+      "symbol": "WOIN",
+      "total_supply": "1000000000000000",
+      "address": "juno1enxzhqt4gsxcw4kysyzypej3lqknxw227n3aymg3xraa2q47wtasqn3cmu",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1enxzhqt4gsxcw4kysyzypej3lqknxw227n3aymg3xraa2q47wtasqn3cmu"
+    },
+    "token2_reserve": "10000000"
+  },
+  {
+    "pool_address": "juno1hkz5dhn59w6l29k8w8ceuramqx2f35qpen7xtlx6ezketwh8ndxq8rwq2a",
+    "lp_token_address": "juno1ukhxlrtje0dt2n7k54m8l83rxjrta7fqwvzzhapgzafwzt38u8pqsdfrh8",
+    "lp_token_supply": "5779778261",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1854801236",
+    "token2": {
+      "name": null,
+      "symbol": "uscrt",
+      "total_supply": null,
+      "address": "ibc/B55B08EF3667B0C6F029C2CC9CAA6B00788CF639EBB84B34818C85CBABA33ABD",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/B55B08EF3667B0C6F029C2CC9CAA6B00788CF639EBB84B34818C85CBABA33ABD",
+      "cw20": null
+    },
+    "token2_reserve": "7664990975"
+  },
+  {
+    "pool_address": "juno1hue3dnrtgf9ly2frnnvf8z5u7e224ctc4hk7wks2xumeu3arj6rs9vgzec",
+    "lp_token_address": "juno1l0z6d7wlwpwequtenwt8pd44685jyhqys6jdnp8xa8ektn0un4zsadyw8y",
+    "lp_token_supply": "5238393996",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1911321774",
+    "token2": {
+      "name": null,
+      "symbol": "uusd",
+      "total_supply": null,
+      "address": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/2DA4136457810BCB9DAAB620CA67BC342B17C3C70151CA70490A170DF7C9CB27",
+      "cw20": null
+    },
+    "token2_reserve": "284734602875"
+  },
+  {
+    "pool_address": "juno1ctsmp54v79x7ea970zejlyws50cj9pkrmw49x46085fn80znjmpqz2n642",
+    "lp_token_address": "juno1uwp9rs0ya4p6qk8zezl2y666vvtnfvxfmuwngu95pg6m55mg6xpq65jrje",
+    "lp_token_supply": "276036020811",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "395966077026",
+    "token2": {
+      "name": null,
+      "symbol": "uusdc",
+      "total_supply": null,
+      "address": "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034",
+      "cw20": null
+    },
+    "token2_reserve": "1530372804842"
+  },
+  {
+    "pool_address": "juno1cvjuc66rdg34guugmxpz6w59rw6ghrun5m33z3hpvx6q60f40knqglhzzx",
+    "lp_token_address": "juno1h0sqa8qtngwe3jl9qpfg03whjvcgczsk985vrpt6h94t0yp8uspssfvugp",
+    "lp_token_supply": "585712359",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "952112397",
+    "token2": {
+      "name": "MARBLE",
+      "symbol": "MARBLE",
+      "total_supply": "20999990",
+      "address": "juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1g2g7ucurum66d42g8k5twk34yegdq8c82858gz0tq2fc75zy7khssgnhjl"
+    },
+    "token2_reserve": "726805"
+  },
+  {
+    "pool_address": "juno1cjtj9u76l9grhkeew4yef98fvagkl4e8ddex2hf6f4aqu0p9f65qrgv5dq",
+    "lp_token_address": "juno1c7cajk3akx90egke2s4s699receslnnle48dzv9sxc42zh38uhaq5fmp8k",
+    "lp_token_supply": "10000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10000",
+    "token2": {
+      "name": "SAFEMOON",
+      "symbol": "SFM",
+      "total_supply": "1000000000000000",
+      "address": "juno1hm4p3qsqkdmh6tdf4se337fhzdejqg7q5jq7c983ufy6yzkxfqwq2xqqdf",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1hm4p3qsqkdmh6tdf4se337fhzdejqg7q5jq7c983ufy6yzkxfqwq2xqqdf"
+    },
+    "token2_reserve": "10000"
+  },
+  {
+    "pool_address": "juno1ey4g8zuh32kp600e4vhh960zy6rkjktwr3c5deqzn42zvvz6x0esjcu8nk",
+    "lp_token_address": "juno1l53kdre0vzd9xwg4uxxpt3knmwlvtdgu39eatjh7ntjcl2trf92qumdwqh",
+    "lp_token_supply": "10000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10000",
+    "token2": {
+      "name": "SAFEMOON",
+      "symbol": "SFM",
+      "total_supply": "1000000000000000",
+      "address": "juno13sn084lhg58z9w73jccvxwsljs8r7xw8uydq2df88k63pk6a2fmsf3u5he",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno13sn084lhg58z9w73jccvxwsljs8r7xw8uydq2df88k63pk6a2fmsf3u5he"
+    },
+    "token2_reserve": "10000"
+  },
+  {
+    "pool_address": "juno1e8n6ch7msks487ecznyeagmzd5ml2pq9tgedqt2u63vra0q0r9mqrjy6ys",
+    "lp_token_address": "juno1jmechmr7w6kwqu8jcy5973rtllxgttyetarys60rtsu0g675mkjsy96t8l",
+    "lp_token_supply": "150397558485",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "73854161811",
+    "token2": {
+      "name": "NETA",
+      "symbol": "NETA",
+      "total_supply": "31886600000",
+      "address": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno168ctmpyppk90d34p3jjy658zf5a5l3w8wk35wht6ccqj4mr0yv8s4j5awr"
+    },
+    "token2_reserve": "3848129121"
+  },
+  {
+    "pool_address": "juno1enl842z00cklnathpv8f3t3w2u70dkrq22crz3gxg38we7xjfq5s8lktmg",
+    "lp_token_address": "juno12snvzgec29vvzhmcc3m4dq2a86vl5apn2gemveqj73ypxhylty3q2ndad4",
+    "lp_token_supply": "464669103",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "17997886",
+    "token2": {
+      "name": "Cardinal Finance ",
+      "symbol": "PRIMO",
+      "total_supply": "49999999990",
+      "address": "juno1t8dnpktypue65q0hjz7tr3cvqypgj5vkxhd2twvng4a2ywa3j25spjuk6z",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1t8dnpktypue65q0hjz7tr3cvqypgj5vkxhd2twvng4a2ywa3j25spjuk6z"
+    },
+    "token2_reserve": "15087388081"
+  },
+  {
+    "pool_address": "juno1enlufkvehg3nhtsynr6jma3nca6hxzv4ughwjgxsec7h9wgjku8qxyht2p",
+    "lp_token_address": "juno1nskdesxzhxvk7qxd85afupxm39y03gv0kee72xyph8jsrhjcua2q8hz2la",
+    "lp_token_supply": "2",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "2",
+    "token2": {
+      "name": "Matrix Coin",
+      "symbol": "MTX",
+      "total_supply": "100000",
+      "address": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt",
+      "decimals": 0
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt"
+    },
+    "token2_reserve": "3"
+  },
+  {
+    "pool_address": "juno1ehnmjq4232yxh7t2xfkjfqkeddsflcc4z5xd2f7lfcms904szf4skk7pju",
+    "lp_token_address": "juno12andc7fqgfs5fa7svq2tm0f5ccq5tehj9f44x9hevpmflejg0guq6q87gg",
+    "lp_token_supply": "98662",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "2654",
+    "token2": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token2_reserve": "86519"
+  },
+  {
+    "pool_address": "juno1el6rfmz6h9pwpdlf6k2qf4dwt3y5wqd7k3xpyvytklsnkt9uv2aqe8aq4v",
+    "lp_token_address": "juno100pmxfny54wktum5jklg9vme7d5pe44h7va6uw4smccte6wkfaust0untw",
+    "lp_token_supply": "178344528569",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "129614259893",
+    "token2": {
+      "name": null,
+      "symbol": "uosmo",
+      "total_supply": null,
+      "address": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+      "cw20": null
+    },
+    "token2_reserve": "459051176043"
+  },
+  {
+    "pool_address": "juno16zn96yf3vnxengke3vcf6mg9x7qyppgsdh3dnnmvdd8hvtpw58wsrjuu56",
+    "lp_token_address": "juno1pe2umwzqea0hvstzug2mm2ntrcxm336374954p5f6e52s5gf2zusklhqqr",
+    "lp_token_supply": "48712059965",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "117375689",
+    "token2": {
+      "name": "HULCAT",
+      "symbol": "HULC",
+      "total_supply": "4999999999999997",
+      "address": "juno1pshrvuw5ng2q4nwcsuceypjkp48d95gmcgjdxlus2ytm4k5kvz2s7t9ldx",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1pshrvuw5ng2q4nwcsuceypjkp48d95gmcgjdxlus2ytm4k5kvz2s7t9ldx"
+    },
+    "token2_reserve": "209209856854893"
+  },
+  {
+    "pool_address": "juno16yngwxhh5gcqgtgl63gccve9nx84e2q2tz4664qfv5kqp09m5ypq9xtq0q",
+    "lp_token_address": "juno1s8kz538t2hkt9jaz6shg7e3q8nl0wqz3wqtl0lr6lgmwf0dzus5sqra49w",
+    "lp_token_supply": "10000000",
+    "token1": {
+      "name": "Stable Fortis Oeconomia Token",
+      "symbol": "sFOT",
+      "total_supply": "46778042084763935",
+      "address": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx",
+      "decimals": 10
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno17c7zyezg3m8p2tf9hqgue9jhahvle70d59e8j9nmrvhw9anrpk8qxlrghx"
+    },
+    "token1_reserve": "10000000",
+    "token2": {
+      "name": null,
+      "symbol": "uatom",
+      "total_supply": null,
+      "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "cw20": null
+    },
+    "token2_reserve": "27000"
+  },
+  {
+    "pool_address": "juno1689r2g790gdxhyd0m9wfw5n9c8ukc86artdq5hq95w6fa2qjn3dqvg407h",
+    "lp_token_address": "juno12x970v4emjhqz74c8anhmz5ua2gjrl5x09m3u6vws0zn5rzn8ygsrfx6gr",
+    "lp_token_supply": "23333",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "23333",
+    "token2": {
+      "name": "BLOCK",
+      "symbol": "BLCK",
+      "total_supply": "53111488259",
+      "address": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1w5e6gqd9s4z70h6jraulhnuezry0xl78yltp5gtp54h84nlgq30qta23ne"
+    },
+    "token2_reserve": "1534384"
+  },
+  {
+    "pool_address": "juno1653nhx2330rnhmzk2qe9w74kwwa3jtxe4lrfs5cfq8szfms8pqzsra5fvq",
+    "lp_token_address": "juno1dtmjggsjx56ehpdjccqlzzls7u4wsnxejt4rj46x3g2jqayls87svgemgq",
+    "lp_token_supply": "432510",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "701719",
+    "token2": {
+      "name": null,
+      "symbol": "ungm",
+      "total_supply": null,
+      "address": "ibc/52423136339C1CE8C91F6A586DFE41591BDDD4665AE526DFFA8421F9ACF95196",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/52423136339C1CE8C91F6A586DFE41591BDDD4665AE526DFFA8421F9ACF95196",
+      "cw20": null
+    },
+    "token2_reserve": "16175519"
+  },
+  {
+    "pool_address": "juno16mcxtk7pucpwkf5ng7wtnjk8lvd272un3uvet45fef6wcs3v2uxqw4ge7n",
+    "lp_token_address": "juno1g63x26j00pa9rqf8kntu75jc88x20rsfwv8rymf7h8wu0fvmsyvszmr5la",
+    "lp_token_supply": "20",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "20",
+    "token2": {
+      "name": "LUNA",
+      "symbol": "XLUNA",
+      "total_supply": "99999",
+      "address": "juno16s4mrjsakd6275fjnrgjftn982mv9a3hg3ru78s5flx3wgkx8qyszff0aj",
+      "decimals": 0
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno16s4mrjsakd6275fjnrgjftn982mv9a3hg3ru78s5flx3wgkx8qyszff0aj"
+    },
+    "token2_reserve": "10000"
+  },
+  {
+    "pool_address": "juno1m08vn7klzxh9tmqwajuux202xms2qz3uckle7zvtturcq7vk2yaqpcwxlz",
+    "lp_token_address": "juno10cdmzmh5yya0d0686407qrn92elx4q7ecmmdq0vrprpartjhz99q50frz2",
+    "lp_token_supply": "14765104260",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "6915179085",
+    "token2": {
+      "name": "RACOON",
+      "symbol": "RAC",
+      "total_supply": "923783339949",
+      "address": "juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1r4pzw8f9z0sypct5l9j906d47z998ulwvhvqe5xdwgy8wf84583sxwh0pa"
+    },
+    "token2_reserve": "113789852428"
+  },
+  {
+    "pool_address": "juno1ajtzf25zp3jt8tgzlhptelsxuj0pfcjsuxw9mkxa2ptt9nd4zqeseldpnc",
+    "lp_token_address": "juno1s494eeq9vx596p39na5gqxgjzgn07jgg87940w6y3ap99qvdn95qftzgh6",
+    "lp_token_supply": "5676500915937",
+    "token1": {
+      "name": "WasmSwap_Liquidity_Token",
+      "symbol": "wslpt",
+      "total_supply": "536862668506",
+      "address": "juno1ngkpj8f4kg4qpnt385cs0ne3ucfm3s2x5e72nczlggteedl2t6qst649l7",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1ngkpj8f4kg4qpnt385cs0ne3ucfm3s2x5e72nczlggteedl2t6qst649l7"
+    },
+    "token1_reserve": "135401386284",
+    "token2": {
+      "name": "Grand Fortis Oeconomia Token",
+      "symbol": "gFOT",
+      "total_supply": "122189735862165",
+      "address": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno10ynpq4wchr4ruu6mhrfh29495ep4cja5vjnkhz3j5lrgcsap9vtssyeekl"
+    },
+    "token2_reserve": "794288711039"
+  },
+  {
+    "pool_address": "juno1anc4mn8pkelncggkme574mpvar4csrnpqfld08v3x8qnnc5mspus285yqg",
+    "lp_token_address": "juno1sgy52zv39jfqlwx8rgwkavqs9yetrvn55qkhe7hv55krqvnjy6xqjx62a5",
+    "lp_token_supply": "10000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10000",
+    "token2": {
+      "name": "BLISS",
+      "symbol": "BLISS",
+      "total_supply": "100000000",
+      "address": "juno1nq6q9cg7jvuf960s4el3v95axpn6w704gsvka54dt5tznterelgsst89qa",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1nq6q9cg7jvuf960s4el3v95axpn6w704gsvka54dt5tznterelgsst89qa"
+    },
+    "token2_reserve": "9000000"
+  },
+  {
+    "pool_address": "juno1acs6q36t6qje5k82h5g74plr258y2q90cjf9z4wnktt7caln0mhsx8mt7z",
+    "lp_token_address": "juno1k2xzml24sglxlf3hrsmt9a7mtk0jchq279ja5u3asvmtaq3a4uss7xuu5g",
+    "lp_token_supply": "1336069580",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1464191278",
+    "token2": {
+      "name": "CannaLabs",
+      "symbol": "CANLAB",
+      "total_supply": "1001000000",
+      "address": "juno1vn38rzq0wc7zczp4dhy0h5y5kxh2jjzeahwe30c9cc6dw3lkyk5qn5rmfa",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1vn38rzq0wc7zczp4dhy0h5y5kxh2jjzeahwe30c9cc6dw3lkyk5qn5rmfa"
+    },
+    "token2_reserve": "167179979"
+  },
+  {
+    "pool_address": "juno1amn4fp4fgreyn9erxcgzg7u5xf75nl9eqrmqllv9rr36k0l4mwvsygduhk",
+    "lp_token_address": "juno1ngkpj8f4kg4qpnt385cs0ne3ucfm3s2x5e72nczlggteedl2t6qst649l7",
+    "lp_token_supply": "536862668506",
+    "token1": {
+      "name": "WasmSwap_Liquidity_Token",
+      "symbol": "wslpt",
+      "total_supply": "3232639866303",
+      "address": "juno1h0ce9ff2ekgq9aq3lwumrqyam9rl8yfmpmemyparnvwka9l47a3setumzu",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1h0ce9ff2ekgq9aq3lwumrqyam9rl8yfmpmemyparnvwka9l47a3setumzu"
+    },
+    "token1_reserve": "1995798154666",
+    "token2": {
+      "name": null,
+      "symbol": "uatom",
+      "total_supply": null,
+      "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "cw20": null
+    },
+    "token2_reserve": "12420263"
+  },
+  {
+    "pool_address": "juno1730cx75d8uevqvrkcwxpy9trhqqfksu5u9xwqss0qe4tn7x0tt3shakhk8",
+    "lp_token_address": "juno1lgprt38gkp4nvggjl0dm0e7k5lgd80e525f8rjg60tc6fk2xexcqhpp6sm",
+    "lp_token_supply": "3083809327",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "692070616",
+    "token2": {
+      "name": null,
+      "symbol": "uhuahua",
+      "total_supply": null,
+      "address": "ibc/D836B191CDAE8EDACDEBE7B64B504C5E06CC17C6A072DAF278F9A96DF66F6241",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/D836B191CDAE8EDACDEBE7B64B504C5E06CC17C6A072DAF278F9A96DF66F6241",
+      "cw20": null
+    },
+    "token2_reserve": "34412277190269"
+  },
+  {
+    "pool_address": "juno175crveehdxywa43x49y5krjv9mu2axdmufs47kj5z0ck43lysqys6thnwx",
+    "lp_token_address": "juno1qmn3a2acch2hajddymxrs9ymh6xu9scpnsa750f4nkltrxl50nssddcnyu",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "World coin",
+      "symbol": "World",
+      "total_supply": "10000",
+      "address": "juno15cp5yajp9y3lkygae5amcajdrcef4nx3llvcsm90axapzmwkl8hqf4533n",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15cp5yajp9y3lkygae5amcajdrcef4nx3llvcsm90axapzmwkl8hqf4533n"
+    },
+    "token2_reserve": "10"
+  },
+  {
+    "pool_address": "juno17h4sgpaksygdnswpx74szv98hggddc08ny4zv5ca63jv53qptxrshacvku",
+    "lp_token_address": "juno1gcamzveq77v32lw7252v0etx9tm2j2jzy3s5ax0cz6dxnzkx5g4qfqunul",
+    "lp_token_supply": "9089811805151",
+    "token1": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token1_reserve": "10093945690478",
+    "token2": {
+      "name": null,
+      "symbol": "uosmo",
+      "total_supply": null,
+      "address": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+      "cw20": null
+    },
+    "token2_reserve": "189248995744"
+  },
+  {
+    "pool_address": "juno1lyg9wwjc4psrh6u7c5ummt4er6uzuztd345wmrr7xwrk4amrwkwq2vd2ws",
+    "lp_token_address": "juno1f3tfeaz6qnq8r3n3xfsde0r7c20z7k9w0rpzustp7y6y2x3st2hs4yvqjn",
+    "lp_token_supply": "18930041387337",
+    "token1": {
+      "name": "WasmSwap_Liquidity_Token",
+      "symbol": "wslpt",
+      "total_supply": "5676500915937",
+      "address": "juno1s494eeq9vx596p39na5gqxgjzgn07jgg87940w6y3ap99qvdn95qftzgh6",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1s494eeq9vx596p39na5gqxgjzgn07jgg87940w6y3ap99qvdn95qftzgh6"
+    },
+    "token1_reserve": "3975231650435",
+    "token2": {
+      "name": "Fortis Oeconomia Token",
+      "symbol": "FOT",
+      "total_supply": "846957743443843220",
+      "address": "juno1xmpenz0ykxfy8rxr3yc3d4dtqq4dpas4zz3xl6sh873us3vajlpshzp69d",
+      "decimals": 10
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1xmpenz0ykxfy8rxr3yc3d4dtqq4dpas4zz3xl6sh873us3vajlpshzp69d"
+    },
+    "token2_reserve": "781612672654249"
+  },
+  {
+    "pool_address": "juno1ltmcnc8kj32g6d5zh52ell6nlncs7frv0tdsx4sv48mq9564qapsnv2amc",
+    "lp_token_address": "juno1h7d2k7tx9sym54ercezt9rv4vw5tf624utjrrrq2kwrl7a3v5yyswac8gs",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "Matrix Coin",
+      "symbol": "MTX",
+      "total_supply": "100000",
+      "address": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt",
+      "decimals": 0
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1kj8q8g2pmhnagmfepp9jh9g2mda7gzd0m5zdq0s08ulvac8ck4dqhnemjt"
+    },
+    "token2_reserve": "1"
+  },
+  {
+    "pool_address": "juno150vj5jusg4g8n82q40nd9cmq3unc255u3hf5qh6pud4dexkgyp0ss7yvwq",
+    "lp_token_address": "juno1luhat2afjej7m3aypxyn7hyk0c4w8y823f5qcuxkkljyvwwtwnrsq6qrvy",
+    "lp_token_supply": "2355444763",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1903469184",
+    "token2": {
+      "name": "PUNK JUNO TOKEN",
+      "symbol": "PUNK",
+      "total_supply": "12345678000000",
+      "address": "juno13926947pmrjly5p9hf5juey65c6rget0gqrnx3us3r6pvnpf4hwqm8mchy",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno13926947pmrjly5p9hf5juey65c6rget0gqrnx3us3r6pvnpf4hwqm8mchy"
+    },
+    "token2_reserve": "2920861759394"
+  },
+  {
+    "pool_address": "juno1cugrrrryrpl383kfca0w5swywffa08zwqshrsfre82059vxjlx6syhf73y",
+    "lp_token_address": "juno1883e886ujdkgcx94dg35da0l020jcx8y3m6wrf6lf0ntpl5y0mmsq50aru",
+    "lp_token_supply": "63963428296",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "17063735198",
+    "token2": {
+      "name": "Gelotto",
+      "symbol": "GLTO",
+      "total_supply": "275092660865970",
+      "address": "juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se"
+    },
+    "token2_reserve": "27872064377530"
+  },
+  {
+    "pool_address": "juno19jfe8367al32w8sjy3qd3ag77e7wmnsq2p3dt2r3fra0leeauauqtpnzvd",
+    "lp_token_address": "juno16efx2qjtyahkhs4agnw4gjutus9rzy3ytqxzuq4y7caml2vjgmvqpkhr2m",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "Xplorer Token",
+      "symbol": "XPLOT",
+      "total_supply": "100000000000",
+      "address": "juno1qdcprxhe5nyj6gvagnsnpl3skyst2wmufxga0d6qxlnrtf9e0edqt2dgcg",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1qdcprxhe5nyj6gvagnsnpl3skyst2wmufxga0d6qxlnrtf9e0edqt2dgcg"
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno1v63cnaz3qg9fanu8w8mjlx7kawy2q9agzg2uaslz8wjekrtxngkq8qy5cd",
+    "lp_token_address": "juno170atyx7xv25rjlqn2gf47z7makum0emkehncpd5lmchwa80jnlqqxfzaxw",
+    "lp_token_supply": "12",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "12",
+    "token2": {
+      "name": "Xplorer Token",
+      "symbol": "XPLOT",
+      "total_supply": "100000000000",
+      "address": "juno1qdcprxhe5nyj6gvagnsnpl3skyst2wmufxga0d6qxlnrtf9e0edqt2dgcg",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1qdcprxhe5nyj6gvagnsnpl3skyst2wmufxga0d6qxlnrtf9e0edqt2dgcg"
+    },
+    "token2_reserve": "12000000"
+  },
+  {
+    "pool_address": "juno1r4ud0tjvqg8c4j8fjmm2gndjyyfdgmmeu93qycrv7a0qn7pl679s0pt8lh",
+    "lp_token_address": "juno164dqddnk83c0hkpufaazvrst9004chrazj5ukfw22zj6vprcztmskfy6ch",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "Xplorer Token",
+      "symbol": "XPLOT",
+      "total_supply": "100000000000",
+      "address": "juno1qdcprxhe5nyj6gvagnsnpl3skyst2wmufxga0d6qxlnrtf9e0edqt2dgcg",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1qdcprxhe5nyj6gvagnsnpl3skyst2wmufxga0d6qxlnrtf9e0edqt2dgcg"
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno17d2xjvkpqn7zdhkw083audacn0v4gr6qvlcjrz9skjc5en754naszmqy8z",
+    "lp_token_address": "juno1hw2x4kvpcpr2pfyfet4vkudq6lg45gtw46fx69wtvps6d8kx7t0qyq7yls",
+    "lp_token_supply": "12345",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "12345",
+    "token2": {
+      "name": "MDAO",
+      "symbol": "MDAO",
+      "total_supply": "100000000",
+      "address": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6"
+    },
+    "token2_reserve": "10"
+  },
+  {
+    "pool_address": "juno1aut4tmae2v5f5rde7lrnhphupwsxq59pag5465zsvzp02y826y8qz22qad",
+    "lp_token_address": "juno149pxe53trx4edqwwvaq3mdc5kqaa97tua20j9xhaen78qgn5sqssdrwf29",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "EZ Coin",
+      "symbol": "XEZ",
+      "total_supply": "1000000000",
+      "address": "juno1ctnjk7an90lz5wjfvr3cf6x984a8cjnv8dpmztmlpcq4xteaa2xsss6qs9",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1ctnjk7an90lz5wjfvr3cf6x984a8cjnv8dpmztmlpcq4xteaa2xsss6qs9"
+    },
+    "token2_reserve": "1"
+  },
+  {
+    "pool_address": "juno1ttj4p5m4vpycdh8llwhy90jwje698htk38j2qjs3t3ghuqsfkzns6r73v8",
+    "lp_token_address": "juno1yuugtxuv7qv57a5f2kj6uduuxqs04kufvzxhh5zzrrw67gldnkcs57yyga",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "EZ Coin",
+      "symbol": "XEZ",
+      "total_supply": "1000000000",
+      "address": "juno1ctnjk7an90lz5wjfvr3cf6x984a8cjnv8dpmztmlpcq4xteaa2xsss6qs9",
+      "decimals": 3
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1ctnjk7an90lz5wjfvr3cf6x984a8cjnv8dpmztmlpcq4xteaa2xsss6qs9"
+    },
+    "token2_reserve": "1"
+  },
+  {
+    "pool_address": "juno15y5r3zss4j4f4r2prtzp68cef7a089uxx2j23fn6g028ms5vmg7skfwmm5",
+    "lp_token_address": "juno1lwdxmrp8rlh6ae5lrz9s62u5ykt7j5aw0ax0v0yfumg0f60nmmnqhpza2w",
+    "lp_token_supply": "1234",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1234",
+    "token2": {
+      "name": "MDAO",
+      "symbol": "MDAO",
+      "total_supply": "100000000",
+      "address": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6"
+    },
+    "token2_reserve": "10"
+  },
+  {
+    "pool_address": "juno1c8undhm2t93mj8qwffudvqevtcwtaaflepakz3k2u4eqktxv2zcs8f4dkl",
+    "lp_token_address": "juno1p5ercduu3jqglvrka9sf4u9azls53qefhaamrr560w6fx8e5hv7st5r3sc",
+    "lp_token_supply": "10000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10000",
+    "token2": {
+      "name": "MDAO",
+      "symbol": "MDAO",
+      "total_supply": "100000000",
+      "address": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno160z8mk4xm6maywsa8ctn8t38l826p3pzvet5l8hwhl83v2ymlv9qjjhkh6"
+    },
+    "token2_reserve": "1000000"
+  },
+  {
+    "pool_address": "juno106mz7k2gfj4afv0jnpsqw0zhhtr5y7k4jm86l4dz9dadk5d8200quzc2k3",
+    "lp_token_address": "juno1jv5er935334pxck9chd2mj9cuwk8zyq2k4f34jzpggvh8angntks4qnagf",
+    "lp_token_supply": "1",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1",
+    "token2": {
+      "name": "PLEB",
+      "symbol": "PLEB",
+      "total_supply": "100000",
+      "address": "juno1halr9l6r7xsqnh3tl63wsmqugtd5ppdcgfe3h625fvw28g3wwl3qrajkfu",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1halr9l6r7xsqnh3tl63wsmqugtd5ppdcgfe3h625fvw28g3wwl3qrajkfu"
+    },
+    "token2_reserve": "50000"
+  },
+  {
+    "pool_address": "juno1hqt3c0wu22rcxw69qkwp9hv6z27ds5c59nltmqjcqpdwwqt49fjsa46050",
+    "lp_token_address": "juno1yh2vlxu8yze6zlth0fsfwvshyxytj60v886u3c83dp4ylcu429rsttsmdr",
+    "lp_token_supply": "10",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "10",
+    "token2": {
+      "name": "MUSE",
+      "symbol": "MUSE",
+      "total_supply": "100000000000000",
+      "address": "juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3"
+    },
+    "token2_reserve": "500"
+  },
+  {
+    "pool_address": "juno1ytntasjjyzpdfhsw60yp7rt3ww57nqth45lfaek9ae65ylm0xpkqsp47fz",
+    "lp_token_address": "juno1dmtkurpgzyk0p4h26k02txwmk23qu9vq9xn6e6cuahh6n9x52r2qej4gl9",
+    "lp_token_supply": "206141",
+    "token1": {
+      "name": "seJUNO",
+      "symbol": "SEJUNO",
+      "total_supply": "268062168028",
+      "address": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv"
+    },
+    "token1_reserve": "220240",
+    "token2": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token2_reserve": "33619451"
+  },
+  {
+    "pool_address": "juno1maj5xlggctfwm6ct6x2e3456zxm8chadq9prqxl9kjxzzs9edalsk5wzwh",
+    "lp_token_address": "juno1th2uaedyeat7a8mer6a709mcq67wr7avlt5tlm4pvt9f6v2cf9lqhxwq25",
+    "lp_token_supply": "2737100",
+    "token1": {
+      "name": "bJUNO",
+      "symbol": "BJUNO",
+      "total_supply": "64111160887",
+      "address": "juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3"
+    },
+    "token1_reserve": "2804672",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "2908609"
+  },
+  {
+    "pool_address": "juno1htpf9u449tjgd0nttgweg6h2a3lk26utwr9l6mmzwavnrhaldmhsyycymg",
+    "lp_token_address": "juno17erxhm0unu06h20qrg4995suau7std0e4eda6kf0fk53f6fwf80sdwrucj",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "Loop Protocol",
+      "symbol": "LOOP",
+      "total_supply": "153458304000000",
+      "address": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup"
+    },
+    "token2_reserve": "16500000"
+  },
+  {
+    "pool_address": "juno107l74mj5q7d6zdzqzwpmdkk76628az2p9z08z9cj5pa7s5fpucws96f57e",
+    "lp_token_address": "juno1a7cyletk5w0v7w4v2h65w4qx6hfrjq6p054ymeldn57tta0pnrdqlh2enk",
+    "lp_token_supply": "7456734838",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "9898390814",
+    "token2": {
+      "name": "MUSE",
+      "symbol": "MUSE",
+      "total_supply": "100000000000000",
+      "address": "juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3"
+    },
+    "token2_reserve": "307480316806"
+  },
+  {
+    "pool_address": "juno1d0nzar9wtc298lsq965xjzghyadp08vu7xknp5le9zxvl8njczlqu80jp5",
+    "lp_token_address": "juno12djra9uef89rfhklxepr76wjrskpd9exu8g24gpx7ueu3ln8zz0q46tlts",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1100000",
+    "token2": {
+      "name": "Stake Dragons",
+      "symbol": "DRGN",
+      "total_supply": "10000000000000",
+      "address": "juno147t4fd3tny6hws6rha9xs5gah9qa6g7hrjv9tuvv6ce6m25sy39sq6yv52",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno147t4fd3tny6hws6rha9xs5gah9qa6g7hrjv9tuvv6ce6m25sy39sq6yv52"
+    },
+    "token2_reserve": "909339"
+  },
+  {
+    "pool_address": "juno1fjmrqc5tjj2t5mfwkk5utwz2t0gcpkfajjefllrfahuqanctn9ys968emr",
+    "lp_token_address": "juno1dl5efsl4nj07rzc0qrrh0wa2dkn2u6746qtcvnvl0hmfawlm0ctqwmqzm9",
+    "lp_token_supply": "5735225112",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "4597019855",
+    "token2": {
+      "name": "Stake Dragons",
+      "symbol": "DRGN",
+      "total_supply": "10000000000000",
+      "address": "juno147t4fd3tny6hws6rha9xs5gah9qa6g7hrjv9tuvv6ce6m25sy39sq6yv52",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno147t4fd3tny6hws6rha9xs5gah9qa6g7hrjv9tuvv6ce6m25sy39sq6yv52"
+    },
+    "token2_reserve": "36349949379"
+  },
+  {
+    "pool_address": "juno1qt7uzjg9su3mk78jpt695rmxce4sa7evz7wa0edexjrsxghy35hsgje5l9",
+    "lp_token_address": "juno1s6vnzf94d5sa0ax735y3ug4svmg5pc40lumsqygkc5jxngwccqls7z5xjv",
+    "lp_token_supply": "9450462160",
+    "token1": {
+      "name": "Loop Protocol",
+      "symbol": "LOOP",
+      "total_supply": "153458304000000",
+      "address": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup"
+    },
+    "token1_reserve": "21224785638",
+    "token2": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token2_reserve": "18290955866"
+  },
+  {
+    "pool_address": "juno1vcnna64q553z63402cch4pv2wfdrje2aljf44v76dk5kax4fpmzqnryz5g",
+    "lp_token_address": "juno17yufvch87fpyaqnf6nrpys8dmqft439yddtjt0x6hhmd68xk4gdqeuccmg",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": null,
+      "symbol": "ucre",
+      "total_supply": null,
+      "address": "ibc/B7EA961307B6915512F1204B78B6180851DD7474469EB21F16D30DF74DA22903",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": "ibc/B7EA961307B6915512F1204B78B6180851DD7474469EB21F16D30DF74DA22903",
+      "cw20": null
+    },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token2_reserve": "16500000"
+  },
+  {
+    "pool_address": "juno1dlhl4jqelj8va3h4ay9pzypy0nv7xqv84t6sklxzhep4u8j045sst2kms4",
+    "lp_token_address": "juno19tzzy5d00q69k4fehjj5hjvfl72fpzlwju6cesqw8k8ahuxlex2qhx9wcz",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": null,
+      "symbol": "aevmos",
+      "total_supply": null,
+      "address": "ibc/9B990F95D85E7CA8C46544975776CAA20A3DEE3507EEA829A4000D8D65617F6D",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": "ibc/9B990F95D85E7CA8C46544975776CAA20A3DEE3507EEA829A4000D8D65617F6D",
+      "cw20": null
+    },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token2_reserve": "650000"
+  },
+  {
+    "pool_address": "juno1fha0ux5k6xxzzknhwk0j2rtwxtczlp8kzk6w9g383lzjhu337k9swvjdlv",
+    "lp_token_address": "juno19dts5x9v2jz2589e42fw8ynn2737a2jawsk8ank8hvu5jveassfqmlvff9",
+    "lp_token_supply": "70473987323",
+    "token1": {
+      "name": "seJUNO",
+      "symbol": "SEJUNO",
+      "total_supply": "268062168028",
+      "address": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv"
+    },
+    "token1_reserve": "81149420582",
+    "token2": {
+      "name": null,
+      "symbol": "uatom",
+      "total_supply": null,
+      "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "cw20": null
+    },
+    "token2_reserve": "25683607860"
+  },
+  {
+    "pool_address": "juno1gxvcltkl0tf20rpsn2wf9q6ex0vr5xk6j3tzezuv6yyjez97w5vqmxk0cv",
+    "lp_token_address": "juno1qjt776qcnrjjhdnqe7ds5sn3cr3sfhsv6awfhvx9ujywv92lty7q45ucx9",
+    "lp_token_supply": "47106024861",
+    "token1": {
+      "name": "seJUNO",
+      "symbol": "SEJUNO",
+      "total_supply": "268062168028",
+      "address": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv"
+    },
+    "token1_reserve": "44557849694",
+    "token2": {
+      "name": "RAW",
+      "symbol": "RAW",
+      "total_supply": "1000000000000000",
+      "address": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g"
+    },
+    "token2_reserve": "8903021652808"
+  },
+  {
+    "pool_address": "juno1d04vn4t3cw494md0xleyqk6hxt8ctn5gmr353h06uvnudlvk5chq93vmjq",
+    "lp_token_address": "juno1m53w7htf3lgtt2mvd336ja8kkwjrhayk7wazpmvjwsenxxeyt4zsgjn6gw",
+    "lp_token_supply": "66739243962",
+    "token1": {
+      "name": "seJUNO",
+      "symbol": "SEJUNO",
+      "total_supply": "268062168028",
+      "address": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1dd0k0um5rqncfueza62w9sentdfh3ec4nw4aq4lk5hkjl63vljqscth9gv"
+    },
+    "token1_reserve": "66967407332",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "71070995700"
+  },
+  {
+    "pool_address": "juno14hrt7htv42234xwpsxmxaxu7wywak7zflpk9jf5nze3w6e93czdsfwe0ly",
+    "lp_token_address": "juno1pca9ws39kps48dd0gmw7nxy5zgha2qhs8mxstswyyhcjd29jwpaq2uk9p8",
+    "lp_token_supply": "211528795464",
+    "token1": {
+      "name": "SEASY",
+      "symbol": "SEASY",
+      "total_supply": "2000100000000",
+      "address": "juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno19rqljkh95gh40s7qdx40ksx3zq5tm4qsmsrdz9smw668x9zdr3lqtg33mf"
+    },
+    "token1_reserve": "74852709902",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "62591960207"
+  },
+  {
+    "pool_address": "juno17v2d2993me50e6dgzx50ckuuah0vmfyanl0segxsdcg3s4qzqersyrvu8n",
+    "lp_token_address": "juno1s4rn507yhlqw8p7haqpmd3uuvttehact7acsgd9s94pvnkw78t4smkuacv",
+    "lp_token_supply": "59613660192",
+    "token1": {
+      "name": "bJUNO",
+      "symbol": "BJUNO",
+      "total_supply": "64111160887",
+      "address": "juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3",
+      "decimals": 6
+    },
+    "token1_denom": {
+      "native": null,
+      "cw20": "juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3"
+    },
+    "token1_reserve": "60436366833",
+    "token2": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token2_denom": { "native": "ujuno", "cw20": null },
+    "token2_reserve": "60470666271"
+  },
+  {
+    "pool_address": "juno19s8kt9mf667uwku2g5te5lvaaf4uwgwsxwx3frcwtnplgaqzq85qeq32qe",
+    "lp_token_address": "juno1mwyjhrvvk32tc3a34qx0pduxer8yhaw7p7me8h0uzg54h0ul5tnqt2ezc7",
+    "lp_token_supply": "1000000",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "1000000",
+    "token2": {
+      "name": "UniverseDAO",
+      "symbol": "VERSE",
+      "total_supply": "9000000000000",
+      "address": "juno1kqx9rhc8ksx52tukdx797k4rjrhkgfh4gljs04ql97hmnnkgyvxs5cqt7d",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1kqx9rhc8ksx52tukdx797k4rjrhkgfh4gljs04ql97hmnnkgyvxs5cqt7d"
+    },
+    "token2_reserve": "4000000"
+  },
+  {
+    "pool_address": "juno1na8zlnp3pqsjfzllcncq2ahsxg9zkdkqrz3sl4ae5lergh2wrjes7jl9gr",
+    "lp_token_address": "juno1p047hllllt4nu487a8qhsf2lr9unxfknal7jm56se3qplehrlunsr8zwyc",
+    "lp_token_supply": "1536051076",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "136617233",
+    "token2": {
+      "name": "UniverseDAO",
+      "symbol": "VERSE",
+      "total_supply": "9000000000000",
+      "address": "juno1kqx9rhc8ksx52tukdx797k4rjrhkgfh4gljs04ql97hmnnkgyvxs5cqt7d",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno1kqx9rhc8ksx52tukdx797k4rjrhkgfh4gljs04ql97hmnnkgyvxs5cqt7d"
+    },
+    "token2_reserve": "84243556603"
+  },
+  {
+    "pool_address": "juno1pxn38k3kz9k8cjlrghdwzmkxz67l343k5xuxn744wa56vfddrepsx72j5x",
+    "lp_token_address": "juno1n5ljavtmj2heu34yvx7kdu8qrr4dqll2j3j8k86jxd03qyd6e3nqtmfgqx",
+    "lp_token_supply": "165472611",
+    "token1": {
+      "name": "ujuno",
+      "symbol": "ujuno",
+      "total_supply": null,
+      "address": null,
+      "decimals": 6
+    },
+    "token1_denom": { "native": "ujuno", "cw20": null },
+    "token1_reserve": "296104932",
+    "token2": {
+      "name": "Steak Token",
+      "symbol": "STEAK",
+      "total_supply": "593131725",
+      "address": "juno173c59crjqeec28cpzs7n0y7hm4cd308zda8z6j4cnl6pct3stenseg2dxp",
+      "decimals": 6
+    },
+    "token2_denom": {
+      "native": null,
+      "cw20": "juno173c59crjqeec28cpzs7n0y7hm4cd308zda8z6j4cnl6pct3stenseg2dxp"
+    },
+    "token2_reserve": "401280185"
+  }
+]
