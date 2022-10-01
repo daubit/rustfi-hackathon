@@ -32,6 +32,8 @@ pub trait Pool: DynClone + Send + Sync {
     fn token_denoms(&self) -> Vec<String>;
     fn to_json(&self) -> String;
     fn chain(&self) -> String;
+    // unique identifer
+    fn address(&self) -> Result<String>;
 }
 
 dyn_clone::clone_trait_object!(Pool);

@@ -187,6 +187,10 @@ impl Pool for OsmosisPool {
     fn chain(&self) -> String {
         String::from("osmosis")
     }
+
+    fn address(&self) -> Result<String> {
+        Ok(self.address.clone())
+    }
 }
 
 #[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]

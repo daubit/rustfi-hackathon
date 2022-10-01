@@ -274,10 +274,16 @@ impl Pool for WasmPool {
         let token2_denom: String = self.token2.clone().unwrap().symbol.unwrap();
         vec![token1_denom, token2_denom]
     }
+
     fn to_json(&self) -> String {
         serde_json::to_string(&self).unwrap()
     }
+
     fn chain(&self) -> String {
         String::from("juno")
+    }
+
+    fn address(&self) -> Result<String> {
+        Ok(self.pool_address.clone().unwrap())
     }
 }

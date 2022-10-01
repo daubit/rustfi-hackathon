@@ -70,4 +70,13 @@ impl DexAgg {
             })
             .collect()
     }
+
+    pub fn with_address(&self, addr: String) -> Result<Box<dyn Pool>> {
+        let index = self
+            .pools
+            .iter()
+            .position(|x| x.address().unwrap() == addr)
+            .unwrap();
+        Ok(self.pools[index].clone())
+    }
 }
