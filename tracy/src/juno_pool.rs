@@ -1,14 +1,15 @@
 use async_trait::async_trait;
 use serde::{Deserialize, Serialize};
 
+use eyre::Result;
 use std::error::Error;
 use std::fs::{self, File};
-use std::io::Write;
+use std::io::{Read, Write};
 use std::path::Path;
 use std::str::{self, from_utf8};
 
-use crate::util::denom_trace::{self, denom_trace};
-use crate::Pool;
+use crate::util::denom_trace::denom_trace;
+use crate::{Pool, Quote};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WasmContractResponse {
@@ -104,13 +105,13 @@ pub async fn get_token_info(
     Ok(token)
 }
 
-pub async fn get_pool_info(api: &str, contract_address: &str) -> Result<JunoPool, Box<dyn Error>> {
+pub async fn get_pool_info(api: &str, contract_address: &str) -> Result<WasmPool, Box<dyn Error>> {
     let msg = "{ \"info\" : {} }";
     let msg = base64::encode(msg);
     let res = query_contract(api, contract_address, msg.as_str()).await?;
     let decoded = base64::decode_config(res, base64::STANDARD)?;
     let decoded = from_utf8(&decoded)?;
-    let pool = serde_json::from_str::<JunoPool>(&decoded)?;
+    let pool = serde_json::from_str::<WasmPool>(&decoded)?;
     Ok(pool)
 }
 
@@ -140,7 +141,7 @@ pub async fn get_price_for(
     return Err(Box::from("We should not be here"));
 }
 
-pub async fn fetch_juno_pools(api: &str) -> Result<Vec<JunoPool>, Box<dyn Error>> {
+pub async fn fetch_juno_pools(api: &str) -> Result<Vec<WasmPool>, Box<dyn Error>> {
     let contracts = get_contracts(api, 16).await?;
     let mut res = Vec::new();
     for contract in contracts {
@@ -210,7 +211,14 @@ pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub fn load_juno_pools_from_file() {}
+pub fn load_juno_pools_from_file(path: &Path) -> Result<Vec<JunoPool>> {
+    let mut file = File::open(path)?;
+
+    let mut text: String = "".to_string();
+    file.read_to_string(&mut text)?;
+    let pools: Vec<JunoPool> = serde_json::from_str(&text)?;
+    Ok(pools)
+}
 
 #[derive(Debug)]
 pub struct JunoPoolConfig {}
@@ -245,6 +253,6 @@ impl Pool<JunoPoolConfig> for JunoPool {
         token_out_denom: &str,
         config: JunoPoolConfig,
     ) -> Result<Quote> {
-        Err(Box::new(""))
+        todo!()
     }
 }
