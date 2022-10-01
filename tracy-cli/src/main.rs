@@ -14,8 +14,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .author("Daubit")
         .subcommand(
             Command::new("quote")
-                .short_flag('q')
-                .long_flag("quote")
                 .about("Get the quote of two tokens")
                 .arg(
                     Arg::new("token_in")
@@ -55,9 +53,27 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         )
         .subcommand(
             Command::new("load")
-                .short_flag('l')
-                .long_flag("load")
                 .about("Loading files.")
+                .arg(
+                    Arg::new("chain")
+                        .short('s')
+                        .long("chain")
+                        .action(ArgAction::Set)
+                        .num_args(1..)
+                        .help("Chain to update"),
+                )
+                .arg(
+                    Arg::new("node")
+                        .short('n')
+                        .long("node")
+                        .action(ArgAction::Set)
+                        .num_args(1..)
+                        .help("Node to connect to"),
+                ),
+        )
+        .subcommand(
+            Command::new("update")
+                .about("Update pool data")
                 .arg(
                     Arg::new("chain")
                         .short('s')
@@ -162,20 +178,5 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         _ => unreachable!(), // If all subcommands are defined above, anything else is unreachable
     };
-    // let api = "https://lcd-juno.itastakers.com";
-    // // let _res = fetch_juno_pools(api).await.unwrap();
-    // let pool = JunoPool::new();
-    // let config = JunoPoolConfig {
-    //     path: "juno_pools.json".to_string(),
-    //     api: api.to_string(),
-    // };
-    // let token_in = "ujuno";
-    // let token_out = "uatom";
-    // let amount = 1000000;
-    // let quote = pool.get_quote(amount, token_in, token_out, config).await?;
-    // println!(
-    //     "Price for {} {} -> {} {}",
-    //     token_in, amount, token_out, quote.token_out
-    // );
     Ok(())
 }
