@@ -2,8 +2,6 @@ use async_trait::async_trait;
 use dyn_clone::DynClone;
 use eyre::Result;
 
-
-
 pub struct Quote {
     pub token_in: u128,
     pub token_out: u128,
@@ -35,5 +33,6 @@ pub trait Pool: DynClone + Send + Sync {
 dyn_clone::clone_trait_object!(Pool);
 
 pub mod dex;
+pub mod juno_pool;
 pub mod pools;
 pub mod util;
