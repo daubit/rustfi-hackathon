@@ -3,6 +3,8 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { Header } from "../components/Header";
+import { Pools } from "../components/Pools";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -15,23 +17,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Breadcrumb
-          spacing="8px"
-          separator={<ChevronRightIcon color="gray.500" />}
-        >
-          <BreadcrumbItem>
-            <BreadcrumbLink href="#">Home</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/pools">Pools</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/swap">Swap</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/graph">Graph</BreadcrumbLink>
-          </BreadcrumbItem>
-        </Breadcrumb>
+        <Header />
+        <Pools></Pools>
       </main>
 
       <footer className={styles.footer}>
