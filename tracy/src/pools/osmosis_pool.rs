@@ -237,7 +237,7 @@ pub async fn fetch_osmosis_pools() -> Result<()> {
         // TODO: this should probably be mapable
         let mut assets: Vec<OsmosisPoolAssets> = vec![];
         for asset in pool.pool_assets {
-            sleep(Duration::from_millis(500)).await;
+            sleep(Duration::from_millis(200)).await;
             assets.push(OsmosisPoolAssets {
                 token: OsmosisPoolToken {
                     denom: asset.token.denom.clone(),

@@ -123,7 +123,7 @@ pub async fn get_price_for(
     amount: u64,
     for2: bool,
 ) -> Result<String, Box<dyn Error>> {
-    let (method, arg): (&str, &str) = if for2 {
+    let (method, arg): (&str, &str) = if !for2 {
         ("token2_for_token1_price", "token2_amount")
     } else {
         ("token1_for_token2_price", "token1_amount")
