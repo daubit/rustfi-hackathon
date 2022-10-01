@@ -20,39 +20,9 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { useAtomValue } from "jotai";
-import { useMemo } from "react";
 import { usePools } from "../hooks/usePools";
 import { chainsAtom } from "../state/menu";
-
-interface Token {
-  name: String | null;
-  symbol: String | null;
-  total_supply: String | null;
-  address: String | null;
-  decimals: number | null;
-}
-
-interface Denom {
-  native: String | null;
-  cw20: String | null;
-}
-
-enum Chain {
-  JUNO = "juno",
-  OSMOSIS = "osmosis",
-}
-interface Pool {
-  chain?: Chain | null;
-  pool_address: String | null;
-  lp_token_address: String | null;
-  lp_token_supply: String | null;
-  token1: Token | null;
-  token1_denom: Denom | null;
-  token1_reserve: String | null;
-  token2: Token | null;
-  token2_denom: Denom | null;
-  token2_reserve: String | null;
-}
+import { Pool } from "../types";
 
 interface PoolProps {
   pool: Pool;
@@ -65,11 +35,24 @@ const Pool = (props: PoolProps) => {
   return (
     <>
       <Tr onClick={onOpen}>
-        <Td>{pool.token1?.symbol}</Td>
-        <Td>{pool.token2?.symbol}</Td>
-        <Td>{pool.pool_address}</Td>
-        <Td isNumeric>{pool.token1_reserve}</Td>
-        <Td isNumeric>{pool.token2_reserve}</Td>
+        {pool.chain === "juno" && (
+          <>
+            <Td>{pool.token1?.symbol}</Td>
+            <Td>{pool.token2?.symbol}</Td>
+            <Td>{pool.pool_address}</Td>
+            <Td isNumeric>{pool.token1_reserve}</Td>
+            <Td isNumeric>{pool.token2_reserve}</Td>
+          </>
+        )}
+        {pool.chain === "osmosis" && (
+          <>
+            <Td>{pool.pool_assets?.at(0)?.token.native_name}</Td>
+            <Td>{pool.pool_assets?.at(1)?.token.native_name}</Td>
+            <Td>{pool.pool_address}</Td>
+            <Td isNumeric>{pool.pool_assets?.at(0)?.token.amount}</Td>
+            <Td isNumeric>{pool.pool_assets?.at(0)?.token.amount}</Td>
+          </>
+        )}
       </Tr>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
