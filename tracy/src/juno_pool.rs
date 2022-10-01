@@ -1,3 +1,4 @@
+use async_trait::async_trait;
 use serde::{Deserialize, Serialize};
 
 use std::error::Error;
@@ -7,6 +8,7 @@ use std::path::Path;
 use std::str::{self, from_utf8};
 
 use crate::util::denom_trace::{self, denom_trace};
+use crate::Pool;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WasmContractResponse {
@@ -28,7 +30,7 @@ pub struct JunoToken {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct JunoPool {
+pub struct WasmPool {
     pool_address: Option<String>,
     lp_token_address: String,
     lp_token_supply: String,
@@ -186,7 +188,7 @@ async fn extract_token(api: &str, denom: &JunoDenom) -> Result<JunoToken, Box<dy
 
 pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
     let pools = fs::read_to_string(Path::new("juno_pools.json"))?;
-    let pools = serde_json::from_str::<Vec<JunoPool>>(&pools)?;
+    let pools = serde_json::from_str::<Vec<WasmPool>>(&pools)?;
     let mut assets = Vec::new();
     for pool in pools {
         if pool.token1_reserve == "0" || pool.token2_reserve == "0" {
@@ -206,4 +208,43 @@ pub async fn extract_assets(api: &str) -> Result<(), Box<dyn Error>> {
     let mut file = File::create(path)?;
     file.write(out.as_bytes())?;
     Ok(())
+}
+
+pub fn load_juno_pools_from_file() {}
+
+#[derive(Debug)]
+pub struct JunoPoolConfig {}
+
+#[derive(Debug, serde::Serialize, serde::Deserialize)]
+pub struct JunoPoolParams {
+    #[serde(alias = "swapFee")]
+    swap_fee: String,
+    #[serde(alias = "exitFee")]
+    exit_fee: String,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct JunoPool {
+    address: String,
+    id: String,
+}
+
+#[async_trait]
+impl Pool<JunoPoolConfig> for JunoPool {
+    // fn new(address: &str) -> Self {
+    //     Self {
+    //         address: (),
+    //         id: (),
+    //     }
+    // }
+
+    async fn get_quote(
+        &self,
+        amount: u128,
+        token_in_denom: &str,
+        token_out_denom: &str,
+        config: JunoPoolConfig,
+    ) -> Result<Quote> {
+        Err(Box::new(""))
+    }
 }

@@ -1,8 +1,5 @@
 use eyre::Result;
-use tracy::juno_pool::{
-    extract_assets, fetch_juno_pools, get_contracts, get_pool_info, get_price_for, get_token_info,
-    query_contract,
-};
+use tracy::juno_pool::extract_assets;
 use tracy::pools::fetch_osmosis_pools;
 
 #[tokio::main]
