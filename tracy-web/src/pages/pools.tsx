@@ -10,6 +10,7 @@ import {
 import { useSetAtom } from "jotai";
 import type { NextPage } from "next";
 import Head from "next/head";
+import React from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Pools } from "../components/Pools";

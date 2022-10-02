@@ -20,6 +20,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { useAtomValue } from "jotai";
+import React from "react";
 import { usePools } from "../hooks/usePools";
 import { chainsAtom } from "../state/menu";
 import { Pool } from "../types";

@@ -1,5 +1,6 @@
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
+import React from "react";
 
 export const Header = () => {
   return (
@@ -13,9 +14,9 @@ export const Header = () => {
       <BreadcrumbItem>
         <BreadcrumbLink href="/swap">Swap</BreadcrumbLink>
       </BreadcrumbItem>
-      <BreadcrumbItem>
+      {/* <BreadcrumbItem>
         <BreadcrumbLink href="/graph">Graph</BreadcrumbLink>
-      </BreadcrumbItem>
+      </BreadcrumbItem> */}
     </Breadcrumb>
   );
 };

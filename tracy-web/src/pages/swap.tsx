@@ -18,9 +18,11 @@ import {
   useToast,
   VStack,
 } from "@chakra-ui/react";
+import { UpDownIcon } from "@chakra-ui/icons";
 import { uniq } from "lodash";
 import type { NextPage } from "next";
 import Head from "next/head";
+import React from "react";
 import { useCallback, useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -59,12 +61,19 @@ const Home: NextPage = () => {
       return;
     }
     console.log({ token1, token2, amount });
+    setLpPool([]);
     fetchQuote(token1, token2, amount).then((r) => {
       console.log(r);
       setLpPool(r);
     });
     onOpen();
   }, [amount, onOpen, toast, token1, token2]);
+  const swap = useCallback(() => {
+    const token1_tmp = token1;
+    const token2_tmp = token2;
+    setToken1(token2_tmp);
+    setToken2(token1_tmp);
+  }, [token1, token2]);
   if (!data) {
     return (
       <Spinner
@@ -126,6 +135,7 @@ const Home: NextPage = () => {
                       <option
                         key={key}
                         value={token!}
+                        selected={token1 === token}
                         style={{ color: "black" }}
                       >
                         {token}
@@ -136,6 +146,9 @@ const Home: NextPage = () => {
                   }
                 })}
               </Select>
+              <Button>
+                <UpDownIcon color={"black"} onClick={swap}></UpDownIcon>
+              </Button>
               <Select
                 placeholder="Token Out"
                 onChange={(t) => setToken2(t.target.value)}
@@ -146,6 +159,7 @@ const Home: NextPage = () => {
                       <option
                         key={key}
                         value={token!}
+                        selected={token2 === token}
                         style={{ color: "black" }}
                       >
                         {token}
@@ -182,7 +196,7 @@ const Home: NextPage = () => {
               <Container gap="2rem" overflowY={"scroll"} maxHeight={"50%"}>
                 <>
                   {lpPool.length === 0 && (
-                    <Text>{`No pool created yet for ${token1} and ${token2}`}</Text>
+                    <Text>{`Loading for ${token1} and ${token2}`}</Text>
                   )}
                   {lpPool.length > 0 &&
                     lpPool.map(
