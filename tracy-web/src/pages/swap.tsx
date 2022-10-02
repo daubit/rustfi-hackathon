@@ -12,6 +12,7 @@ import {
   ModalHeader,
   ModalOverlay,
   Text,
+  Image,
   Select,
   Spinner,
   useDisclosure,
@@ -31,7 +32,6 @@ import { usePools } from "../hooks/usePools";
 import { fetchQuote } from "../hooks/useQuote";
 import styles from "../styles/Home.module.css";
 import { Pool } from "../types";
-import Image from "next/image";
 
 interface LpPool {
   error: string | null;
