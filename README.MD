@@ -79,4 +79,4 @@ In tracy/:
 in tracy-web/:
 
 - yarn install
-- yarn start
+- yarn dev
