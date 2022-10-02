@@ -78,7 +78,7 @@ const Home: NextPage = () => {
   }, [token1, token2]);
   if (!data) {
     return (
-      <Center boxSize={"xl"}>
+      <Center boxSize={"xl"} backgroundColor="black">
         <Image src="/images/tracy.png" alt="Logo" />
       </Center>
     );
