@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider, ToastProvider } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "react-query";
+import React from "react";
 
 export const queryClient = new QueryClient();
 

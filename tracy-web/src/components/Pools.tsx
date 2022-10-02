@@ -62,17 +62,34 @@ const Pool = (props: PoolProps) => {
           <ModalHeader>Pool View</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Container gap="2rem">
-              <p>Pool Address: {pool.pool_address}</p>
-              <Divider />
-              <p>
-                {pool.token1?.symbol}: {pool.token1?.address}
-              </p>
-              <Divider />
-              <p>
-                {pool.token2?.symbol}: {pool.token2?.address}
-              </p>
-            </Container>
+            {pool.chain === "juno" && (
+              <Container gap="2rem">
+                <p>Pool Address: {pool.pool_address}</p>
+                <Divider />
+                <p>
+                  {pool.token1?.symbol}: {pool.token1?.address}
+                </p>
+                <Divider />
+                <p>
+                  {pool.token2?.symbol}: {pool.token2?.address}
+                </p>
+              </Container>
+            )}
+            {pool.chain === "osmosis" && (
+              <Container gap="2rem">
+                <p>Pool Address: {pool.pool_address}</p>
+                <Divider />
+                <p>
+                  {pool.pool_assets?.at(0)?.token.native_name}:{" "}
+                  {pool.pool_assets?.at(0)?.token.denom}
+                </p>
+                <Divider />
+                <p>
+                  {pool.pool_assets?.at(1)?.token.native_name}:{" "}
+                  {pool.pool_assets?.at(1)?.token.denom}
+                </p>
+              </Container>
+            )}
           </ModalBody>
           <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={onClose}>

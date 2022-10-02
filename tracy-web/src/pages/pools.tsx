@@ -7,7 +7,7 @@ import {
   MenuList,
   MenuOptionGroup,
 } from "@chakra-ui/react";
-import { useSetAtom } from "jotai";
+import { useAtom } from "jotai";
 import type { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
@@ -18,7 +18,8 @@ import { chainsAtom } from "../state/menu";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const setChains = useSetAtom(chainsAtom);
+  const [chains, setChains] = useAtom(chainsAtom);
+  console.log(chains);
   return (
     <div className={styles.container}>
       <Head>
@@ -56,6 +57,7 @@ const Home: NextPage = () => {
             >
               <MenuItemOption
                 value="juno"
+                isChecked={chains.includes("juno")}
                 _hover={{ bg: "teal.600" }}
                 _focus={{ bg: "black" }}
                 _active={{ bg: "teal.600" }}
@@ -64,6 +66,7 @@ const Home: NextPage = () => {
               </MenuItemOption>
               <MenuItemOption
                 value="osmosis"
+                isChecked={chains.includes("osmosis")}
                 _hover={{ bg: "teal.600" }}
                 _focus={{ bg: "black" }}
                 _active={{ bg: "teal.600" }}

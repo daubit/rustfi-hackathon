@@ -1,3 +1,3 @@
 import { atom } from "jotai";
 
-export const chainsAtom = atom<String[]>([])
+export const chainsAtom = atom<String[]>(["juno"])

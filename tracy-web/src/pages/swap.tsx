@@ -17,6 +17,7 @@ import {
   useDisclosure,
   useToast,
   VStack,
+  Center,
 } from "@chakra-ui/react";
 import { UpDownIcon } from "@chakra-ui/icons";
 import { uniq } from "lodash";
@@ -30,6 +31,7 @@ import { usePools } from "../hooks/usePools";
 import { fetchQuote } from "../hooks/useQuote";
 import styles from "../styles/Home.module.css";
 import { Pool } from "../types";
+import Image from "next/image";
 
 interface LpPool {
   error: string | null;
@@ -76,15 +78,9 @@ const Home: NextPage = () => {
   }, [token1, token2]);
   if (!data) {
     return (
-      <Spinner
-        thickness="4px"
-        speed="0.65s"
-        emptyColor="gray.200"
-        color="blue.500"
-        size="xl"
-        marginTop={"5rem"}
-        marginBottom={"5rem"}
-      />
+      <Center boxSize={"xl"}>
+        <Image src="/images/tracy.png" alt="Logo" />
+      </Center>
     );
   }
   let tokens = uniq(
