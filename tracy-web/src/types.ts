@@ -1,14 +1,14 @@
 export interface Token {
-    name: String | null;
-    symbol: String | null;
-    total_supply: String | null;
-    address: String | null;
+    name: string | null;
+    symbol: string | null;
+    total_supply: string | null;
+    address: string | null;
     decimals: number | null;
 }
 
 export interface Denom {
-    native: String | null;
-    cw20: String | null;
+    native: string | null;
+    cw20: string | null;
 }
 
 export enum Chain {
@@ -18,41 +18,41 @@ export enum Chain {
 
 export interface Asset {
     token: {
-        denom: String;
-        amount: String;
-        native_name: String;
+        denom: string;
+        amount: string;
+        native_name: string;
     };
-    weight: String;
+    weight: string;
 }
 
 export interface PoolParams {
-    exit_fee: String;
-    swap_fee: String;
+    exit_fee: string;
+    swap_fee: string;
 }
 
 export interface TotalShares {
-    denom: String;
-    amount: String;
+    denom: string;
+    amount: string;
     native_name: null;
 }
 
 export interface Pool {
     chain?: Chain;
-    pool_address: String | null;
-    lp_token_address: String | null;
-    lp_token_supply: String | null;
+    pool_address: string | null;
+    lp_token_address: string | null;
+    lp_token_supply: string | null;
     token1: Token | null;
     token1_denom: Denom | null;
-    token1_reserve: String | null;
+    token1_reserve: string | null;
     token2: Token | null;
     token2_denom: Denom | null;
-    token2_reserve: String | null;
+    token2_reserve: string | null;
 
     //Osomsis
-    future_pool_governor?: String;
-    id?: String;
+    future_pool_governor?: string;
+    id?: string;
     pool_assets?: Asset[];
     pool_params?: PoolParams;
     total_shares?: TotalShares;
-    total_weight?: String;
+    total_weight?: string;
 }
