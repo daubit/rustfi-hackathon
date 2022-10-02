@@ -22,6 +22,10 @@ warp = "0.3.3"
 [build-dependencies]
 tonic-build = "0.8.2"
 
+[lib]
+crate-type = ["lib"]
+bench = false
+
 [[bin]]
 bench = false
 path = "src/server/server.rs"
