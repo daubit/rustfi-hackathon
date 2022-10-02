@@ -1,3 +1,5 @@
+![Tracy Logo](./logo.png)
+
 # tracy
 
 This crate contains an API for fetching data from various blockchains.
