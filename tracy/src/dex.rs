@@ -14,7 +14,7 @@ pub struct DexAgg {
 }
 
 impl DexAgg {
-    pub fn new() -> Result<Self> {
+    pub fn new(extra_pools: Option<&mut Vec<Box<dyn Pool>>>) -> Result<Self> {
         let mut osmo_pools =
             load_osmo_pools_from_file_boxed(Path::new("./osmosis_pools_hackathon.json"))?;
         let mut juno_pools = load_juno_pools_from_file(Path::new("./juno_pools.json"))?;
@@ -28,6 +28,9 @@ impl DexAgg {
                 .map(|x| Box::<dyn Pool>::from(x))
                 .collect::<Vec<Box<dyn Pool>>>(),
         );
+        if extra_pools.is_some() {
+            pools.append(extra_pools.unwrap());
+        }
         let mut config = HashMap::new();
         config.insert(
             "osmosis".to_owned(),

@@ -104,7 +104,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("Provide amount argument!");
                 return Ok(());
             }
-            let dex = DexAgg::new()?;
+            let dex = DexAgg::new(None)?;
             let token_in = token_in.unwrap();
             let token_out = token_out.unwrap();
             let node = node.unwrap();
@@ -168,6 +168,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
         }
         Some(("graph", _)) => {
+            // TODO: use DexAgg
             let osmo_pools =
                 load_osmo_pools_from_file_boxed(&Path::new("./osmosis_pools_hackathon.json"))?;
             let juno_pools = load_juno_pools_from_file(&Path::new("./juno_pools.json"))?;
