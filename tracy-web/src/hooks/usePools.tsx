@@ -1,8 +1,7 @@
 import { useQuery } from "react-query";
-import pools from "../assets/pools.json";
 
 const fetchPools = async () => {
-  //   const parsed = await (await fetch("http://localhost:3000/pools")).json();
+  const pools = await (await fetch("http://localhost:8080/pools")).json();
   return pools;
 };
 
