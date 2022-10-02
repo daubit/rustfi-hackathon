@@ -32,7 +32,7 @@ impl DexAgg {
         config.insert(
             "osmosis".to_owned(),
             PoolConfig {
-                grpc_url: None,
+                grpc_url: Some("https://osmosis-grpc.polkachu.com:12590".to_owned()),
                 rest_url: None,
                 rpc_url: None,
                 estimate_quote: true,
@@ -84,5 +84,15 @@ impl DexAgg {
             .position(|x| x.address().unwrap() == addr)
             .unwrap();
         Ok(pools[index].clone())
+    }
+
+    pub async fn with_chain(&self, chain: &str) -> Vec<Box<dyn Pool>> {
+        self.pools
+            .lock()
+            .await
+            .clone()
+            .into_iter()
+            .filter(|x| x.chain() == chain)
+            .collect()
     }
 }

@@ -11,7 +11,6 @@ fn pools_with_denom(
     warp::path("pools_for_denom")
         .and(warp::get())
         .and(warp::path::param())
-        // TODO: hacky af
         .and(with_db(dex_agg))
         .and_then(list_pools_for_denom)
 }
@@ -20,9 +19,9 @@ fn pools_with_denoms(
     dex_agg: Db,
 ) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
     warp::path("pools_for_denoms")
+        .and(warp::get())
         .and(warp::path::param())
         .and(warp::path::param())
-        // TODO: hacky af
         .and(with_db(dex_agg))
         .and_then(list_pools_for_denoms)
 }
@@ -31,7 +30,7 @@ fn get_quotes_route(
     dex_agg: Db,
 ) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
     warp::path!("quote" / String / String / String)
-        // TODO: hacky af
+        .and(warp::get())
         .and(with_db(dex_agg))
         .and_then(get_quotes)
 }
@@ -40,7 +39,7 @@ fn get_pool_by_address(
     dex_agg: Db,
 ) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
     warp::path!("pool" / String)
-        // TODO: hacky af
+        .and(warp::get())
         .and(with_db(dex_agg))
         .and_then(get_pool_by_address_handler)
 }
@@ -49,7 +48,7 @@ fn get_pools(
     dex_agg: Db,
 ) -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
     warp::path!("pools")
-        // TODO: hacky af
+        .and(warp::get())
         .and(with_db(dex_agg))
         .and_then(get_pools_handler)
 }

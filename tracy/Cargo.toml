@@ -26,3 +26,8 @@ tonic-build = "0.8.2"
 bench = false
 path = "src/server/server.rs"
 name = "server"
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "playground"
