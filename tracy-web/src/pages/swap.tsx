@@ -27,7 +27,7 @@ import { useCallback, useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { usePools } from "../hooks/usePools";
-import { fetchQuote, useQuote } from "../hooks/useQuote";
+import { fetchQuote } from "../hooks/useQuote";
 import styles from "../styles/Home.module.css";
 import { Pool } from "../types";
 
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
   const [token2, setToken2] = useState("");
   const [amount, setAmount] = useState("");
   const handleSwap = useCallback(() => {
-    if (!token1 || !token2 || !amount) {
+    if (!token1 || !token2 || !amount || !data) {
       toast({
         position: "top",
         duration: 1000,
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
       setLpPool(r);
     });
     onOpen();
-  }, [amount, onOpen, toast, token1, token2]);
+  }, [amount, data, onOpen, toast, token1, token2]);
   const swap = useCallback(() => {
     const token1_tmp = token1;
     const token2_tmp = token2;
