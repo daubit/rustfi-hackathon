@@ -16,18 +16,18 @@ use crate::{Pool, PoolConfig, Quote};
 #[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPool {
     #[serde(alias = "address")]
-    pool_address: String,
-    id: String,
+    pub pool_address: String,
+    pub id: String,
     #[serde(alias = "poolParams")]
-    pool_params: OsmosisPoolParams,
-    future_pool_governor: String,
+    pub pool_params: OsmosisPoolParams,
+    pub future_pool_governor: String,
     #[serde(alias = "totalShares")]
-    total_shares: OsmosisPoolToken,
+    pub total_shares: OsmosisPoolToken,
     #[serde(alias = "poolAssets")]
-    pool_assets: Vec<OsmosisPoolAssets>,
+    pub pool_assets: Vec<OsmosisPoolAssets>,
     #[serde(alias = "totalWeight")]
-    total_weight: String,
-    chain: Option<String>,
+    pub total_weight: String,
+    pub chain: Option<String>,
 }
 
 #[derive(Debug)]
@@ -206,15 +206,15 @@ pub struct OsmosisPoolParams {
 
 #[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolToken {
-    denom: String,
-    amount: String,
-    native_name: Option<String>,
+    pub denom: String,
+    pub amount: String,
+    pub native_name: Option<String>,
 }
 
 #[derive(Debug, serde::Serialize, serde::Deserialize, Clone)]
 pub struct OsmosisPoolAssets {
-    token: OsmosisPoolToken,
-    weight: String,
+    pub token: OsmosisPoolToken,
+    pub weight: String,
 }
 
 #[derive(Debug, serde::Deserialize)]

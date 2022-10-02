@@ -24,11 +24,11 @@ pub struct WasmContractRaw {
 
 #[derive(Debug, Serialize, Deserialize, PartialEq, Clone)]
 pub struct JunoToken {
-    name: Option<String>,
-    symbol: Option<String>,
-    total_supply: Option<String>,
-    address: Option<String>,
-    decimals: Option<u64>,
+    pub name: Option<String>,
+    pub symbol: Option<String>,
+    pub total_supply: Option<String>,
+    pub address: Option<String>,
+    pub decimals: Option<u64>,
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -47,8 +47,8 @@ pub struct WasmPool {
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct JunoDenom {
-    native: Option<String>,
-    cw20: Option<String>,
+    pub native: Option<String>,
+    pub cw20: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

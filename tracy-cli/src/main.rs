@@ -1,8 +1,15 @@
+use std::collections::HashMap;
+use std::fs::File;
+use std::io::Write;
+use std::path::Path;
+
 use clap::{Arg, ArgAction, Command};
+use petgraph::dot::Dot;
+use petgraph::stable_graph::{DefaultIx, NodeIndex};
 use petgraph::{Graph, Undirected};
 use tracy::dex::DexAgg;
-use tracy::pools::juno_pool::fetch_juno_pools;
-use tracy::pools::osmosis_pool::fetch_osmosis_pools;
+use tracy::pools::juno_pool::{fetch_juno_pools, load_juno_pools_from_file};
+use tracy::pools::osmosis_pool::{fetch_osmosis_pools, load_osmo_pools_from_file_boxed};
 use tracy::PoolConfig;
 
 #[tokio::main]
@@ -161,7 +168,97 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
         }
         Some(("graph", _)) => {
-            let mut graph = Graph::<&str, &str, Undirected>::new_undirected();
+            let osmo_pools =
+                load_osmo_pools_from_file_boxed(&Path::new("./osmosis_pools_hackathon.json"))?;
+            let juno_pools = load_juno_pools_from_file(&Path::new("./juno_pools.json"))?;
+
+            let mut graph = Graph::<String, String, Undirected>::new_undirected();
+
+            let mut token_map: HashMap<String, NodeIndex<DefaultIx>> = HashMap::new();
+
+            for pool in osmo_pools.clone() {
+                for asset in pool.pool_assets.clone() {
+                    if !token_map.contains_key(&asset.token.native_name.clone().unwrap()) {
+                        let node = graph.add_node(asset.token.native_name.clone().unwrap());
+                        token_map.insert(asset.token.native_name.clone().unwrap(), node);
+                    }
+                }
+            }
+
+            for pool in juno_pools.clone() {
+                let token_1 = if pool.token1_denom.cw20.is_some() {
+                    format!("cw20:{}", pool.token1_denom.cw20.clone().unwrap())
+                } else {
+                    pool.token1.clone().unwrap().symbol.clone().unwrap()
+                };
+                let token_2 = if pool.token2_denom.cw20.is_some() {
+                    format!("cw20:{}", pool.token2_denom.cw20.clone().unwrap())
+                } else {
+                    pool.token2.clone().unwrap().symbol.clone().unwrap()
+                };
+
+                if !token_map.contains_key(&token_1) {
+                    let node = graph.add_node(token_1.clone());
+                    token_map.insert(token_1.clone(), node);
+                }
+
+                if !token_map.contains_key(&token_2) {
+                    let node = graph.add_node(token_2.clone());
+                    token_map.insert(token_2.clone(), node);
+                }
+            }
+
+            for pool in osmo_pools {
+                for asset in pool.pool_assets.clone() {
+                    let index = pool
+                        .pool_assets
+                        .iter()
+                        .position(|x| {
+                            x.token.amount == asset.token.amount
+                                && x.token.denom == asset.token.denom
+                                && x.token.native_name == asset.token.native_name
+                        })
+                        .unwrap();
+                    if pool.pool_assets.len() < index + 1 {
+                        println!("{} {}", pool.pool_assets.len(), index);
+                        continue;
+                    }
+                    for other_asset in &pool.pool_assets.clone()[index + 1..] {
+                        let node_1 = token_map
+                            .get(&asset.token.native_name.clone().unwrap())
+                            .unwrap();
+                        let node_2 = token_map
+                            .get(&other_asset.token.native_name.clone().unwrap())
+                            .unwrap();
+
+                        graph.add_edge(*node_1, *node_2, pool.id.clone());
+                    }
+                }
+            }
+
+            for pool in juno_pools {
+                let token_1 = if pool.token1_denom.cw20.is_some() {
+                    format!("cw20:{}", pool.token1_denom.cw20.unwrap())
+                } else {
+                    pool.token1.unwrap().symbol.unwrap()
+                };
+                let token_2 = if pool.token2_denom.cw20.is_some() {
+                    format!("cw20:{}", pool.token2_denom.cw20.unwrap())
+                } else {
+                    pool.token2.unwrap().symbol.unwrap()
+                };
+
+                let node_1 = token_map.get(&token_1).unwrap();
+                let node_2 = token_map.get(&token_2).unwrap();
+
+                graph.add_edge(*node_1, *node_2, pool.pool_address.unwrap());
+            }
+
+            let dot_config = &vec![];
+            let dot = Dot::with_config(&graph, dot_config);
+
+            let mut f = File::create(Path::new("graph.dot"))?;
+            f.write_all(dot.to_string().as_bytes())?;
         }
         _ => unreachable!(), // If all subcommands are defined above, anything else is unreachable
     };
