@@ -1,3 +1,4 @@
+import { Box, Image, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Footer } from "../components/Footer";
@@ -15,7 +16,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Header />
-
+        <Box boxSize="sm">
+          <Image src="/images/tracy.svg" alt="Logo" />
+        </Box>
+        <Text fontSize={"3xl"}>
+          In Tracy we T<span style={{ color: "#f44a00" }}>rust</span>
+        </Text>
         <Footer />
       </main>
     </div>

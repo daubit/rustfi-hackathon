@@ -85,9 +85,9 @@ const Pool = (props: PoolProps) => {
 };
 
 export const Pools = () => {
-  const { data, isLoading } = usePools();
+  const { data, isLoading, isError } = usePools();
   const chains = useAtomValue(chainsAtom);
-  if (isLoading) {
+  if (isLoading || isError) {
     return (
       <Spinner
         thickness="4px"
