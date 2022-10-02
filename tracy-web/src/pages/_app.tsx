@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, ToastProvider } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 export const queryClient = new QueryClient();

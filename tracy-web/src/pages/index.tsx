@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Header />
         <Box boxSize="sm">
-          <Image src="/images/tracy.svg" alt="Logo" />
+          <Image src="/images/tracy.png" alt="Logo" />
         </Box>
         <Text fontSize={"3xl"}>
           In Tracy we T<span style={{ color: "#f44a00" }}>rust</span>
